@@ -1,10 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 
+.poppins{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+
+.inter{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.7px;
+}
+
+
+
+.cabin{
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+} 
+
+.cabin2{
+  font-family: 'Cabin', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18.29px;
+}
+
+.quicksand{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+}
+
+
+.nunito{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+
+.Jakarta{
+  font-family: 'Plus Jakarta Sans';
+}
 
 
 
 
+/* nav animation */
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: 30px;
+}
+
+.nav-link span {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.nav-link .top {
+  transform: translateY(0%);
+}
+
+.nav-link .bottom {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(0%);
+}
+
+.nav-link:hover .top {
+  transform: translateY(-100%);
+}
+
+.nav-link:hover .bottom {
+  transform: translateY(-100%);
+}
+
+/* nav animation end */
