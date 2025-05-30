@@ -97,6 +97,9 @@ function Homepage() {
           </div>
         </div>
       </section>
+{/* hero section end */}
+
+
 
       {/* Top Clients Section */}
       <section className="bg-white py-20 overflow-x-hidden">
@@ -277,7 +280,7 @@ function Homepage() {
                 System<br />Monitoring
               </h3>
               <p className="font-cabin text-[14px] text-[#696969] font-normal leading-snug">
-                Tap Into New Tech Expertise, And Build Your Technology Teams With A Dedicated, Self-Sufficient Engineering Team Integrated With Your Organization.
+                Tap Into New Tech Expertise, And Build Your Technology Teams With A Dedicated, Self Sufficient Engineering Team Integrated With Your Organization.
               </p>
             </div>
             <img src={card04} alt="System Monitoring" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0" />

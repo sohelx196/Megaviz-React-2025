@@ -1,5 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
+
+
 import Homepage from "./components/Homepage";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
@@ -70,10 +72,6 @@ import SystemMonitoring from "./components/it_Solution/SystemMonitoring";
                 path: "systemMonitoring",
                 element:<SystemMonitoring/>
             },
-
-
-
-
 
 
             
