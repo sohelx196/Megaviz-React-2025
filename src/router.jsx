@@ -8,6 +8,10 @@ import ITConsultancy from "./components/it_Solution/ITConsultancy";
 import Infrastructure from "./components/it_Solution/Infrastructure";
 import CyberSecurity from "./components/it_Solution/CyberSecurity";
 import BackupSolution from "./components/it_Solution/BackupSolution";
+import Telephony from "./components/it_Solution/Telephony";
+import Cctv from "./components/it_Solution/Cctv";
+import ItSupport from "./components/it_Solution/ItSupport";
+import SystemMonitoring from "./components/it_Solution/SystemMonitoring";
 
 
 
@@ -50,7 +54,25 @@ import BackupSolution from "./components/it_Solution/BackupSolution";
                 path: "backupSolution",
                 element:<BackupSolution/>
             },
-            
+            {
+                path: "telephony",
+                element:<Telephony/>
+            },
+            {
+                path: "cctv",
+                element:<Cctv/>
+            },
+            {
+                path: "itSupport",
+                element:<ItSupport/>
+            },
+            {
+                path: "systemMonitoring",
+                element:<SystemMonitoring/>
+            },
+
+
+
 
 
 

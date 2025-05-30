@@ -104,7 +104,7 @@ function Services() {
           </Link>
 
           <Link
-            to="/solutions/cctv"
+            to="/cctv"
             className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#DFF7EA] rounded-2xl p-4 shadow-md flex flex-col items-center text-center h-full"
           >
             <img src={cctv} alt="CCTV Surveillance" className="mb-3 w-40 h-40 z-20" />
@@ -144,7 +144,7 @@ function Services() {
           </Link>
 
           <Link
-            to="/solutions/backup"
+            to="/backupSolution"
             className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#EBE2F2] rounded-2xl p-6 shadow-md h-[260px] flex items-center gap-6"
           >
             <img src={backupSolution} alt="Backup Solutions" className="w-32 h-32 flex-shrink-0 z-20" />
@@ -157,7 +157,7 @@ function Services() {
           </Link>
 
           <Link
-            to="/solutions/telephony"
+            to="/telephony"
             className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#FEE6DC] rounded-2xl p-6 shadow-md h-[260px] flex flex-col items-center justify-center text-center"
           >
             <img src={telephony} alt="Telephony" className="w-24 h-24 mb-4 z-20" />
@@ -168,7 +168,7 @@ function Services() {
           </Link>
 
           <Link
-            to="/solutions/it-support"
+            to="/itSupport"
             className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#FEEFC1] rounded-2xl p-6 shadow-md h-[260px] flex items-center gap-6"
           >
             <img src={itSupport} alt="IT Support" className="w-32 h-32 flex-shrink-0 z-20" />
@@ -181,7 +181,7 @@ function Services() {
           </Link>
 
           <Link
-            to="/solutions/system-monitoring"
+            to="/systemMonitoring"
             className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#EBE2F2] rounded-2xl p-6 shadow-md h-[260px] flex items-center gap-6"
           >
             <img src={systemMonitoring} alt="System Monitoring" className="w-32 h-32 flex-shrink-0 z-20" />
