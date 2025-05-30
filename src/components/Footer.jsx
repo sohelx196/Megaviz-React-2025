@@ -17,7 +17,7 @@ function Footer() {
             className="mb-4 mx-auto lg:mx-0 w-32 h-auto md:w-36 lg:w-40 lg:h-10"
           />
           <p className="font-poppins text-gray-600 text-xs sm:text-sm leading-relaxed max-w-xs mx-auto lg:mx-0">
-            Experience the Stellar difference and unlock the true potential
+            MegaViz helps enterprises to assess their current IT Infrastructure and evaluates whether an upgrade is required to justify their business needs.
           </p>
         </div>
 

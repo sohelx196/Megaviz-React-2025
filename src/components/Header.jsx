@@ -24,12 +24,12 @@ function Header() {
           <nav className="hidden lg:block">
             <ul className="flex space-x-6 text-base">
               <li><Link to="/" className="nav-link"><span className="top">Home</span><span className="bottom">Home</span></Link></li>
-              {/* <li><Link to="/capabilities" className="nav-link"><span className="top">Capabilities</span><span className="bottom">Capabilities</span></Link></li>
+              <li><Link to="" className="nav-link"><span className="top">Capabilities</span><span className="bottom">Capabilities</span></Link></li>
               <li><Link to="/industries" className="nav-link"><span className="top">Industries</span><span className="bottom">Industries</span></Link></li>
-              <li><Link to="/aboutUs" className="nav-link"><span className="top">About Us</span><span className="bottom">About Us</span></Link></li>
+              <li><Link to="aboutUs" className="nav-link"><span className="top">About Us</span><span className="bottom">About Us</span></Link></li>
               <li><Link to="/blogs" className="nav-link"><span className="top">Blogs</span><span className="bottom">Blogs</span></Link></li>
               <li><Link to="/case-studies" className="nav-link"><span className="top">Case Studies</span><span className="bottom">Case Studies</span></Link></li>
-              <li><Link to="/career" className="nav-link"><span className="top">Career</span><span className="bottom">Career</span></Link></li> */}
+              <li><Link to="/career" className="nav-link"><span className="top">Career</span><span className="bottom">Career</span></Link></li>
             </ul>
           </nav>
         </div>
@@ -55,12 +55,12 @@ function Header() {
         <div className="lg:hidden px-6 pb-4">
           <ul className="flex flex-col space-y-4 text-base items-center">
             <li><Link to="/" className="nav-link"><span className="top">Home</span><span className="bottom">Home</span></Link></li>
-            {/* <li><Link to="/capabilities" className="nav-link"><span className="top">Capabilities</span><span className="bottom">Capabilities</span></Link></li>
+            <li><Link to="/capabilities" className="nav-link"><span className="top">Capabilities</span><span className="bottom">Capabilities</span></Link></li>
             <li><Link to="/industries" className="nav-link"><span className="top">Industries</span><span className="bottom">Industries</span></Link></li>
-            <li><Link to="/aboutUs" className="nav-link"><span className="top">About Us</span><span className="bottom">About Us</span></Link></li>
+            <li><Link to="aboutUs" className="nav-link"><span className="top">About Us</span><span className="bottom">About Us</span></Link></li>
             <li><Link to="/blogs" className="nav-link"><span className="top">Blogs</span><span className="bottom">Blogs</span></Link></li>
             <li><Link to="/case-studies" className="nav-link"><span className="top">Case Studies</span><span className="bottom">Case Studies</span></Link></li>
-            <li><Link to="/career" className="nav-link"><span className="top">Career</span><span className="bottom">Career</span></Link></li> */}
+            <li><Link to="/career" className="nav-link"><span className="top">Career</span><span className="bottom">Career</span></Link></li>
             <li>
               <button className="font-poppins font-medium text-base bg-red-600 text-white px-6 py-2 rounded-full border border-transparent hover:bg-transparent hover:text-black hover:border-black transition-all duration-300 w-full">
                 Let’s Talk

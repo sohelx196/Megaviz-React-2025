@@ -28,8 +28,8 @@ function Testimonials() {
               <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
               <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
             </div>
-            <p className="text-base text-gray-600 font-medium mb-6">
-              From day one, Megaviz has exceeded our expectations. Their tailored solutions perfectly align with our needs, helping us achieve our goals faster.
+            <p className="text-sm text-gray-600 font-medium mb-6">
+              “As a business with complex IT requirements we find Mega Vision Computers Trading LLC helpful and on call 24/7. They have often fixed problems late at night as we cannot close our systems until late because of our home workers. Offering great value and advice with many money saving applications, so important in this day and age.”
             </p>
           </div>
           <div className="flex items-center gap-3 mt-auto">
@@ -38,7 +38,7 @@ function Testimonials() {
               alt="David Brown"
               className="w-10 h-10 rounded-full border-2 border-blue-600"
             />
-            <p className="font-semibold text-black">- David Brown, CFO</p>
+            <p className="font-semibold text-black">- Mr. Ali Asgar</p>
           </div>
         </div>
 
@@ -52,8 +52,8 @@ function Testimonials() {
               <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
               <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
             </div>
-            <p className="text-base text-gray-600 font-medium mb-6">
-              From day one, Megaviz has exceeded our expectations. Their tailored solutions perfectly align with our needs, helping us achieve our goals faster.
+            <p className="text-sm text-gray-600 font-medium mb-6">
+             “As a business with complex IT requirements we find Mega Vision Computers Trading LLC helpful and on call 24/7. They have often fixed problems late at night as we cannot close our systems until late because of our home workers. Offering great value and advice with many money saving applications, so important in this day and age.”
             </p>
           </div>
           <div className="flex items-center gap-3 mt-auto">
@@ -62,7 +62,7 @@ function Testimonials() {
               alt="David Brown"
               className="w-10 h-10 rounded-full border-2 border-blue-600"
             />
-            <p className="font-semibold text-black">- David Brown, CFO</p>
+            <p className="font-semibold text-black">- Mr. Ali Asgar</p>
           </div>
         </div>
 
@@ -76,8 +76,8 @@ function Testimonials() {
               <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
               <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
             </div>
-            <p className="text-base text-gray-600 font-medium mb-6">
-              From day one, Megaviz has exceeded our expectations. Their tailored solutions perfectly align with our needs, helping us achieve our goals faster.
+            <p className="text-sm text-gray-600 font-medium mb-6">
+            “As a business with complex IT requirements we find Mega Vision Computers Trading LLC helpful and on call 24/7. They have often fixed problems late at night as we cannot close our systems until late because of our home workers. Offering great value and advice with many money saving applications, so important in this day and age.”
             </p>
           </div>
           <div className="flex items-center gap-3 mt-auto">
@@ -86,7 +86,7 @@ function Testimonials() {
               alt="David Brown"
               className="w-10 h-10 rounded-full border-2 border-blue-600"
             />
-            <p className="font-semibold text-black">- David Brown, CFO</p>
+            <p className="font-semibold text-black">- Mr. Ali Asgar</p>
           </div>
         </div>
       </div>

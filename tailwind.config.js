@@ -10,6 +10,8 @@ module.exports = {
         jakarta: ['Plus Jakarta Sans', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
         cabin: ['Cabin', 'sans-serif'],
+        quicksand: ['Quicksand', 'sans-serif'],
+        nunito: ['Nunito', 'sans-serif'],
       },
     },
   },
