@@ -94,6 +94,8 @@ function Homepage() {
             <button className="cabin border border-gray-400 hover:border-gray-600 text-sm px-6 py-3 sm:py-4 rounded-full text-black transition duration-300">
               Any Query?
             </button>
+
+            
           </div>
         </div>
       </section>
