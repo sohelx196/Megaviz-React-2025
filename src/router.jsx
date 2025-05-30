@@ -4,6 +4,8 @@ import Homepage from "./components/Homepage";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import Services from "./components/Services";
+import ITConsultancy from "./components/it_Solution/ITConsultancy";
+import Infrastructure from "./components/it_Solution/Infrastructure";
 
 
 
@@ -27,6 +29,16 @@ import Services from "./components/Services";
             {
                 path:"services",
                 element: <Services/>
+            },
+
+            {
+                path: "itConsultancy",
+                element:<ITConsultancy/>
+            },
+
+            {
+                path: "infrastructure",
+                element:<Infrastructure/>
             }
             
         ]

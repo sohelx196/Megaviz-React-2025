@@ -180,7 +180,7 @@ function AboutUs() {
 
       {/* See All Button */}
       <div className="mt-3">
-        <Link href="/services">
+        <Link to="/services">
           <button className="flex items-center gap-2 mx-auto font-cabin group bg-red-600 hover:bg-red-700 text-white text-sm font-medium px-6 py-3 sm:py-4 rounded-full transition-colors duration-300">
             See All
             <img src={arrowIcon} alt="Arrow" className="w-3 h-3 transition-transform duration-300 group-hover:rotate-45" />
