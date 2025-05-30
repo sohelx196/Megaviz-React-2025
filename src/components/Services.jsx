@@ -131,7 +131,7 @@ function Services() {
           </Link>
 
           <Link
-            to="/solutions/cyber-security"
+            to="/cyberSecurity"
             className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#DFF7EA] rounded-2xl p-6 shadow-md h-[260px] flex items-center gap-6"
           >
             <img src={cyberSecurity} alt="Cyber Security" className="w-32 h-32 flex-shrink-0 z-20" />

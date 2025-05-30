@@ -6,6 +6,8 @@ import ContactUs from "./components/ContactUs";
 import Services from "./components/Services";
 import ITConsultancy from "./components/it_Solution/ITConsultancy";
 import Infrastructure from "./components/it_Solution/Infrastructure";
+import CyberSecurity from "./components/it_Solution/CyberSecurity";
+import BackupSolution from "./components/it_Solution/BackupSolution";
 
 
 
@@ -39,7 +41,19 @@ import Infrastructure from "./components/it_Solution/Infrastructure";
             {
                 path: "infrastructure",
                 element:<Infrastructure/>
-            }
+            },
+            {
+                path: "cyberSecurity",
+                element:<CyberSecurity/>
+            },
+            {
+                path: "backupSolution",
+                element:<BackupSolution/>
+            },
+            
+
+
+
             
         ]
         
