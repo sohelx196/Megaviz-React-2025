@@ -43,25 +43,25 @@ function ContactUs() {
       </div>
 
       {/* Contact Form */}
-      <form className="space-y-8">
+      <form action="" className="space-y-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div>
             <label className="font-cabin block text-sm font-normal mb-1">Your Name</label>
-            <input type="text" className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2" />
+            <input type="text" required className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2" />
           </div>
           <div>
             <label className="font-cabin block text-sm font-normal mb-1">Email Address</label>
-            <input type="email" className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2" />
+            <input type="email" required className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2" />
           </div>
           <div>
             <label className="font-cabin block text-sm font-normal mb-1">Phone Number (optional)</label>
-            <input type="text" className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2" />
+            <input type="text" required className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2" />
           </div>
         </div>
 
         <div>
           <label className="font-cabin block text-sm font-normal mb-1">Message</label>
-          <textarea rows="3" className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2 resize-none"></textarea>
+          <textarea rows="3" required className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2 resize-none"></textarea>
         </div>
 
         <div>

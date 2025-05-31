@@ -80,7 +80,7 @@ function Homepage() {
           </h1>
           <p className="font-cabin text-gray-500 text-base sm:text-lg md:text-xl font-normal mb-8 px-2 sm:px-8">
             We are your one-for-all Business and Technology Consultants, offering customised, secure
-            solutions to suit your project needs.
+            solutions to suit your project needs. 
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
