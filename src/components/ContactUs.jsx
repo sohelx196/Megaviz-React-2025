@@ -10,37 +10,46 @@ import contactBackground from "../assets/images/Contact/contactDesign.png";
 
 function ContactUs() {
   const form = useRef();
+
+  const [isSending, setIsSending] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
+    setIsSending(true);
+    setSuccessMessage("");
 
-    const publicKey = "XYqPNAKVxyILNqOe1";
+    try {
+      const publicKey = "XYqPNAKVxyILNqOe1";
     const serviceId = "service_5rja5qa";
     const templateId = "template_wqla8ez";
 
-    emailjs
-      .sendForm(serviceId, templateId, form.current, {
+      await emailjs.sendForm(serviceId, templateId, form.current, {
         publicKey: publicKey,
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-          setSuccessMessage('Thank you for reaching out to MegaViz. We’ll be in touch soon.');
-          form.current.reset();
-          setTimeout(() => {
-            setSuccessMessage('');
-          }, 5000); // message disappears after 5 seconds
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        }
-      );
+      });
+
+    setSuccessMessage("Your message has been successfully sent to MegaViz. We’ll get back to you shortly.");
+      form.current.reset();
+
+      setTimeout(() => {
+        setSuccessMessage("");
+      }, 5000);
+
+    } catch (error) {
+      console.error("FAILED...", error.text);
+      setSuccessMessage("Oops! Something went wrong. Please try again later.");
+
+      setTimeout(() => {
+        setSuccessMessage("");
+      }, 4000);
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
     <>
-      {/* contact form start */}
+      {/* Contact Form Section */}
       <section className="px-4 py-12 sm:py-16 lg:py-20 max-w-7xl mx-auto">
         {/* Heading */}
         <div className="mb-12 text-center lg:text-left lg:flex lg:justify-between lg:items-start">
@@ -68,8 +77,6 @@ function ContactUs() {
           </div>
         </div>
 
-       
-
         {/* Contact Form */}
         <form ref={form} onSubmit={sendEmail} className="space-y-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -92,24 +99,34 @@ function ContactUs() {
             <textarea name='message' required rows="3" className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2 resize-none"></textarea>
           </div>
 
-           {/* Success Message */}
-        {successMessage && (
-          <div className="font-cabin text-[#0F2B59]  px-4 py-3 text-base mb-6 text-center">
-            {successMessage}
-          </div>
-        )}
+          {/* Success or Error Message */}
+          {successMessage && (
+            <div className="font-cabin text-[#0F2B59] px-4 py-3 text-base mb-6 text-center">
+              {successMessage}
+            </div>
+          )}
 
-          <div>
-            <button type="submit" className="font-cabin group flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium px-6 py-3 sm:py-4 rounded-full transition-colors duration-300">
-              leave us a message
-              <img src={arrowIcon} alt="Arrow" className="w-3 h-3 transition-transform duration-300 group-hover:rotate-45" />
+          {/* Submit Button - Hide when message is showing */}
+          {!successMessage && (
+            <button
+              type="submit"
+              disabled={isSending}
+              className={`font-cabin group flex items-center gap-2 ${
+                isSending ? "bg-gray-400" : "bg-red-600 hover:bg-red-700"
+              } text-white text-sm font-medium px-6 py-3 sm:py-4 rounded-full transition-colors duration-300`}
+            >
+              {isSending ? "Sending..." : "Leave us a message"}
+              <img
+                src={arrowIcon}
+                alt="Arrow"
+                className="w-3 h-3"
+              />
             </button>
-          </div>
-
+          )}
         </form>
       </section>
 
-      {/* contact info start */}
+      {/* Contact Info Section */}
       <section className="bg-no-repeat bg-cover bg-center px-4 py-16 sm:px-6 lg:px-12" style={{ backgroundImage: `url(${contactBackground})` }}>
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-start lg:justify-between gap-12">
           <div className="text-center lg:text-left lg:w-1/3 -mt-4">
@@ -149,6 +166,7 @@ function ContactUs() {
         </div>
       </section>
 
+      {/* Google Map Section */}
       <section className="px-4 py-12 sm:px-6 lg:px-12 bg-white">
         <div className="max-w-7xl mx-auto">
           <iframe
@@ -161,7 +179,6 @@ function ContactUs() {
           ></iframe>
         </div>
       </section>
-      {/* contact info end */}
     </>
   );
 }
