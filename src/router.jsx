@@ -1,84 +1,90 @@
 import { createBrowserRouter } from "react-router-dom";
+import React, { lazy, Suspense } from "react";
 import App from "./App";
 
 
-import Homepage from "./components/Homepage";
-import AboutUs from "./components/AboutUs";
-import ContactUs from "./components/ContactUs";
-import Services from "./components/Services";
-import ITConsultancy from "./components/it_Solution/ITConsultancy";
-import Infrastructure from "./components/it_Solution/Infrastructure";
-import CyberSecurity from "./components/it_Solution/CyberSecurity";
-import BackupSolution from "./components/it_Solution/BackupSolution";
-import Telephony from "./components/it_Solution/Telephony";
-import Cctv from "./components/it_Solution/Cctv";
-import ItSupport from "./components/it_Solution/ItSupport";
-import SystemMonitoring from "./components/it_Solution/SystemMonitoring";
+const Homepage = lazy(() => import("./components/Homepage"));
+const AboutUs = lazy(() => import("./components/AboutUs"));
+const ContactUs = lazy(() => import("./components/ContactUs"));
+const Services = lazy(() => import("./components/Services"));
 
+const ITConsultancy = lazy(() => import("./components/it_Solution/ITConsultancy"));
+const Infrastructure = lazy(() => import("./components/it_Solution/Infrastructure"));
+const CyberSecurity = lazy(() => import("./components/it_Solution/CyberSecurity"));
+const BackupSolution = lazy(() => import("./components/it_Solution/BackupSolution"));
+const Telephony = lazy(() => import("./components/it_Solution/Telephony"));
+const Cctv = lazy(() => import("./components/it_Solution/Cctv"));
+const ItSupport = lazy(() => import("./components/it_Solution/ItSupport"));
+const SystemMonitoring = lazy(() => import("./components/it_Solution/SystemMonitoring"));
 
+// Suspense wrapper
+const withSuspense = (Component) => (
+  <Suspense fallback={null}>
+    <Component />
+  </Suspense>
+);
 
- const router = createBrowserRouter([
-    {
-        path: "",
-        element: <App/>,
-        children: [
-            {
-                path: "/",
-                element: <Homepage/>
-            },
-            {
-                path: "aboutUs",
-                element: <AboutUs/>
-            },
-            {
-                path: "contactUs",
-                element: <ContactUs/>       
-            },
-            {
-                path:"services",
-                element: <Services/>
-            },
-
-            {
-                path: "itConsultancy",
-                element:<ITConsultancy/>
-            },
-
-            {
-                path: "infrastructure",
-                element:<Infrastructure/>
-            },
-            {
-                path: "cyberSecurity",
-                element:<CyberSecurity/>
-            },
-            {
-                path: "backupSolution",
-                element:<BackupSolution/>
-            },
-            {
-                path: "telephony",
-                element:<Telephony/>
-            },
-            {
-                path: "cctv",
-                element:<Cctv/>
-            },
-            {
-                path: "itSupport",
-                element:<ItSupport/>
-            },
-            {
-                path: "systemMonitoring",
-                element:<SystemMonitoring/>
-            },
-
-
-            
-        ]
+const router = createBrowserRouter([
+  {
+    path: "",
+    element: <App />,
+    children: [
+        { 
+           path: "/", 
+           element: withSuspense(Homepage) 
+         },
+        { 
+           path: "aboutUs", 
+           element: withSuspense(AboutUs) 
+         },
+        { 
+           path: "contactUs",
+            element: withSuspense(ContactUs) 
+         },
+        { 
+           path: "services", 
+           element: withSuspense(Services) 
+         },
+        { 
+           path: "itConsultancy",
+            element: withSuspense(ITConsultancy) 
+         },
+        { 
+           path: "infrastructure",
+            element: withSuspense(Infrastructure) 
+         },
+        { 
+           path: "cyberSecurity",
+            element: withSuspense(CyberSecurity) 
+         },
+        { 
+           path: "backupSolution",
+            element: withSuspense(BackupSolution) 
+         },
+        { 
+           path: "telephony", 
+           element: withSuspense(Telephony) 
+         },
+        { 
+           path: "cctv",
+            element: withSuspense(Cctv) 
+         },
+        { 
+           path: "itSupport", 
+           element: withSuspense(ItSupport) 
+         },
+        { 
+           path: "systemMonitoring",
+            element: withSuspense(SystemMonitoring) 
+        },
         
+        
+        
+        
+    ], 
+  },
 
-    }
-])
+
+]);
 
 export default router;

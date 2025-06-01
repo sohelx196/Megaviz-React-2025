@@ -12,12 +12,12 @@ function Header() {
       
         <div className="flex items-center space-x-10 w-full lg:w-auto">
           {/* Logo */}
+
           <Link to="/">
             <img
               src={logo}
               alt="megaviz logo"
-              className="w-28 h-auto sm:w-20 sm:h-6 md:w-28 md:h-8 lg:w-40 lg:h-10"
-            />
+              className="w-28 h-auto sm:w-20 sm:h-6 md:w-28 md:h-8 lg:w-40 lg:h-10"/>
           </Link>
 
           {/* Desktop Nav */}
@@ -32,6 +32,7 @@ function Header() {
               <li><Link to="" className="nav-link"><span className="top">Career</span><span className="bottom">Career</span></Link></li>
             </ul>
           </nav>
+          
         </div>
 
         {/* CTA Button */}
