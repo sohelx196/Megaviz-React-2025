@@ -8,6 +8,9 @@ import arrowIcon from "../assets/icons/arrorw.png";
 
 import contactBackground from "../assets/images/Contact/contactDesign.png";
 
+
+
+
 function ContactUs() {
   const form = useRef();
 
@@ -119,7 +122,7 @@ function ContactUs() {
               <img
                 src={arrowIcon}
                 alt="Arrow"
-                className="w-3 h-3"
+                className="w-3 h-3 transition-transform duration-300 group-hover:rotate-45"
               />
             </button>
           )}
