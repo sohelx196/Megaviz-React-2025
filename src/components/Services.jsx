@@ -56,7 +56,7 @@ function Services() {
             {/* Overlay Card */}
             <div
               className="absolute w-[90px] sm:w-[110px] md:w-[130px] lg:w-[230px] xl:w-[310px]
-                         top-[23%] left-[13%] -translate-x-1/2 -translate-y-1/2">
+                         top-[24%] left-[13%] -translate-x-1/2 -translate-y-1/2">
               <img
                 src={clientCardImg}
                 alt="Client Card"

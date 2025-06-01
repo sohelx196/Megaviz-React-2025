@@ -111,20 +111,23 @@ function ContactUs() {
 
           {/* Submit Button - Hide when message is showing */}
           {!successMessage && (
-            <button
-              type="submit"
-              disabled={isSending}
-              className={`font-cabin group flex items-center gap-2 ${
-                isSending ? "bg-gray-400" : "bg-red-600 hover:bg-red-700"
-              } text-white text-sm font-medium px-6 py-3 sm:py-4 rounded-full transition-colors duration-300`}
-            >
-              {isSending ? "Sending..." : "Leave us a message"}
-              <img
-                src={arrowIcon}
-                alt="Arrow"
-                className="w-3 h-3 transition-transform duration-300 group-hover:rotate-45"
-              />
-            </button>
+    <button
+        type="submit"
+       disabled={isSending}
+        className={`font-cabin group flex items-center gap-2
+       ${isSending ? "bg-gray-400" : "bg-red-600 hover:bg-red-700"}
+        text-white text-sm font-medium
+          px-4 py-2 sm:px-5 sm:py-3 lg:px-6 lg:py-4
+         rounded-full transition-colors duration-300
+        sm:text-sm lg:text-base `}>
+
+  {isSending ? "Sending..." : "Leave us a message"}
+  <img
+    src={arrowIcon}
+    alt="Arrow"
+    className="w-3 h-3 transition-transform duration-300 group-hover:rotate-45" />
+</button>
+
           )}
         </form>
       </section>

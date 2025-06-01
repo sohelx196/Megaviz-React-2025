@@ -230,7 +230,7 @@ function Homepage() {
           <span className="text-[#0F2B59]">Our</span> <span className="text-red-600">Services</span>
         </h2>
         <p className="font-cabin text-[#000000BF] font-normal mb-12 max-w-lg mx-auto text-center leading-[1.6]">
-          We are pioneers of the digital approach, using leading-edge technology to simplify procedures and apply executive for your business.
+          Start your amazing IT experience with us.
         </p>
 
         {/* Cards Grid */}
@@ -402,9 +402,9 @@ function Homepage() {
           Meet Our<span className="text-red-600"> Clients</span>
         </h2>
         <p className="font-cabin text-[#696969] mt-4 text-base sm:text-lg font-normal">
-          We are proud to collaborate with leading names in the software industry,
+        We have earned the trust of 100's of customers, 
           <span className="block">
-            ensuring you get the best tools for your business and creative needs.
+            including these fine companies
           </span>
         </p>
       </div>
