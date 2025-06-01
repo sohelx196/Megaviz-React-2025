@@ -67,17 +67,36 @@ function ContactUs() {
           </div>
 
           {/* Social Icons */}
-          <div className="flex lg:flex-col flex-row items-center lg:items-start gap-3 mt-6 lg:mt-0 justify-center">
-            <a href="#" className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8">
-              <img src={facebookIcon} alt="Facebook" className="w-4 lg:w-5 h-auto" />
-            </a>
-            <a href="#" className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8">
-              <img src={instagramIcon} alt="Instagram" className="w-4 lg:w-5 h-auto" />
-            </a>
-            <a href="#" className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8">
-              <img src={twitterIcon} alt="Twitter" className="w-4 lg:w-5 h-auto" />
-            </a>
-          </div>
+        <div className="flex lg:flex-col flex-row items-center lg:items-start gap-3 mt-6 lg:mt-0 justify-center">
+  <a
+    href="https://www.facebook.com/megavizco/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8">
+      
+    <img src={facebookIcon} alt="Facebook" className="w-4 lg:w-5 h-auto" />
+  </a>
+
+  <a
+    href="https://www.instagram.com/megavizco/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8">
+
+    <img src={instagramIcon} alt="Instagram" className="w-4 lg:w-5 h-auto" />
+  </a>
+
+  <a
+    href="https://x.com/megavizco"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8">
+
+    <img src={twitterIcon} alt="Twitter" className="w-4 lg:w-5 h-auto" />
+  </a>
+</div>
+
+
         </div>
 
         {/* Contact Form */}
