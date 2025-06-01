@@ -44,6 +44,7 @@ function Telephony() {
           <img
             src={backDots}
             alt="Dot Pattern"
+             loading="lazy"
             className="absolute 
                        -top-5 sm:-top-2 md:-top-6 lg:-top-8 xl:-top-10
                        -right-2 sm:-right-2 md:-right-6 lg:-right-8 xl:-right-7
@@ -55,6 +56,7 @@ function Telephony() {
           <img
             src={telephonyMain}
             alt="Team Working"
+             loading="lazy"
             className="w-full h-[300px] md:h-[480px] lg:h-[500px] object-cover rounded-2xl md:rounded-l-none md:rounded-r-2xl relative z-10"
           />
         </div>
@@ -74,6 +76,7 @@ function Telephony() {
           <img
             src={telephonyOverlap}
             alt="Team Working"
+             loading="lazy"
             className="rounded-[30px] 
                        w-[90%] h-[500px] 
                        lg:w-[80%] lg:h-[550px] 
@@ -144,6 +147,7 @@ function Telephony() {
           <img
             src={toyMen}
             alt="IT Consultancy"
+             loading="lazy"
             className="absolute bottom-5 
               right-[-60px] sm:right-[-70px] md:right-[-70px] lg:right-[-90px] 
               w-[200px] sm:w-[200px] md:w-[240px] lg:w-[260px] 
@@ -168,6 +172,7 @@ function Telephony() {
           <img
             src={twoWomen}
             alt="IT Consultancy"
+             loading="lazy"
             className="absolute bottom-5 
               right-[-30px] sm:right-[-70px] md:right-[-70px] lg:right-[-90px] 
               w-[220px] sm:w-[200px] md:w-[290px] lg:w-[330px] 

@@ -17,7 +17,7 @@ function Header() {
             <img
               src={logo}
               alt="megaviz logo"
-              className="w-28 h-auto sm:w-20 sm:h-6 md:w-28 md:h-8 lg:w-40 lg:h-10"/>
+              className="w-28 h-auto sm:w-20 sm:h-6 md:w-28 md:h-8 lg:w-40 lg:h-10"  loading="lazy"/>
           </Link>
 
           {/* Desktop Nav */}

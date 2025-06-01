@@ -50,6 +50,7 @@ function Services() {
             <img
               src={officeImg}
               alt="Office Scene"
+               loading="lazy"
               className="rounded-2xl object-cover w-full h-auto"
             />
 
@@ -61,6 +62,7 @@ function Services() {
                 src={clientCardImg}
                 alt="Client Card"
                 className="rounded-2xl w-full h-auto"
+                 loading="lazy"
               />
             </div>
           </div>
@@ -96,7 +98,7 @@ function Services() {
             to="/itConsultancy"
             className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#FEE6DC] rounded-2xl p-4 shadow-md flex flex-col items-center text-center h-full"
           >
-            <img src={itConsultancy} alt="IT Consultancy" className="mb-3 w-40 h-40 z-20" />
+            <img src={itConsultancy} alt="IT Consultancy" className="mb-3 w-40 h-40 z-20"  loading="lazy" />
             <h2 className="font-poppins text-lg font-semibold mb-2 z-20">IT Consultancy</h2>
             <p className="font-poppins text-xs z-20">
               MegaViz’s architectural approach to UC&C transforms your communication culture with integrated platforms.
@@ -107,7 +109,7 @@ function Services() {
             to="/cctv"
             className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#DFF7EA] rounded-2xl p-4 shadow-md flex flex-col items-center text-center h-full"
           >
-            <img src={cctv} alt="CCTV Surveillance" className="mb-3 w-40 h-40 z-20" />
+            <img src={cctv} alt="CCTV Surveillance" className="mb-3 w-40 h-40 z-20"  loading="lazy" />
             <h2 className="font-poppins text-lg font-semibold mb-2 z-20">CCTV Surveillance</h2>
             <p className="font-poppins text-xs z-20">
               Secure your branches efficiently with intelligent CCTV technology and reduce guarding costs.
@@ -121,7 +123,7 @@ function Services() {
             to="/infrastructure"
             className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#FEEFC1] rounded-2xl p-6 shadow-md h-[260px] flex items-center gap-6"
           >
-            <img src={infraCloud} alt="Infrastructure & Cloud" className="w-32 h-32 flex-shrink-0 z-20" />
+            <img src={infraCloud} alt="Infrastructure & Cloud" className="w-32 h-32 flex-shrink-0 z-20"  loading="lazy"/>
             <div className="flex flex-col justify-center z-20 text-center">
               <h2 className="font-poppins text-lg font-semibold mb-2">Infrastructure & Cloud</h2>
               <p className="font-poppins text-xs">
@@ -134,7 +136,7 @@ function Services() {
             to="/cyberSecurity"
             className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#DFF7EA] rounded-2xl p-6 shadow-md h-[260px] flex items-center gap-6"
           >
-            <img src={cyberSecurity} alt="Cyber Security" className="w-32 h-32 flex-shrink-0 z-20" />
+            <img src={cyberSecurity} alt="Cyber Security" className="w-32 h-32 flex-shrink-0 z-20"  loading="lazy" />
             <div className="flex flex-col justify-center z-20 text-center">
               <h2 className="font-poppins text-lg font-semibold mb-2">Cyber Security Solutions</h2>
               <p className="font-poppins text-xs">
@@ -147,7 +149,7 @@ function Services() {
             to="/backupSolution"
             className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#EBE2F2] rounded-2xl p-6 shadow-md h-[260px] flex items-center gap-6"
           >
-            <img src={backupSolution} alt="Backup Solutions" className="w-32 h-32 flex-shrink-0 z-20" />
+            <img src={backupSolution} alt="Backup Solutions" className="w-32 h-32 flex-shrink-0 z-20"  loading="lazy" />
             <div className="flex flex-col justify-center z-20 text-center">
               <h2 className="font-poppins text-lg font-semibold mb-2">Backup Solutions</h2>
               <p className="font-poppins text-xs">
@@ -160,7 +162,7 @@ function Services() {
             to="/telephony"
             className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#FEE6DC] rounded-2xl p-6 shadow-md h-[260px] flex flex-col items-center justify-center text-center"
           >
-            <img src={telephony} alt="Telephony" className="w-24 h-24 mb-4 z-20" />
+            <img src={telephony} alt="Telephony" className="w-24 h-24 mb-4 z-20"  loading="lazy" />
             <h2 className="font-poppins text-lg font-semibold mb-2 z-20">Telephony</h2>
             <p className="font-poppins text-xs px-2 z-20">
               Proven telecom expertise delivering top-tier communication solutions across UAE.
@@ -171,7 +173,7 @@ function Services() {
             to="/itSupport"
             className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#FEEFC1] rounded-2xl p-6 shadow-md h-[260px] flex items-center gap-6"
           >
-            <img src={itSupport} alt="IT Support" className="w-32 h-32 flex-shrink-0 z-20" />
+            <img src={itSupport} alt="IT Support" className="w-32 h-32 flex-shrink-0 z-20"  loading="lazy" />
             <div className="flex flex-col justify-center z-20 text-center">
               <h2 className="font-poppins text-lg font-semibold mb-2">IT Support</h2>
               <p className="font-poppins text-xs">
@@ -184,7 +186,7 @@ function Services() {
             to="/systemMonitoring"
             className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#EBE2F2] rounded-2xl p-6 shadow-md h-[260px] flex items-center gap-6"
           >
-            <img src={systemMonitoring} alt="System Monitoring" className="w-32 h-32 flex-shrink-0 z-20" />
+            <img src={systemMonitoring} alt="System Monitoring" className="w-32 h-32 flex-shrink-0 z-20"  loading="lazy" />
             <div className="flex flex-col justify-center z-20 text-center">
               <h2 className="font-poppins text-lg font-semibold mb-2">System Monitoring</h2>
               <p className="font-poppins text-xs">

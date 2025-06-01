@@ -64,8 +64,8 @@ function Homepage() {
  {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden px-4">
         {/* Background Images */}
-        <img src={heroBgTop} alt="Top Background" className="absolute top-0 left-0 w-full h-auto object-cover z-0 pointer-events-none" />
-        <img src={heroBgBottom} alt="Bottom Background" className="absolute bottom-0 left-0 w-full h-auto object-cover z-0 pointer-events-none" />
+        <img src={heroBgTop} alt="Top Background" className="absolute top-0 left-0 w-full h-auto object-cover z-0 pointer-events-none" loading='lazy'/>
+        <img src={heroBgBottom} alt="Bottom Background" className="absolute bottom-0 left-0 w-full h-auto object-cover z-0 pointer-events-none" loading='lazy'/>
 
         {/* Hero Content */}
         <div className="relative z-10 text-center max-w-4xl mx-auto">
@@ -108,19 +108,19 @@ function Homepage() {
         <div className="container mx-auto text-center px-4">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
             <div className="flex justify-center items-center order-1">
-              <img src={mace01} alt="Client 1" className="max-w-full h-auto w-20 sm:w-24 md:w-28" />
+              <img src={mace01} alt="Client 1" className="max-w-full h-auto w-20 sm:w-24 md:w-28"  loading="lazy"/>
             </div>
             <div className="flex justify-center items-center order-2">
-              <img src={mace02} alt="Client 2" className="max-w-full h-auto w-24 sm:w-28 md:w-36" />
+              <img src={mace02} alt="Client 2" className="max-w-full h-auto w-24 sm:w-28 md:w-36"  loading="lazy"/>
             </div>
             <div className="col-span-2 md:col-span-1 flex justify-center items-center order-3">
-              <img src={mace03} alt="RICS Logo" className="max-w-full h-auto w-24 sm:w-28 md:w-32" />
+              <img src={mace03} alt="RICS Logo" className="max-w-full h-auto w-24 sm:w-28 md:w-32"  loading="lazy"/>
             </div>
             <div className="flex justify-center items-center order-4 md:order-3">
-              <img src={mace04} alt="Client 4" className="max-w-full h-auto w-24 sm:w-28 md:w-32" />
+              <img src={mace04} alt="Client 4" className="max-w-full h-auto w-24 sm:w-28 md:w-32"  loading="lazy"/>
             </div>
             <div className="flex justify-center items-center order-5 md:order-4">
-              <img src={mace05} alt="Client 5" className="max-w-full h-auto w-24 sm:w-28 md:w-32" />
+              <img src={mace05} alt="Client 5" className="max-w-full h-auto w-24 sm:w-28 md:w-32"  loading="lazy"/>
             </div>
           </div>
         </div>
@@ -141,7 +141,7 @@ function Homepage() {
           {/* Stats */}
           <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="flex flex-col items-center text-center">
-              <img src={growthIcon} alt="Graph Icon" className="w-6 h-6 mb-2" />
+              <img src={growthIcon} alt="Graph Icon" className="w-6 h-6 mb-2"  loading="lazy"/>
               <h3 className="font-cabin text-4xl sm:text-5xl font-bold text-black">35%+</h3>
               <p className="font-cabin text-[#C72C28] text-base sm:text-lg font-semibold mt-1">
                 Performance & Productivity Improvement
@@ -149,7 +149,7 @@ function Homepage() {
             </div>
 
             <div className="flex flex-col items-center text-center">
-              <img src={ideaIcon} alt="Bulb Icon" className="w-6 h-6 mb-2" />
+              <img src={ideaIcon} alt="Bulb Icon" className="w-6 h-6 mb-2"  loading="lazy"/>
               <h3 className="font-cabin text-4xl sm:text-5xl font-bold text-black">60%+</h3>
               <p className="font-cabin text-[#C72C28] text-base sm:text-lg font-semibold mt-1">
                 Increase in Digital Adoption
@@ -157,7 +157,7 @@ function Homepage() {
             </div>
 
             <div className="flex flex-col items-center text-center">
-              <img src={syncIcon} alt="Sync Icon" className="w-6 h-6 mb-2" />
+              <img src={syncIcon} alt="Sync Icon" className="w-6 h-6 mb-2"  loading="lazy"/>
               <h3 className="font-cabin text-4xl sm:text-5xl font-bold text-black">2x</h3>
               <p className="font-cabin text-[#C72C28] text-base sm:text-lg font-semibold mt-1">
                 Speed to Market
@@ -181,8 +181,7 @@ function Homepage() {
             <img 
               src={meetingImg} 
               alt="Team Image" 
-              className="rounded-[30px] w-full h-full max-h-[600px] object-cover" 
-            />
+              className="rounded-[30px] w-full h-full max-h-[600px] object-cover"  loading="lazy"/>
           </div>
 
           {/* Content */}
@@ -246,7 +245,7 @@ function Homepage() {
                 Automate the entire cycle of build, provisioning, and deployment process with our DevOps experts & agile processes.
               </p>
             </div>
-            <img src={card01} alt="IT Consultancy" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0" />
+            <img src={card01} alt="IT Consultancy" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0"  loading="lazy"/>
           </div>
 
           {/* Card 2 */}
@@ -259,7 +258,7 @@ function Homepage() {
                 Secure And Managed Solutions To Streamline Cloud Adoption, Development, And Migration For Businesses.
               </p>
             </div>
-            <img src={card02} alt="Infrastructure & Cloud" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0" />
+            <img src={card02} alt="Infrastructure & Cloud" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0"  loading="lazy"/>
           </div>
 
           {/* Card 3 */}
@@ -272,7 +271,7 @@ function Homepage() {
                 Integrating AI To Solve The Toughest Business Problems Through The Next-Generation Artificial Intelligence.
               </p>
             </div>
-            <img src={card03} alt="Cyber Security Solutions" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0" />
+            <img src={card03} alt="Cyber Security Solutions" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0"  loading="lazy"/>
           </div>
 
           {/* Card 4 */}
@@ -285,7 +284,7 @@ function Homepage() {
                 Tap Into New Tech Expertise, And Build Your Technology Teams With A Dedicated, Self Sufficient Engineering Team Integrated With Your Organization.
               </p>
             </div>
-            <img src={card04} alt="System Monitoring" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0" />
+            <img src={card04} alt="System Monitoring" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0"  loading="lazy"/>
           </div>
 
           {/* Card 5 */}
@@ -298,7 +297,7 @@ function Homepage() {
                 Developing IoT Solutions & Accelerators, That Include End-To-End Digital Execution Capabilities Enabling Clients To Build And Launch New Digital Products.
               </p>
             </div>
-            <img src={card05} alt="Backup Solutions" className="absolute bottom-0 right-[-20px] w-[170px] h-[170px] object-contain z-0" />
+            <img src={card05} alt="Backup Solutions" className="absolute bottom-0 right-[-20px] w-[170px] h-[170px] object-contain z-0"  loading="lazy"/>
           </div>
 
           {/* Card 6 */}
@@ -311,7 +310,7 @@ function Homepage() {
                 Building Smart Solutions For Leading E-Commerce Brands With A Single View Of Their Business And Customers Across Channels Leveraging Real-Time Analytics And Reporting.
               </p>
             </div>
-            <img src={card06} alt="E-Commerce" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0" />
+            <img src={card06} alt="E-Commerce" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0"  loading="lazy"/>
           </div>
 
           {/* Card 7 */}
@@ -324,7 +323,7 @@ function Homepage() {
                 Automate The Entire Cycle Of Build, Provisioning, And Deployment Process With Our DevOps Experts & Agile Processes.
               </p>
             </div>
-            <img src={card07} alt="IT Support" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0" />
+            <img src={card07} alt="IT Support" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0"  loading="lazy"/>
           </div>
 
           {/* Card 8 */}
@@ -337,7 +336,7 @@ function Homepage() {
                 Building Bespoke Software Applications Using Cutting-Edge Tools That Are Scalable, Flexible, And Easy To Manage.
               </p>
             </div>
-            <img src={card08} alt="Telephony" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0" />
+            <img src={card08} alt="Telephony" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0"  loading="lazy"/>
           </div>
 
         </div>
@@ -357,8 +356,7 @@ function Homepage() {
           <img
             src={meetingImg2}
             alt="Team Working"
-            className="rounded-[30px] w-full h-full max-h-[600px] object-cover"
-          />
+            className="rounded-[30px] w-full h-full max-h-[600px] object-cover"  loading="lazy"    />
         </div>
 
         {/* Right Content */}
@@ -415,96 +413,84 @@ function Homepage() {
           <img
             src={maceImg}
             alt="Mace"
-            className="h-16 sm:h-20 max-w-[140px] object-contain"
-          />
+            className="h-16 sm:h-20 max-w-[140px] object-contain"  loading="lazy"   />
         </div>
 
         <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-b border-gray-300">
           <img
             src={mundiPharmaImg}
             alt="Mundi Pharma"
-            className="h-16 sm:h-20 max-w-[140px] object-contain"
-          />
+            className="h-16 sm:h-20 max-w-[140px] object-contain"  loading="lazy"   />
         </div>
 
         <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-b border-gray-300">
           <img
             src={cbreImg}
             alt="CBRE"
-            className="h-16 sm:h-20 max-w-[140px] object-contain"
-          />
+            className="h-16 sm:h-20 max-w-[140px] object-contain"  loading="lazy"   />
         </div>
 
         <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-b border-gray-300">
           <img
             src={astraZenecaImg}
             alt="AstraZeneca"
-            className="h-16 sm:h-20 max-w-[140px] object-contain"
-          />
+            className="h-16 sm:h-20 max-w-[140px] object-contain"  loading="lazy"   />
         </div>
 
         <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-b border-gray-300">
           <img
             src={msAmlinImg}
             alt="MS Amlin"
-            className="h-16 sm:h-20 max-w-[140px] object-contain"
-          />
+            className="h-16 sm:h-20 max-w-[140px] object-contain"  loading="lazy"   />
         </div>
 
         <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-b border-gray-300">
           <img
             src={ricsImg}
             alt="RICS"
-            className="h-16 sm:h-20 max-w-[140px] object-contain"
-          />
+            className="h-16 sm:h-20 max-w-[140px] object-contain"  loading="lazy"   />
         </div>
 
         <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-b border-gray-300">
           <img
             src={moneyPensionImg}
             alt="Money Service"
-            className="h-16 sm:h-20 max-w-[140px] object-contain"
-          />
+            className="h-16 sm:h-20 max-w-[140px] object-contain"  loading="lazy"   />
         </div>
 
         <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-b border-gray-300">
           <img
             src={vivoEnergyImg}
             alt="Vivo Energy"
-            className="h-16 sm:h-20 max-w-[140px] object-contain"
-          />
+            className="h-16 sm:h-20 max-w-[140px] object-contain"  loading="lazy"   />
         </div>
 
         <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-gray-300">
           <img
             src={impellamImg}
             alt="Impellam"
-            className="h-16 sm:h-20 max-w-[140px] object-contain"
-          />
+            className="h-16 sm:h-20 max-w-[140px] object-contain"  loading="lazy"   />
         </div>
 
         <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-gray-300">
           <img
             src={costaCoffeeImg}
             alt="Costa"
-            className="h-16 sm:h-20 max-w-[140px] object-contain"
-          />
+            className="h-16 sm:h-20 max-w-[140px] object-contain"  loading="lazy"   />
         </div>
 
         <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-gray-300">
           <img
             src={quilterInvesterImg}
             alt="Quilter"
-            className="h-16 sm:h-20 max-w-[140px] object-contain"
-          />
+            className="h-16 sm:h-20 max-w-[140px] object-contain"  loading="lazy"   />
         </div>
 
         <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-gray-300">
           <img
             src={babcockImg}
             alt="Babcock"
-            className="h-16 sm:h-20 max-w-[140px] object-contain"
-          />
+            className="h-16 sm:h-20 max-w-[140px] object-contain"  loading="lazy"   />
         </div>
       </div>
     </section>

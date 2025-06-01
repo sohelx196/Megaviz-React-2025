@@ -22,11 +22,11 @@ function Testimonials() {
         <div className="w-full sm:w-[300px] h-full rounded-xl border border-gray-200 shadow-sm p-6 flex flex-col justify-between transition hover:shadow-black hover:shadow-md">
           <div>
             <div className="flex justify-start mb-4">
-              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
-              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
-              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
-              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
-              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
+              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5"  loading="lazy" />
+              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5"  loading="lazy" />
+              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5"  loading="lazy" />
+              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5"  loading="lazy" />
+              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5"  loading="lazy" />
             </div>
             <p className="text-sm text-gray-600 font-medium mb-6">
               “As a business with complex IT requirements we find Mega Vision Computers Trading LLC helpful and on call 24/7. They have often fixed problems late at night as we cannot close our systems until late because of our home workers. Offering great value and advice with many money saving applications, so important in this day and age.”
@@ -36,8 +36,7 @@ function Testimonials() {
             <img
               src={person01}
               alt="David Brown"
-              className="w-10 h-10 rounded-full border-2 border-blue-600"
-            />
+              className="w-10 h-10 rounded-full border-2 border-blue-600"  loading="lazy"   />
             <p className="font-semibold text-black">- Mr. Ali Asgar</p>
           </div>
         </div>
@@ -46,11 +45,11 @@ function Testimonials() {
         <div className="w-full sm:w-[300px] h-full rounded-xl border border-gray-200 shadow-sm p-6 flex flex-col justify-between transition hover:shadow-black hover:shadow-md">
           <div>
             <div className="flex justify-start mb-4">
-              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
-              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
-              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
-              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
-              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
+              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5"  loading="lazy" />
+              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5"  loading="lazy" />
+              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5"  loading="lazy" />
+              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5"  loading="lazy" />
+              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5"  loading="lazy" />
             </div>
             <p className="text-sm text-gray-600 font-medium mb-6">
              “As a business with complex IT requirements we find Mega Vision Computers Trading LLC helpful and on call 24/7. They have often fixed problems late at night as we cannot close our systems until late because of our home workers. Offering great value and advice with many money saving applications, so important in this day and age.”
@@ -60,8 +59,7 @@ function Testimonials() {
             <img
               src={person01}
               alt="David Brown"
-              className="w-10 h-10 rounded-full border-2 border-blue-600"
-            />
+              className="w-10 h-10 rounded-full border-2 border-blue-600"  loading="lazy"   />
             <p className="font-semibold text-black">- Mr. Ali Asgar</p>
           </div>
         </div>
@@ -70,11 +68,11 @@ function Testimonials() {
         <div className="w-full sm:w-[300px] h-full rounded-xl border border-gray-200 shadow-sm p-6 flex flex-col justify-between transition hover:shadow-black hover:shadow-md">
           <div>
             <div className="flex justify-start mb-4">
-              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
-              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
-              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
-              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
-              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5" />
+              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5"   loading="lazy"/>
+              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5"   loading="lazy"/>
+              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5"   loading="lazy"/>
+              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5"   loading="lazy"/>
+              <img src={starIcon} alt="star icon" className="w-6 h-6 mx-0.5"   loading="lazy"/>
             </div>
             <p className="text-sm text-gray-600 font-medium mb-6">
             “As a business with complex IT requirements we find Mega Vision Computers Trading LLC helpful and on call 24/7. They have often fixed problems late at night as we cannot close our systems until late because of our home workers. Offering great value and advice with many money saving applications, so important in this day and age.”
@@ -84,8 +82,7 @@ function Testimonials() {
             <img
               src={person01}
               alt="David Brown"
-              className="w-10 h-10 rounded-full border-2 border-blue-600"
-            />
+              className="w-10 h-10 rounded-full border-2 border-blue-600"  loading="lazy"   />
             <p className="font-semibold text-black">- Mr. Ali Asgar</p>
           </div>
         </div>

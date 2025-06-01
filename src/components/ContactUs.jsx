@@ -121,14 +121,14 @@ function ContactUs() {
             <textarea name='message' required rows="3" className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2 resize-none"></textarea>
           </div>
 
-          {/* Success or Error Message */}
+          {/* Success Message */}
           {successMessage && (
             <div className="font-cabin text-[#0F2B59] px-4 py-3 text-base mb-6 text-center">
               {successMessage}
             </div>
           )}
 
-          {/* Submit Button - Hide when message is showing */}
+          {/* Submit Button */}
           {!successMessage && (
     <button
         type="submit"

@@ -17,7 +17,7 @@ function Footer() {
           <img
             src={megavizLogo}
             alt="Megaviz Logo"
-            className="mb-4 mx-auto lg:mx-0 w-32 h-auto md:w-36 lg:w-40 lg:h-10"/>
+            className="mb-4 mx-auto lg:mx-0 w-32 h-auto md:w-36 lg:w-40 lg:h-10"  loading="lazy"/>
             </Link>
           <p className="font-poppins  text-gray-600 text-xs sm:text-sm  max-w-xs mx-auto lg:mx-0 ">
             MegaViz helps enterprises to assess their current IT Infrastructure and evaluates whether an upgrade is required to justify their business needs.
@@ -81,7 +81,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="hover:border hover:border-[#002699] w-10 transition-all duration-300 h-10 rounded-full border border-gray-200 flex items-center justify-center"
           >
-            <img src={facebookIcon} alt="facebook-icon" className="w-6 h-6" />
+            <img src={facebookIcon} alt="facebook-icon" className="w-6 h-6"  loading="lazy" />
           </a>
           <a
             href="https://x.com/megavizco"
@@ -89,7 +89,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="hover:border hover:border-[#002699] w-10 transition-all duration-300 h-10 rounded-full border border-gray-200 flex items-center justify-center"
           >
-            <img src={twitterIcon} alt="twitter-icon" className="w-6 h-6" />
+            <img src={twitterIcon} alt="twitter-icon" className="w-6 h-6"  loading="lazy" />
           </a>
           <a
             href="https://www.instagram.com/megavizco/"
@@ -97,7 +97,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="hover:border hover:border-[#002699] w-10 transition-all duration-300 h-10 rounded-full border border-gray-200 flex items-center justify-center"
           >
-            <img src={instagramIcon} alt="instagram-icon" className="w-6 h-6" />
+            <img src={instagramIcon} alt="instagram-icon" className="w-6 h-6"  loading="lazy" />
           </a>
         </div>
       </div>

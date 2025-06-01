@@ -45,8 +45,7 @@ function AboutUs() {
           <img
             src={arrowIcon}
             alt="Arrow"
-            className="w-3 h-3 transition-transform duration-300 group-hover:rotate-45"
-          />
+            className="w-3 h-3 transition-transform duration-300 group-hover:rotate-45"  loading="lazy"    />
         </button>
       </Link>
     </div>
@@ -73,11 +72,11 @@ function AboutUs() {
         <div className="hidden lg:block absolute w-6 h-6 top-1/3 left-[18%] -translate-y-1/2 rounded-full shadow-[0px_3px_20px_rgba(0,0,0,0.05)]" style={{ background: "linear-gradient(180deg, #FF8E8E 0%, #F62424 100%)" }}></div>
         <div className="hidden lg:block absolute w-6 h-6 -top-[50%] right-[5%] rounded-full shadow-[0px_3px_20px_rgba(0,0,0,0.05)]" style={{ background: "linear-gradient(180deg, #FF8E8E 0%, #F62424 100%)" }}></div>
 
-        <img src={studentImg} alt="Team Meeting" className="rounded-2xl w-full max-w-3xl object-cover z-10" />
+        <img src={studentImg} alt="Team Meeting" className="rounded-2xl w-full max-w-3xl object-cover z-10"   loading="lazy"/>
 
         <div className="quicksand absolute top-6 left-48 bg-white rounded-xl shadow-lg px-4 py-3 w-auto z-20">
           <div className="font-quicksand flex items-center space-x-2 mb-1">
-            <img src={starIcon} alt="star icon" className="w-4 h-4" />
+            <img src={starIcon} alt="star icon" className="w-4 h-4"  loading="lazy" />
             <p className=" text-xs text-gray-500 font-semibold">GREAT PROJECT</p>
           </div>
           <p className=" text-lg font-bold leading-snug">1,472 Successful Projects</p>
@@ -85,7 +84,7 @@ function AboutUs() {
 
         <div className="absolute bottom-6 right-48 bg-white rounded-xl shadow-lg px-4 py-4 w-60 z-20">
           <div className="flex items-center space-x-2 mb-2">
-            <img src={personImg} alt="Bill Adams" className="w-8 h-8 rounded-full" />
+            <img src={personImg} alt="Bill Adams" className="w-8 h-8 rounded-full"   loading="lazy"/>
             <div className="font-quicksand">
               <p className="text-sm font-semibold">Bill Adams</p>
               <p className="text-xs text-gray-500">CEO Uptech</p>
@@ -100,7 +99,7 @@ function AboutUs() {
       <div className="flex flex-col items-center space-y-6 px-4 sm:hidden">
         <div className="quicksand bg-white rounded-xl shadow-lg px-4 py-3 w-full max-w-xs">
           <div className="flex items-center space-x-2 mb-1">
-            <img src={starIcon} alt="star icon" className="w-4 h-4" />
+            <img src={starIcon} alt="star icon" className="w-4 h-4"  loading="lazy" />
             <p className="text-xs text-gray-500 font-semibold">GREAT PROJECT</p>
           </div>
           <p className="text-base font-bold leading-snug">1,472 Successful Projects</p>
@@ -114,7 +113,7 @@ function AboutUs() {
           <div className="w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
         </div>
 
-        <img src={studentImg} alt="Team Meeting" className="rounded-2xl w-full max-w-sm object-cover" />
+        <img src={studentImg} alt="Team Meeting" className="rounded-2xl w-full max-w-sm object-cover"  loading="lazy" />
 
         <div className="flex space-x-2">
           <div className="w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
@@ -126,7 +125,7 @@ function AboutUs() {
 
         <div className="bg-white rounded-xl shadow-lg px-4 py-4 w-full max-w-xs">
           <div className="flex items-center space-x-2 mb-2">
-            <img src={personImg} alt="Bill Adams" className="w-8 h-8 rounded-full" />
+            <img src={personImg} alt="Bill Adams" className="w-8 h-8 rounded-full"  loading="lazy" />
             <div className="quicksand">
               <p className="text-sm font-semibold">Bill Adams</p>
               <p className="text-xs text-gray-500">CEO Uptech</p>
@@ -155,7 +154,7 @@ function AboutUs() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4 py-4">
         {/* Left Card */}
         <div className="hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer cabin relative h-[260px] sm:h-[280px] lg:h-[280px] w-[90%] mx-auto rounded-xl overflow-hidden group flex items-end">
-          <img src={mobileAppDev} alt="Mobile app Development" className="w-full h-full object-cover" />
+          <img src={mobileAppDev} alt="Mobile app Development" className="w-full h-full object-cover"  loading="lazy" />
           <div className="absolute bottom-4 left-4 text-white text-base md:text-lg font-medium">
             <h2 className="font-cabin">Mobile app Development</h2>
           </div>
@@ -163,7 +162,7 @@ function AboutUs() {
 
         {/* Center Card */}
         <div className="hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer cabin relative h-[260px] sm:h-[280px] lg:h-[340px] w-[90%] mx-auto rounded-xl overflow-hidden group flex items-end lg:-translate-y-6 z-10">
-          <img src={websiteDesign} alt="Website Design" className="w-full h-full object-cover" />
+          <img src={websiteDesign} alt="Website Design" className="w-full h-full object-cover"  loading="lazy"/>
           <div className="absolute bottom-7 left-4 text-white text-base md:text-lg font-medium">
             <h2 className="font-cabin">Website Design</h2>
           </div>
@@ -171,7 +170,7 @@ function AboutUs() {
 
         {/* Right Card */}
         <div className="hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer cabin relative h-[260px] sm:h-[280px] lg:h-[280px] w-[90%] mx-auto rounded-xl overflow-hidden group flex items-end">
-          <img src={websiteDevelopment} alt="Website Development" className="w-full h-full object-cover" />
+          <img src={websiteDevelopment} alt="Website Development" className="w-full h-full object-cover"  loading="lazy" />
           <div className="absolute bottom-4 left-4 text-white text-base md:text-lg font-medium">
             <h2 className="font-cabin">Website Development</h2>
           </div>
@@ -183,7 +182,7 @@ function AboutUs() {
         <Link to="/services">
           <button className="flex items-center gap-2 mx-auto font-cabin group bg-red-600 hover:bg-red-700 text-white text-sm font-medium px-6 py-3 sm:py-4 rounded-full transition-colors duration-300">
             See All
-            <img src={arrowIcon} alt="Arrow" className="w-3 h-3 transition-transform duration-300 group-hover:rotate-45" />
+            <img src={arrowIcon} alt="Arrow" className="w-3 h-3 transition-transform duration-300 group-hover:rotate-45"  loading="lazy"/>
           </button>
         </Link>
       </div>
@@ -218,7 +217,7 @@ function AboutUs() {
           <div className="lg:col-span-2 relative text-white rounded-2xl shadow-lg min-h-[250px] overflow-hidden flex flex-col justify-between p-6 bg-black">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
-              <img src={projectFinish} alt="Background" className="w-full h-full object-cover opacity-3 rotate-[6deg] scale-110" />
+              <img src={projectFinish} alt="Background" className="w-full h-full object-cover opacity-3 rotate-[6deg] scale-110"  loading="lazy" />
             </div>
 
             {/* Content Layer */}
@@ -233,7 +232,7 @@ function AboutUs() {
 
             {/* Card Icon */}
             <div className="absolute bottom-4 z-10">
-              <img src={cardIcon} alt="Card Icon" className="h-8 sm:h-10 md:h-12 object-contain" />
+              <img src={cardIcon} alt="Card Icon" className="h-8 sm:h-10 md:h-12 object-contain"  loading="lazy"/>
             </div>
           </div>
 
@@ -241,7 +240,7 @@ function AboutUs() {
           <div className="lg:col-span-3 relative overflow-hidden rounded-2xl bg-black">
             {/* Main Image */}
             <div className="aspect-video w-full h-auto">
-              <img src={howWeWork} alt="How We Work" className="w-full h-full object-cover block" />
+              <img src={howWeWork} alt="How We Work" className="w-full h-full object-cover block"  loading="lazy" />
             </div>
 
             {/* Overlay Title */}
@@ -255,6 +254,7 @@ function AboutUs() {
             <img
               src={playIcon}
               alt="Play Icon"
+               loading="lazy"
               className="absolute bottom-1 right-1 sm:bottom-2 sm:right-2 md:bottom-3 md:right-3 lg:-bottom-1 lg:-right-2 w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 object-contain z-10"
             />
           </div>
@@ -283,14 +283,14 @@ function AboutUs() {
           </div>
 
           <div className="flex justify-center mt-5 sm:mt-6">
-            <img src={ourVision} alt="Vision" className="w-full max-w-[320px] sm:max-w-[360px] object-contain" />
+            <img src={ourVision} alt="Vision" className="w-full max-w-[320px] sm:max-w-[360px] object-contain"  loading="lazy" />
           </div>
         </div>
 
         {/* Mission Card */}
         <div className="hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#EBE2F2] rounded-xl p-6 sm:p-8 flex flex-col justify-start items-center shadow-md max-w-md mx-auto">
           <div className="flex justify-center mb-4 sm:mb-6">
-            <img src={ourMission} alt="Mission" className="w-full max-w-[320px] sm:max-w-[360px] object-contain" />
+            <img src={ourMission} alt="Mission" className="w-full max-w-[320px] sm:max-w-[360px] object-contain"  loading="lazy"/>
           </div>
           <div className="w-full">
             <h3 className="font-cabin text-2xl sm:text-3xl md:text-4xl font-bold text-[#323131] mb-4">
