@@ -276,7 +276,7 @@ function AboutUs() {
             <h3 className="font-cabin text-2xl sm:text-3xl md:text-4xl font-bold text-[#323131] mb-4">
               Our Vision
             </h3>
-            <p className="font-cabin text-[#323131] text-sm sm:text-base md:text-[17px] leading-relaxed sm:leading-[1.8rem] max-w-prose text-justify">
+            <p className="font-cabin text-[#323131] text-sm sm:text-base md:text-[17px] leading-relaxed sm:leading-[1.8rem] max-w-prose ">
               An Individual Character And Arise As A Regarded Programming Arrangements Supplier By Building And Keeping Up
               Durable Connections, Conveying Quality Programming And By Giving Inventive Business Arrangements...
             </p>
@@ -296,7 +296,7 @@ function AboutUs() {
             <h3 className="font-cabin text-2xl sm:text-3xl md:text-4xl font-bold text-[#323131] mb-4">
               Our Mission
             </h3>
-            <p className="font-cabin text-[#323131] text-sm sm:text-base md:text-[17px] leading-relaxed sm:leading-[1.8rem] max-w-prose text-justify">
+            <p className="font-cabin text-[#323131] text-sm sm:text-base md:text-[17px] leading-relaxed sm:leading-[1.8rem] max-w-prose ">
               To Give Inventive, High Calibre And Top Tier IT Consulting & IT Solutions & Services To Our Clients,
               Empowering Them To Accomplish Their Business Destinations. Partners And Accomplices While Co-Operating.
               Also, To Keep Up And Grow Our Convention Of "Greatness Through Quality".
