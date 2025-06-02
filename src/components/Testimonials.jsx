@@ -10,9 +10,7 @@ function Testimonials() {
         <p className="font-bold text-xl text-[#002699]">Testimonials</p>
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#0F2B59] mt-2">
           See what people are
-          <br />
-          <span>saying</span>{" "}
-          <span className="text-red-600">about us</span>
+          <span className='block'>saying <span className='text-red-600'>about us </span></span>
         </h2>
       </div>
 
