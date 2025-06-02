@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 .poppins{
   font-family: 'Poppins';
