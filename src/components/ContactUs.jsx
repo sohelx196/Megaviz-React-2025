@@ -18,7 +18,7 @@ function ContactUs() {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("https://formsubmit.co/cb3bf75b64f7548d27f81a3dcdbc3ee0",
+      const response = await fetch("https://formsubmit.co/mohdmufaddal5%40gmail.com",
         {
           method: "POST",
           body: formData,

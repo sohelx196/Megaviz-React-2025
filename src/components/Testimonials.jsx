@@ -109,10 +109,10 @@ function Testimonials() {
 
 
 
-  {/* Desktop View */}
+
 {/* Desktop View */}
 {testimonials.length <= 3 ? (
-  // No scroll — center cards
+ 
   <div className="hidden sm:flex justify-center gap-6">
     {testimonials.map((testimonial) => (
       <div
