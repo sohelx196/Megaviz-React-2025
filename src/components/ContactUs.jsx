@@ -1,52 +1,44 @@
-import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
-
+import { useState } from "react";
 import facebookIcon from "../assets/icons/facebook.png";
 import instagramIcon from "../assets/icons/instagram.png";
 import twitterIcon from "../assets/icons/twitter.png";
 import arrowIcon from "../assets/icons/arrorw.png";
-
 import contactBackground from "../assets/images/Contact/contactDesign.png";
 
-
-
-
 function ContactUs() {
-  const form = useRef();
-
   const [isSending, setIsSending] = useState(false);
-  const [successMessage, setSuccessMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState("");
 
-  const sendEmail = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSending(true);
     setSuccessMessage("");
 
+    const form = e.target;
+    const formData = new FormData(form);
+
     try {
-      const publicKey = "XYqPNAKVxyILNqOe1";
-    const serviceId = "service_5rja5qa";
-    const templateId = "template_wqla8ez";
+      const response = await fetch("https://formsubmit.co/cb3bf75b64f7548d27f81a3dcdbc3ee0",
+        {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        }
+      );
 
-      await emailjs.sendForm(serviceId, templateId, form.current, {
-        publicKey: publicKey,
-      });
-
-    setSuccessMessage("Your message has been successfully sent to MegaViz. We’ll get back to you shortly.");
-      form.current.reset();
-
-      setTimeout(() => {
-        setSuccessMessage("");
-      }, 5000);
-
-    } catch (error) {
-      console.error("FAILED...", error.text);
-      setSuccessMessage("Oops! Something went wrong. Please try again later.");
-
-      setTimeout(() => {
-        setSuccessMessage("");
-      }, 4000);
+      if (response.ok) {
+        setSuccessMessage("Your message has been successfully sent to MegaViz. We’ll get back to you shortly.");
+        form.reset();
+      } else {
+        setSuccessMessage(" Submission failed. Please try again later.");
+      }
+    } catch {
+      setSuccessMessage("Error occurred. Please check your internet connection.");
     } finally {
       setIsSending(false);
+      setTimeout(() => setSuccessMessage(""), 4000);
     }
   };
 
@@ -54,10 +46,11 @@ function ContactUs() {
     <>
       {/* Contact Form Section */}
       <section className="px-4 py-12 sm:py-16 lg:py-20 max-w-7xl mx-auto">
-        {/* Heading */}
         <div className="mb-12 text-center lg:text-left lg:flex lg:justify-between lg:items-start">
           <div className="max-w-4xl">
-            <p className="font-cabin text-[#C72C28] text-base font-semibold mb-3">Get Started</p>
+            <p className="font-cabin text-[#C72C28] text-base font-semibold mb-3">
+              Get Started
+            </p>
             <h2 className="font-cabin font-bold text-[#102E52] text-[28px] sm:text-[36px] lg:text-[48px] leading-tight">
               <span className="text-[#C72C28]">Get in touch</span> with us. We’re here to
             </h2>
@@ -67,58 +60,62 @@ function ContactUs() {
           </div>
 
           {/* Social Icons */}
-        <div className="flex lg:flex-col flex-row items-center lg:items-start gap-3 mt-6 lg:mt-0 justify-center">
-  <a
-    href="https://www.facebook.com/megavizco/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8">
-      
-    <img src={facebookIcon} alt="Facebook" className="w-4 lg:w-5 h-auto" />
-  </a>
-
-  <a
-    href="https://www.instagram.com/megavizco/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8">
-
-    <img src={instagramIcon} alt="Instagram" className="w-4 lg:w-5 h-auto" />
-  </a>
-
-  <a
-    href="https://x.com/megavizco"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8">
-
-    <img src={twitterIcon} alt="Twitter" className="w-4 lg:w-5 h-auto" />
-  </a>
-</div>
-
-
+          <div className="flex lg:flex-col flex-row items-center lg:items-start gap-3 mt-6 lg:mt-0 justify-center">
+            <a href="#" className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8 lg:w-10 lg:h-10">
+              <img src={facebookIcon} alt="Facebook" className="w-4 lg:w-5" />
+            </a>
+            <a href="#" className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8 lg:w-10 lg:h-10">
+              <img src={instagramIcon} alt="Instagram" className="w-4 lg:w-5" />
+            </a>
+            <a href="#" className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8 lg:w-10 lg:h-10">
+              <img src={twitterIcon} alt="Twitter" className="w-4 lg:w-5" />
+            </a>
+          </div>
         </div>
 
         {/* Contact Form */}
-        <form ref={form} onSubmit={sendEmail} className="space-y-8">
+        <form className="space-y-8" onSubmit={handleSubmit}>
+          <input type="hidden" name="_captcha" value="false" />
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div>
               <label className="font-cabin block text-sm font-normal mb-1">Your Name</label>
-              <input name='user_name' required type="text" className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2" />
+              <input
+                name="name"
+                required
+                type="text"
+                className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2"
+              />
             </div>
             <div>
               <label className="font-cabin block text-sm font-normal mb-1">Email Address</label>
-              <input name='user_email' required type="email" className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2" />
+              <input
+                name="email"
+                required
+                type="email"
+                className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2"
+              />
             </div>
             <div>
-              <label className="font-cabin block text-sm font-normal mb-1">Phone Number (optional)</label>
-              <input name='user_phone' type="text" className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2" />
+              <label className="font-cabin block text-sm font-normal mb-1">
+                Phone Number (optional)
+              </label>
+              <input
+                name="mobile"
+                type="text"
+                className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2"
+              />
             </div>
           </div>
 
           <div>
             <label className="font-cabin block text-sm font-normal mb-1">Message</label>
-            <textarea name='message' required rows="3" className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2 resize-none"></textarea>
+            <textarea
+              name="message"
+              required
+              rows="3"
+              className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2 resize-none"
+            ></textarea>
           </div>
 
           {/* Success Message */}
@@ -130,32 +127,39 @@ function ContactUs() {
 
           {/* Submit Button */}
           {!successMessage && (
-    <button
-        type="submit"
-       disabled={isSending}
-        className={`font-cabin group flex items-center gap-2
-       ${isSending ? "bg-gray-400" : "bg-red-600 hover:bg-red-700"}
-        text-white text-sm font-medium
-          px-4 py-2 sm:px-5 sm:py-3 lg:px-6 lg:py-4
-         rounded-full transition-colors duration-300
-        sm:text-sm lg:text-base `}>
-
-  {isSending ? "Sending..." : "Leave us a message"}
-  <img
-    src={arrowIcon}
-    alt="Arrow"
-    className="w-3 h-3 transition-transform duration-300 group-hover:rotate-45" />
-</button>
-
+            <button
+              type="submit"
+              disabled={isSending}
+              className={`font-cabin group flex items-center gap-2
+              ${isSending ? "bg-gray-400" : "bg-red-600 hover:bg-red-700"}
+              text-white text-sm font-medium
+              px-4 py-2 sm:px-5 sm:py-3 lg:px-6 lg:py-4
+              rounded-full transition-colors duration-300
+              sm:text-sm lg:text-base`}
+            >
+              {isSending ? "Sending..." : "Leave us a message"}
+              <img
+                src={arrowIcon}
+                alt="Arrow"
+                className={`w-3 h-3 transition-transform duration-300 ${
+                  isSending ? "" : "group-hover:rotate-45"
+                }`}
+              />
+            </button>
           )}
         </form>
       </section>
 
       {/* Contact Info Section */}
-      <section className="bg-no-repeat bg-cover bg-center px-4 py-16 sm:px-6 lg:px-12" style={{ backgroundImage: `url(${contactBackground})` }}>
+      <section
+        className="bg-no-repeat bg-cover bg-center px-4 py-16 sm:px-6 lg:px-12"
+        style={{ backgroundImage: `url(${contactBackground})` }}
+      >
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-start lg:justify-between gap-12">
           <div className="text-center lg:text-left lg:w-1/3 -mt-4">
-            <p className="text-[#C72C28] text-sm sm:text-base font-medium mb-5 font-cabin">Our contact details</p>
+            <p className="text-[#C72C28] text-sm sm:text-base font-medium mb-5 font-cabin">
+              Our contact details
+            </p>
             <h2 className="font-cabin text-[#102E52] text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug tracking-wide">
               <span className="block mb-2">We’d Love to Hear</span>
               <span className="block">From You.</span>
@@ -164,7 +168,9 @@ function ContactUs() {
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 text-center sm:text-left lg:w-2/3">
             <div>
-              <h4 className="font-cabin text-sm sm:text-base text-black font-bold mb-3 sm:mb-5">Email Address</h4>
+              <h4 className="font-cabin text-sm sm:text-base text-black font-bold mb-3 sm:mb-5">
+                Email Address
+              </h4>
               <div className="h-[3px] w-5 bg-black mb-3 mx-auto sm:mx-0"></div>
               <p className="font-inter text-sm sm:text-base font-bold">info@megaviz.co</p>
               <p className="font-inter text-xs sm:text-sm mt-1">
@@ -173,13 +179,17 @@ function ContactUs() {
               </p>
             </div>
             <div>
-              <h4 className="font-cabin text-sm sm:text-base text-black font-bold mb-3 sm:mb-5">Number</h4>
+              <h4 className="font-cabin text-sm sm:text-base text-black font-bold mb-3 sm:mb-5">
+                Number
+              </h4>
               <div className="h-[3px] w-5 bg-black mb-3 mx-auto sm:mx-0"></div>
               <p className="font-inter text-sm sm:text-base font-bold">+971 (04) 294-0653</p>
               <p className="font-inter text-sm sm:text-base font-bold">+971 (04) 294-0652</p>
             </div>
             <div>
-              <h4 className="font-cabin text-sm sm:text-base text-black font-bold mb-3 sm:mb-5">Address</h4>
+              <h4 className="font-cabin text-sm sm:text-base text-black font-bold mb-3 sm:mb-5">
+                Address
+              </h4>
               <div className="h-[3px] w-5 bg-black mb-3 mx-auto sm:mx-0"></div>
               <p className="font-inter text-sm sm:text-base font-bold">
                 <span className="block">Office#207, Dubai Tower,</span>
