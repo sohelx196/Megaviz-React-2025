@@ -28,6 +28,7 @@ function ContactUs() {
         }
       );
 
+      
       if (response.ok) {
         setSuccessMessage("Your message has been successfully sent to MegaViz. We’ll get back to you shortly.");
         form.reset();
