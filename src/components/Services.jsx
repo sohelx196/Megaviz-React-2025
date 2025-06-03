@@ -123,7 +123,7 @@ function Services() {
         to="/infrastructure"
         className="bg-[#FEEFC1] rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
       >
-        <img src={infraCloud} alt="Infrastructure & Cloud" className="w-28 h-28 z-20" loading="lazy" />
+        <img src={infraCloud} alt="Infrastructure & Cloud" className="w-32 h-32 z-20" loading="lazy" />
         <div className="flex flex-col justify-center z-20 text-center">
           <h2 className="font-poppins text-lg font-semibold mb-2">Infrastructure & Cloud</h2>
           <p className="font-poppins text-xs">
@@ -136,7 +136,7 @@ function Services() {
         to="/cyberSecurity"
         className="bg-[#DFF7EA] rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
       >
-        <img src={cyberSecurity} alt="Cyber Security" className="w-28 h-28 z-20" loading="lazy" />
+        <img src={cyberSecurity} alt="Cyber Security" className="w-32 h-32 z-20" loading="lazy" />
         <div className="flex flex-col justify-center z-20 text-center">
           <h2 className="font-poppins text-lg font-semibold mb-2">Cyber Security Solutions</h2>
           <p className="font-poppins text-xs ">
@@ -149,7 +149,7 @@ function Services() {
         to="/backupSolution"
         className="bg-[#EBE2F2] rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
       >
-        <img src={backupSolution} alt="Backup Solutions" className="w-28 h-28 z-20" loading="lazy" />
+        <img src={backupSolution} alt="Backup Solutions" className="w-32 h-32 z-20" loading="lazy" />
         <div className="flex flex-col justify-center z-20 text-center">
           <h2 className="font-poppins text-lg font-semibold mb-2">Backup Solutions</h2>
           <p className="font-poppins text-xs">
@@ -173,7 +173,7 @@ function Services() {
         to="/itSupport"
         className="bg-[#FEEFC1] rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
       >
-        <img src={itSupport} alt="IT Support" className="w-28 h-28 z-20" loading="lazy" />
+        <img src={itSupport} alt="IT Support" className="w-32 h-32 z-20" loading="lazy" />
         <div className="flex flex-col justify-center z-20 text-center">
           <h2 className="font-poppins text-lg font-semibold mb-2">IT Support</h2>
           <p className="font-poppins text-xs">
@@ -186,7 +186,7 @@ function Services() {
         to="/systemMonitoring"
         className="bg-[#EBE2F2] rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
       >
-        <img src={systemMonitoring} alt="System Monitoring" className="w-28 h-28 z-20" loading="lazy" />
+        <img src={systemMonitoring} alt="System Monitoring" className="w-32 h-32 z-20" loading="lazy" />
         <div className="flex flex-col justify-center z-20 text-center">
           <h2 className="font-poppins text-lg font-semibold mb-2">System Monitoring</h2>
           <p className="font-poppins text-xs">
