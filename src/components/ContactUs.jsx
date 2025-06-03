@@ -62,13 +62,13 @@ function ContactUs() {
 
           {/* Social Icons */}
           <div className="flex lg:flex-col flex-row items-center lg:items-start gap-3 mt-6 lg:mt-0 justify-center">
-            <a href="#" className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8 lg:w-10 lg:h-10">
+            <a href="https://www.facebook.com/megavizco/"  target="_blank" className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8 lg:w-10 lg:h-10">
               <img src={facebookIcon} alt="Facebook" className="w-4 lg:w-5" />
             </a>
-            <a href="#" className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8 lg:w-10 lg:h-10">
+            <a href="https://www.instagram.com/megavizco/"  target="_blank" className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8 lg:w-10 lg:h-10">
               <img src={instagramIcon} alt="Instagram" className="w-4 lg:w-5" />
             </a>
-            <a href="#" className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8 lg:w-10 lg:h-10">
+            <a href="https://x.com/megavizco"  target="_blank" className="border border-[#102E52] rounded-full flex items-center justify-center w-8 h-8 lg:w-10 lg:h-10">
               <img src={twitterIcon} alt="Twitter" className="w-4 lg:w-5" />
             </a>
           </div>
@@ -176,7 +176,8 @@ function ContactUs() {
               <p className="font-inter text-sm sm:text-base font-bold">info@megaviz.co</p>
               <p className="font-inter text-xs sm:text-sm mt-1">
                 <span className="block font-normal">Assistance hours:</span>
-                <span className="block font-normal">Monday - Friday 6 am to 8 pm EST</span>
+                <span className="block font-normal">Monday - Friday 6 am to</span>
+                 <span className="font-normal">8 pm EST</span>
               </p>
             </div>
             <div>
