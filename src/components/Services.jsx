@@ -24,7 +24,7 @@ function Services() {
 
   <section className="text-center px-6 md:px-20 py-12">
         <h2 className="font-cabin text-red-600 font-semibold text-base md:text-lg lg:text-xl mb-2">
-          MegaViz Services
+          MegaViz Services & Capabilities
         </h2>
         <h1 className="font-cabin text-4xl md:text-5xl font-bold text-[#102E52] leading-tight">
           <span className="block">We're passionate about helping other</span>

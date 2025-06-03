@@ -23,7 +23,7 @@ function Header() {
         <nav className="hidden lg:flex flex-1 justify-center pt-2">
           <ul className="flex space-x-8 text-base items-center">
             <li><Link to="/" className=" font-poppins nav-link"><span className="top">Home</span><span className="bottom">Home</span></Link></li>
-            <li><Link to="" className=" font-poppins nav-link"><span className="top">Capabilities</span><span className="bottom">Capabilities</span></Link></li>
+            <li><Link to="/services" className=" font-poppins nav-link"><span className="top">Capabilities</span><span className="bottom">Capabilities</span></Link></li>
             <li><Link to="" className=" font-poppins nav-link"><span className="top">Industries</span><span className="bottom">Industries</span></Link></li>
             <li><Link to="aboutUs" className=" font-poppins nav-link"><span className="top">About Us</span><span className="bottom">About Us</span></Link></li>
             <li><Link to="" className=" font-poppins nav-link"><span className="top">Blogs</span><span className="bottom">Blogs</span></Link></li>
