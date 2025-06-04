@@ -48,17 +48,26 @@ function ContactUs() {
       {/* Contact Form Section */}
       <section className="px-4 py-12 sm:py-16 lg:py-20 max-w-7xl mx-auto">
         <div className="mb-12 text-center lg:text-left lg:flex lg:justify-between lg:items-start">
-          <div className="max-w-4xl">
-            <p className="font-cabin text-[#C72C28] text-base font-semibold mb-3">
-              Get Started
-            </p>
-            <h2 className="font-cabin font-bold text-[#102E52] text-[28px] sm:text-[36px] lg:text-[48px] leading-tight">
-              <span className="text-[#C72C28]">Get in touch</span> with us. We’re here to
-            </h2>
-            <h2 className="font-cabin font-bold text-[#102E52] text-[28px] sm:text-[36px] lg:text-[48px] leading-tight">
-              assist you.
-            </h2>
-          </div>
+
+<div className="max-w-4xl">
+  <p className="font-cabin text-[#C72C28] text-base font-semibold mb-3">
+    Get Started
+  </p>
+
+  {/* Mobile version */}
+  <h2 className="font-cabin font-bold text-[#102E52] text-[28px] leading-tight sm:hidden">
+    <span className="text-[#C72C28]">Get in touch</span> with us. We’re here to assist you.
+  </h2>
+
+  {/* Desktop version */}
+  <h2 className="hidden sm:block font-cabin font-bold text-[#102E52] sm:text-[36px] lg:text-[48px] leading-tight">
+    <span className="text-[#C72C28]">Get in touch</span> with us. We’re here to
+  </h2>
+  <h2 className="hidden sm:block font-cabin font-bold text-[#102E52] sm:text-[36px] lg:text-[48px] leading-tight">
+    assist you.
+  </h2>
+</div>
+
 
           {/* Social Icons */}
           <div className="flex lg:flex-col flex-row items-center lg:items-start gap-3 mt-6 lg:mt-0 justify-center">
