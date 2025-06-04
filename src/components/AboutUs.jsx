@@ -143,7 +143,7 @@ function AboutUs() {
 {/* our service section start */}
 
  <section className="py-16 px-4 sm:px-6 lg:px-8 text-center my-7">
-      <p className="font-cabin text-[#D72323] text-base font-medium mb-2">Our Service</p>
+      <p className="text-[#D72323]  font-cabin  font-semibold tracking-wider lg:text-lg md:text-lg sm:text-base mb-2 text-center ">Our Service</p>
       <h2 className="font-cabin text-3xl sm:text-5xl font-extrabold text-[#102E52] mb-4">
         What do we do
       </h2>
