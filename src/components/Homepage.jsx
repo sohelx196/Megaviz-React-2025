@@ -84,7 +84,7 @@ function Homepage() {
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <Link to="/contactUs">
-              <button className="cabin group flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium px-6 py-3 sm:py-4 rounded-full transition-colors duration-300">
+              <button className="cabin group flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium px-6 py-4 sm:py-4 rounded-full transition-colors duration-300">
                 Get in Touch now
                 <img src={arrowIcon} alt="Arrow" className="w-3 h-3 transition-transform duration-300 group-hover:rotate-45" />
               </button>
