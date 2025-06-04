@@ -72,7 +72,7 @@ function Footer() {
       {/* Bottom Footer */}
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center text-sm text-[#505A71] gap-4 text-center lg:text-left">
         <p className="font-inter max-w-md lg:max-w-none">
-          Copyright &copy;2025 <span className="text-[#363D4F]">Megaviz. Designed by <span className='text-red-600'><Link to='/'>MegaViz</Link></span></span>
+          Copyright &copy;2025 <span className="text-[#363D4F]">Megaviz. Designed by <span className='text-red-600'>MegaViz</span></span>
         </p>
         <div className="flex gap-3">
           <a
