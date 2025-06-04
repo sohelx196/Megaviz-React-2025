@@ -127,49 +127,50 @@ function Homepage() {
 
 
        {/* Company Facts Section */}
-      <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left gap-12">
-          
-          {/* Heading */}
-          <div className="md:w-1/2 md:pl-8">
-            <h2 className="font-cabin text-4xl sm:text-5xl font-bold text-[#0F2B59] leading-tight">
-              <span className="text-[#B41F1F]">Facts</span> about our<br /> company
-            </h2>
-          </div>
+ <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-center text-center md:text-left gap-12">
+    
+    {/* Heading (Vertically centered on desktop) */}
+    <div className="md:w-1/2 md:pl-8 flex h-full items-center">
+      <h2 className="font-cabin text-4xl sm:text-5xl font-bold text-[#0F2B59] leading-tight">
+        <span className="text-[#B41F1F]">Facts</span> about our <span className='block'>company</span> 
+      </h2>
+    </div>
 
-          {/* Stats */}
-          <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="flex flex-col items-center text-center">
-              <img src={growthIcon} alt="Graph Icon" className="w-6 h-6 mb-2"  loading="lazy"/>
-              <h3 className="font-cabin text-4xl sm:text-5xl font-bold text-black">35%+</h3>
-              <p className="font-cabin text-[#C72C28] text-base sm:text-lg font-semibold mt-1">
-                Performance & Productivity Improvement
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center text-center">
-              <img src={ideaIcon} alt="Bulb Icon" className="w-6 h-6 mb-2"  loading="lazy"/>
-              <h3 className="font-cabin text-4xl sm:text-5xl font-bold text-black">60%+</h3>
-              <p className="font-cabin text-[#C72C28] text-base sm:text-lg font-semibold mt-1">
-                Increase in Digital Adoption
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center text-center">
-              <img src={syncIcon} alt="Sync Icon" className="w-6 h-6 mb-2"  loading="lazy"/>
-              <h3 className="font-cabin text-4xl sm:text-5xl font-bold text-black">2x</h3>
-              <p className="font-cabin text-[#C72C28] text-base sm:text-lg font-semibold mt-1">
-                Speed to Market
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom Note */}
-        <p className="font-cabin text-sm font-semibold mt-6 text-[#696969] text-center md:text-end md:mr-10">
-          *Stats based on the growth delivered to our clients
+    {/* Stats */}
+    <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="flex flex-col items-center text-center">
+        <img src={growthIcon} alt="Graph Icon" className="w-6 h-6 mb-2" loading="lazy" />
+        <h3 className="font-cabin text-4xl sm:text-5xl font-bold text-black">35%+</h3>
+        <p className="font-cabin text-[#C72C28] text-base sm:text-lg font-semibold mt-1">
+          Performance & Productivity Improvement
         </p>
-      </section>
+      </div>
+
+      <div className="flex flex-col items-center text-center">
+        <img src={ideaIcon} alt="Bulb Icon" className="w-6 h-6 mb-2" loading="lazy" />
+        <h3 className="font-cabin text-4xl sm:text-5xl font-bold text-black">60%+</h3>
+        <p className="font-cabin text-[#C72C28] text-base sm:text-lg font-semibold mt-1">
+          Increase in Digital Adoption
+        </p>
+      </div>
+
+      <div className="flex flex-col items-center text-center">
+        <img src={syncIcon} alt="Sync Icon" className="w-6 h-6 mb-2" loading="lazy" />
+        <h3 className="font-cabin text-4xl sm:text-5xl font-bold text-black">2x</h3>
+        <p className="font-cabin text-[#C72C28] text-base sm:text-lg font-semibold mt-1">
+          Speed to Market
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {/* Bottom Note */}
+  <p className="font-cabin text-sm font-semibold mt-6 text-[#696969] text-center md:text-end md:mr-10">
+    *Stats based on the growth delivered to our clients
+  </p>
+</section>
+
 
       {/* About Company Section */}
       <section className="bg-white py-16 px-4 relative lg:ml-20">
@@ -189,8 +190,11 @@ function Homepage() {
               About our company
             </p>
             <h2 className="font-cabin font-bold text-4xl sm:text-5xl text-[#0F2B59] leading-tight mb-4 text-center md:text-left">
-              We're the world's best <br />
+              We're the world's best 
+              <span className='block'>
+
               <span className="text-red-600">IT solutions</span> company
+              </span>
             </h2>
 
             {/* Overlapping Box */}
@@ -238,7 +242,7 @@ function Homepage() {
           <div className="relative bg-[#FEE6DC] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
             <div className="z-10 text-left pr-20">
               <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
-                IT<br />Consultancy
+                IT <span className='block'>Consultancy</span>
               </h3>
               <p className="font-cabin text-[14px] text-[#696969] font-normal leading-snug">
                 Automate the entire cycle of build, provisioning, and deployment process with our DevOps experts & agile processes.
@@ -251,7 +255,7 @@ function Homepage() {
           <div className="relative bg-[#DFF7EA] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
             <div className="z-10 text-left pr-36">
               <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
-                Infrastructure<br />& Cloud
+                Infrastructure  <span className='block'>& Cloud</span>
               </h3>
               <p className="font-cabin text-sm text-[#696969] font-normal leading-snug">
                 Secure And Managed Solutions To Streamline Cloud Adoption, Development, And Migration For Businesses.
@@ -264,7 +268,7 @@ function Homepage() {
           <div className="relative bg-[#FEEFC1] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
             <div className="z-10 text-left pr-24">
               <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
-                Cyber Security<br />Solutions
+                Cyber Security <span className='block'>Solutions</span>
               </h3>
               <p className="font-cabin text-[14px] text-[#696969] font-normal leading-snug">
                 Integrating AI To Solve The Toughest Business Problems Through The Next-Generation Artificial Intelligence.
@@ -277,7 +281,7 @@ function Homepage() {
           <div className="relative bg-[#EBE2F2] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
             <div className="z-10 text-left pr-20">
               <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
-                System<br />Monitoring
+                System <span className='block'>Monitoring</span>
               </h3>
               <p className="font-cabin text-[14px] text-[#696969] font-normal leading-snug">
                 Tap Into New Tech Expertise, And Build Your Technology Teams With A Dedicated, Self Sufficient Engineering Team Integrated With Your Organization.
