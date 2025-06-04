@@ -106,19 +106,19 @@ function Homepage() {
       <section className="bg-white py-20 overflow-x-hidden">
         <div className="container mx-auto text-center px-4">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-            <div className="flex justify-center items-center order-1">
-              <img src={mace01} alt="Client 1" className="max-w-full h-auto w-20 sm:w-24 md:w-28"  loading="lazy"/>
+            <div className="flex justify-center items-center order-1 mt-3">
+              <img src={mace01} alt="Client 1" className="max-w-full h-auto w-20 sm:w-28 md:w-32"  loading="lazy"/>
             </div>
-            <div className="flex justify-center items-center order-2">
-              <img src={mace02} alt="Client 2" className="max-w-full h-auto w-24 sm:w-28 md:w-36"  loading="lazy"/>
+            <div className="flex justify-center items-center order-2 mt-3">
+              <img src={mace02} alt="Client 2" className="max-w-full h-auto w-24 sm:w-28 md:w-32"  loading="lazy"/>
             </div>
             <div className="col-span-2 md:col-span-1 flex justify-center items-center order-3">
-              <img src={mace03} alt="RICS Logo" className="max-w-full h-auto w-24 sm:w-28 md:w-32"  loading="lazy"/>
+              <img src={mace03} alt="RICS Logo" className="max-w-full h-auto w-24 sm:w-28 md:w-40"  loading="lazy"/>
             </div>
             <div className="flex justify-center items-center order-4 md:order-3">
-              <img src={mace04} alt="Client 4" className="max-w-full h-auto w-24 sm:w-28 md:w-32"  loading="lazy"/>
+              <img src={mace04} alt="Client 4" className="max-w-full h-auto w-24 sm:w-28 md:w-40"  loading="lazy"/>
             </div>
-            <div className="flex justify-center items-center order-5 md:order-4">
+            <div className="flex justify-center items-center order-5 md:order-4 mt-3">
               <img src={mace05} alt="Client 5" className="max-w-full h-auto w-24 sm:w-28 md:w-32"  loading="lazy"/>
             </div>
           </div>
