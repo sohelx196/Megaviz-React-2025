@@ -61,6 +61,8 @@ function Homepage() {
 
   return (
     <>
+
+    
  {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden px-4">
         {/* Background Images */}
@@ -172,7 +174,7 @@ function Homepage() {
 </section>
 
 
-      {/* About Company Section */}
+    {/* About Company Section start */}
       <section className="bg-white py-16 px-4 relative lg:ml-20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start relative">
 
@@ -220,7 +222,7 @@ function Homepage() {
           </div>
         </div>
       </section>
-
+ {/* About Company Section end */}
 
 
 

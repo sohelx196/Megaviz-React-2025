@@ -44,7 +44,7 @@ function Header() {
           onClick={() => setMenuOpen(!menuOpen)}
           className="lg:hidden text-black focus:outline-none"
         >
-          <img src={hamburger} alt="Menu" className="w-6 h-4" />
+          <img src={hamburger} alt="Menu" className="w-6 h-4 object-contain" />
         </button>
       </div>
 
