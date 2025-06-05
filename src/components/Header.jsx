@@ -25,7 +25,7 @@ function Header() {
             <li><Link to="/" className=" font-poppins nav-link"><span className="top">Home</span><span className="bottom">Home</span></Link></li>
             <li><Link to="/services" className=" font-poppins nav-link"><span className="top">Capabilities</span><span className="bottom">Capabilities</span></Link></li>
             <li><Link to="" className=" font-poppins nav-link"><span className="top">Industries</span><span className="bottom">Industries</span></Link></li>
-            <li><Link to="aboutUs" className=" font-poppins nav-link"><span className="top">About Us</span><span className="bottom">About Us</span></Link></li>
+            <li><Link to="aboutUs" className="font-poppins nav-link"><span className="top">About Us</span><span className="bottom">About Us</span></Link></li>
             <li><Link to="" className=" font-poppins nav-link"><span className="top">Blogs</span><span className="bottom">Blogs</span></Link></li>
             <li><Link to="" className=" font-poppins nav-link"><span className="top">Case Studies</span><span className="bottom">Case Studies</span></Link></li>
             <li><Link to="" className=" font-poppins nav-link"><span className="top">Career</span><span className="bottom">Career</span></Link></li>

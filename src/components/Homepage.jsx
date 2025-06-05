@@ -260,7 +260,7 @@ function Homepage() {
                 Infrastructure  <span className='block'>& Cloud</span>
               </h3>
               <p className="font-cabin text-sm text-[#696969] font-normal leading-snug">
-                Secure And Managed Solutions To Streamline Cloud Adoption, Development, And Migration For Businesses.
+                Secure And Managed Solutions To Streamline Cloud Adoption, Development, And Migrat ion For Businesses.
               </p>
             </div>
             <img src={card02} alt="Infrastructure & Cloud" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0"  loading="lazy"/>
