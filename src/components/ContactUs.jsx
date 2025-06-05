@@ -167,11 +167,11 @@ function ContactUs() {
       >
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-start lg:justify-between gap-12">
           <div className="text-center lg:text-left lg:w-1/3 -mt-4">
-            <p className="text-[#C72C28] text-sm sm:text-base font-medium mb-5 font-cabin">
+            <p className="text-[#D72323]  font-cabin  font-semibold tracking-wider lg:text-base md:text-base sm:text-xs text-xs mb-5">
               Our contact details
             </p>
             <h2 className="font-cabin text-[#102E52] text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug tracking-wide">
-              <span className="block mb-2">We’d Love to Hear</span>
+              <span className="block lg:mb-2 md:mb-2 sm:mb-1 mb-0">We’d Love to Hear</span>
               <span className="block">From You.</span>
             </h2>
           </div>
