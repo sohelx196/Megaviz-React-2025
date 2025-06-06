@@ -8,34 +8,63 @@ import contactBackground from "../assets/images/Contact/contactDesign.png";
 function ContactUs() {
   const [isSending, setIsSending] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setErrors({ ...errors, [e.target.name]: "" });
+  };
+
+  const validate = () => {
+    const newErrors = {};
+    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.email.trim()) newErrors.email = "Email is required";
+    else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = "Invalid email";
+    if (!formData.mobile.trim()) newErrors.mobile = "Phone number is required";
+    if (!formData.message.trim()) newErrors.message = "Message is required";
+    return newErrors;
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSending(true);
     setSuccessMessage("");
+    const validationErrors = validate();
 
-    const form = e.target;
-    const formData = new FormData(form);
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
 
+    setIsSending(true);
     try {
-      const response = await fetch("https://formsubmit.co/mohdmufaddal5%40gmail.com",
-        {
-          method: "POST",
-          body: formData,
-          headers: {
-            Accept: "application/json",
-          },
-        }
-      );
+      const payload = new FormData();
+      Object.entries(formData).forEach(([key, value]) => {
+        payload.append(key, value);
+      });
+      payload.append("_captcha", "false");
 
-      
+      const response = await fetch("https://formsubmit.co/mohdmufaddal5%40gmail.com", {
+        method: "POST",
+        body: payload,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
       if (response.ok) {
         setSuccessMessage("Your message has been successfully sent to MegaViz. We’ll get back to you shortly.");
-        form.reset();
+        setFormData({ name: "", email: "", mobile: "", message: "" });
       } else {
-        setSuccessMessage(" Submission failed. Please try again later.");
+        setSuccessMessage("Submission failed. Please try again later.");
       }
-    } catch {
+    } catch (error) {
       setSuccessMessage("Error occurred. Please check your internet connection.");
     } finally {
       setIsSending(false);
@@ -84,80 +113,83 @@ function ContactUs() {
         </div>
 
         {/* Contact Form */}
-        <form className="space-y-8" onSubmit={handleSubmit}>
-          <input type="hidden" name="_captcha" value="false" />
+       <form className="space-y-8" onSubmit={handleSubmit}>
+      <input type="hidden" name="_captcha" value="false" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div>
+          <label className="font-cabin block text-sm font-normal mb-1">Your Name</label>
+          <input
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            type="text"
+            className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2"
+          />
+          {errors.name && <p className="text-red-600 text-xs mt-1">{errors.name}</p>}
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div>
-              <label className="font-cabin block text-sm font-normal mb-1">Your Name</label>
-              <input
-                name="name"
-                required
-                type="text"
-                className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2"
-              />
-            </div>
-            <div>
-              <label className="font-cabin block text-sm font-normal mb-1">Email Address</label>
-              <input
-                name="email"
-                required
-                type="email"
-                className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2"
-              />
-            </div>
-            <div>
-              <label className="font-cabin block text-sm font-normal mb-1">
-                Phone Number (optional)
-              </label>
-              <input
-                name="mobile"
-                type="text"
-                className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2"
-              />
-            </div>
-          </div>
+        <div>
+          <label className="font-cabin block text-sm font-normal mb-1">Email Address</label>
+          <input
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            type="email"
+            className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2"
+          />
+          {errors.email && <p className="text-red-600 text-xs mt-1">{errors.email}</p>}
+        </div>
 
-          <div>
-            <label className="font-cabin block text-sm font-normal mb-1">Message</label>
-            <textarea
-              name="message"
-              required
-              rows="3"
-              className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2 resize-none"
-            ></textarea>
-          </div>
+        <div>
+          <label className="font-cabin block text-sm font-normal mb-1">Phone Number</label>
+          <input
+            name="mobile"
+            value={formData.mobile}
+            onChange={handleChange}
+            type="text"
+            className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2"
+          />
+          {errors.mobile && <p className="text-red-600 text-xs mt-1">{errors.mobile}</p>}
+        </div>
+      </div>
 
-          {/* Success Message */}
-          {successMessage && (
-            <div className="font-cabin text-[#0F2B59] px-4 py-3 text-base mb-6 text-center">
-              {successMessage}
-            </div>
-          )}
+      <div>
+        <label className="font-cabin block text-sm font-normal mb-1">Message</label>
+        <textarea
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          rows="3"
+          className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2 resize-none"
+        ></textarea>
+        {errors.message && <p className="text-red-600 text-xs mt-1">{errors.message}</p>}
+      </div>
 
-          {/* Submit Button */}
-          {!successMessage && (
-            <button
-              type="submit"
-              disabled={isSending}
-              className={`font-cabin group flex items-center gap-2
-              ${isSending ? "bg-gray-400" : "bg-red-600 hover:bg-red-700"}
-              text-white text-sm font-medium
-              px-4 py-2 sm:px-5 sm:py-3 lg:px-6 lg:py-4
-              rounded-full transition-colors duration-300
-              sm:text-sm lg:text-base`}
-            >
-              {isSending ? "Sending..." : "Leave us a message"}
-              <img
-                src={arrowIcon}
-                alt="Arrow"
-                className={`w-3 h-3 transition-transform duration-300 ${
-                  isSending ? "" : "group-hover:rotate-45"
-                }`}
-              />
-            </button>
-          )}
-        </form>
+      {successMessage && (
+        <div className="font-cabin text-[#0F2B59] px-4 py-3 text-base mb-6 text-center">
+          {successMessage}
+        </div>
+      )}
+
+      {!successMessage && (
+        <button
+          type="submit"
+          disabled={isSending}
+          className={`font-cabin group flex items-center gap-2 ${
+            isSending ? "bg-gray-400" : "bg-red-600 hover:bg-red-700"
+          } text-white text-sm font-medium px-4 py-2 sm:px-5 sm:py-3 lg:px-6 lg:py-4 rounded-full transition-colors duration-300 sm:text-sm lg:text-base`}
+        >
+          {isSending ? "Sending..." : "Leave us a message"}
+          <img
+            src={arrowIcon}
+            alt="Arrow"
+            className={`w-3 h-3 transition-transform duration-300 ${
+              isSending ? "" : "group-hover:rotate-45"
+            }`}
+          />
+        </button>
+      )}
+    </form>
       </section>
 
       {/* Contact Info Section */}
@@ -186,7 +218,7 @@ function ContactUs() {
               <p className="font-inter text-xs sm:text-sm mt-1">
                 <span className="block font-normal">Assistance hours:</span>
                 <span className="block font-normal">Monday - Friday 6 am to</span>
-                 <span className="font-normal">8 pm EST</span>
+                <span className="font-normal">8 pm EST</span>
               </p>
             </div>
             <div>
