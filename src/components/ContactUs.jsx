@@ -113,12 +113,13 @@ function ContactUs() {
         </div>
 
         {/* Contact Form */}
-       <form className="space-y-8" onSubmit={handleSubmit}>
+  <form className="space-y-8" onSubmit={handleSubmit}>
       <input type="hidden" name="_captcha" value="false" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div>
-          <label className="font-cabin block text-sm font-normal mb-1">Your Name</label>
+          <label for="myName" className="font-cabin block text-sm font-normal mb-1">Your Name</label>
           <input
+            id="myName"
             name="name"
             value={formData.name}
             onChange={handleChange}
@@ -129,8 +130,9 @@ function ContactUs() {
         </div>
 
         <div>
-          <label className="font-cabin block text-sm font-normal mb-1">Email Address</label>
+          <label for="myEmail" className="font-cabin block text-sm font-normal mb-1">Email Address</label>
           <input
+            id="myEmail"
             name="email"
             value={formData.email}
             onChange={handleChange}
@@ -141,12 +143,13 @@ function ContactUs() {
         </div>
 
         <div>
-          <label className="font-cabin block text-sm font-normal mb-1">Phone Number</label>
+          <label for="myMobile" className="font-cabin block text-sm font-normal mb-1">Phone Number</label>
           <input
+            id="myMobile"
             name="mobile"
             value={formData.mobile}
             onChange={handleChange}
-            type="text"
+            type="number"
             className="font-cabin w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2"
           />
           {errors.mobile && <p className="text-red-600 text-xs mt-1">{errors.mobile}</p>}
@@ -154,8 +157,9 @@ function ContactUs() {
       </div>
 
       <div>
-        <label className="font-cabin block text-sm font-normal mb-1">Message</label>
+        <label for="myMessage" className="font-cabin block text-sm font-normal mb-1">Message</label>
         <textarea
+          id="myMessage"
           name="message"
           value={formData.message}
           onChange={handleChange}
