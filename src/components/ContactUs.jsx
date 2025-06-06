@@ -117,7 +117,7 @@ function ContactUs() {
       <input type="hidden" name="_captcha" value="false" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div>
-          <label for="myName" className="font-cabin block text-sm font-normal mb-1">Your Name</label>
+          <label htmlFor="myName" className="font-cabin block text-sm font-normal mb-1">Your Name</label>
           <input
             id="myName"
             name="name"
@@ -130,7 +130,7 @@ function ContactUs() {
         </div>
 
         <div>
-          <label for="myEmail" className="font-cabin block text-sm font-normal mb-1">Email Address</label>
+          <label htmlFor="myEmail" className="font-cabin block text-sm font-normal mb-1">Email Address</label>
           <input
             id="myEmail"
             name="email"
@@ -143,7 +143,7 @@ function ContactUs() {
         </div>
 
         <div>
-          <label for="myMobile" className="font-cabin block text-sm font-normal mb-1">Phone Number</label>
+          <label htmlFor="myMobile" className="font-cabin block text-sm font-normal mb-1">Phone Number</label>
           <input
             id="myMobile"
             name="mobile"
@@ -157,7 +157,7 @@ function ContactUs() {
       </div>
 
       <div>
-        <label for="myMessage" className="font-cabin block text-sm font-normal mb-1">Message</label>
+        <label htmlFor="myMessage" className="font-cabin block text-sm font-normal mb-1">Message</label>
         <textarea
           id="myMessage"
           name="message"
