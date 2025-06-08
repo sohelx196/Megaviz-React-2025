@@ -128,7 +128,7 @@ function BackupSolution() {
         {/* Card 1 */}
         <div className="relative bg-[#FFEEEE] rounded-2xl p-5 w-full lg:w-[500px] min-h-[260px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
           <div className="z-10 text-left pr-[120px]">
-            <h3 className="poppins text-[22px] leading-tight font-semibold text-[#C72C28] mb-2">
+            <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#C72C28] mb-2">
               How Megaviz Can Help:
             </h3>
             <p className="font-cabin text-[14px] text-[#333333CC] font-normal leading-snug">
@@ -151,7 +151,7 @@ function BackupSolution() {
         {/* Card 2 */}
         <div className="relative bg-[#FFEEEE] rounded-2xl p-5 w-full lg:w-[500px] min-h-[260px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
           <div className="z-10 text-left pr-[130px]">
-            <h3 className="poppins text-[22px] leading-tight font-semibold text-[#C72C28] mb-2">
+            <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#C72C28] mb-2">
               Service Offerings:
             </h3>
             <p className="font-cabin text-[14px] text-[#333333CC] font-normal leading-snug">
