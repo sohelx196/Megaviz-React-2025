@@ -96,9 +96,9 @@ function Services() {
     <div className="flex flex-col gap-6 lg:w-[300px] w-full">
       <Link
         to="/itConsultancy"
-        className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#FEE6DC] rounded-2xl p-6 shadow-md flex flex-col items-center text-center flex-1 min-h-[280px] lg:min-h-[240px]"
+        className="relative group hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#FEE6DC] rounded-2xl p-6 shadow-md flex flex-col items-center text-center flex-1 min-h-[280px] lg:min-h-[240px]"
       >
-        <img src={itConsultancy} alt="IT Consultancy" className="mb-4 w-36 h-36 z-20" loading="lazy" />
+        <img src={itConsultancy} alt="IT Consultancy" className="mb-4 w-36 h-36 z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]" loading="lazy" />
         <h2 className="font-poppins text-lg font-semibold mb-2 z-20">IT Consultancy</h2>
         <p className="font-poppins text-xs z-20">
          MegaViz’s architectural approach to the UC&C platform allows you to transform your communications culture by embracing new technologies and social media into your integrated communications platform, including Facebook, LinkedIn, Twitter and more.
@@ -107,9 +107,9 @@ function Services() {
 
       <Link
         to="/cctv"
-        className="relative hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#DFF7EA] rounded-2xl p-6 shadow-md flex flex-col items-center text-center flex-1 min-h-[280px] lg:min-h-[240px]"
+        className="relative group hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#DFF7EA] rounded-2xl p-6 shadow-md flex flex-col items-center text-center flex-1 min-h-[280px] lg:min-h-[240px]"
       >
-        <img src={cctv} alt="CCTV Surveillance" className="mb-4 w-32 h-32 z-20" loading="lazy" />
+        <img src={cctv} alt="CCTV Surveillance" className="mb-4 w-32 h-32 z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]" loading="lazy" />
         <h2 className="font-poppins text-lg font-semibold mb-2 z-20">CCTV Surveillance</h2>
         <p className="font-poppins text-xs z-20">
           MegaViz help you to secure your Branches more efficiently without Guards. Save on guarding costs.CCTV technology has evolved exponentially—from simple video footage monitoring, to today’s intelligent systems that are capable of identifying abnormal events or behavior.
@@ -121,9 +121,9 @@ function Services() {
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-1">
       <Link
         to="/infrastructure"
-        className="bg-[#FEEFC1] rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
+        className="bg-[#FEEFC1] group rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
       >
-        <img src={infraCloud} alt="Infrastructure & Cloud" className="w-32 h-32 z-20" loading="lazy" />
+        <img src={infraCloud} alt="Infrastructure & Cloud" className="w-32 h-32 z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]" loading="lazy" />
         <div className="flex flex-col justify-center z-20 text-center">
           <h2 className="font-poppins text-lg font-semibold mb-2">Infrastructure & Cloud</h2>
           <p className="font-poppins text-xs">
@@ -134,9 +134,9 @@ function Services() {
 
       <Link
         to="/cyberSecurity"
-        className="bg-[#DFF7EA] rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
+        className="bg-[#DFF7EA] group rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
       >
-        <img src={cyberSecurity} alt="Cyber Security" className="w-32 h-32 z-20" loading="lazy" />
+        <img src={cyberSecurity} alt="Cyber Security" className="w-32 h-32 z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]" loading="lazy" />
         <div className="flex flex-col justify-center z-20 text-center">
           <h2 className="font-poppins text-lg font-semibold mb-2">Cyber Security Solutions</h2>
           <p className="font-poppins text-xs ">
@@ -147,9 +147,9 @@ function Services() {
 
       <Link
         to="/backupSolution"
-        className="bg-[#EBE2F2] rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
+        className="bg-[#EBE2F2] group rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
       >
-        <img src={backupSolution} alt="Backup Solutions" className="w-32 h-32 z-20" loading="lazy" />
+        <img src={backupSolution} alt="Backup Solutions" className="w-32 h-32 z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]" loading="lazy" />
         <div className="flex flex-col justify-center z-20 text-center">
           <h2 className="font-poppins text-lg font-semibold mb-2">Backup Solutions</h2>
           <p className="font-poppins text-xs">
@@ -160,9 +160,9 @@ function Services() {
 
       <Link
         to="/telephony"
-        className="bg-[#FEE6DC] rounded-2xl p-6 shadow-md flex flex-col items-center text-center hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
+        className="bg-[#FEE6DC] group rounded-2xl p-6 shadow-md flex flex-col items-center text-center hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
       >
-        <img src={telephony} alt="Telephony" className="w-24 h-24 mb-4 z-20" loading="lazy" />
+        <img src={telephony} alt="Telephony" className="w-24 h-24 mb-4 z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]" loading="lazy" />
         <h2 className="font-poppins text-lg font-semibold mb-2 z-20">Telephony</h2>
         <p className="font-poppins text-xs px-2 z-20">
        MegaViz’s proven experience and in-depth industry knowledge will play a key role in delivering excellent telecom solutions and business communication services across the UAE.
@@ -171,9 +171,9 @@ function Services() {
 
       <Link
         to="/itSupport"
-        className="bg-[#FEEFC1] rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
+        className="group bg-[#FEEFC1] rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
       >
-        <img src={itSupport} alt="IT Support" className="w-32 h-32 z-20" loading="lazy" />
+        <img src={itSupport} alt="IT Support" className="w-32 h-32 z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]" loading="lazy" />
         <div className="flex flex-col justify-center z-20 text-center">
           <h2 className="font-poppins text-lg font-semibold mb-2">IT Support</h2>
           <p className="font-poppins text-xs">
@@ -184,9 +184,9 @@ function Services() {
 
       <Link
         to="/systemMonitoring"
-        className="bg-[#EBE2F2] rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
+        className="bg-[#EBE2F2] group rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
       >
-        <img src={systemMonitoring} alt="System Monitoring" className="w-32 h-32 z-20" loading="lazy" />
+        <img src={systemMonitoring} alt="System Monitoring" className="w-32 h-32 z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]" loading="lazy" />
         <div className="flex flex-col justify-center z-20 text-center">
           <h2 className="font-poppins text-lg font-semibold mb-2">System Monitoring</h2>
           <p className="font-poppins text-xs">

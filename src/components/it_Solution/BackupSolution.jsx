@@ -144,7 +144,7 @@ function BackupSolution() {
              loading="lazy"
             className="absolute bottom-5 right-[-60px] sm:right-[-70px] md:right-[-70px] lg:right-[-90px] 
                        w-[200px] sm:w-[200px] md:w-[240px] lg:w-[260px] h-auto object-contain z-0 
-                       translate-y-12 md:translate-y-12 lg:translate-y-16"
+                       translate-y-12 md:translate-y-12 lg:translate-y-16 "
           />
         </div>
 
@@ -166,7 +166,7 @@ function BackupSolution() {
              loading="lazy"
             className="absolute bottom-5 right-[-30px] sm:right-[-70px] md:right-[-70px] lg:right-[-90px] 
                        w-[220px] sm:w-[200px] md:w-[290px] lg:w-[330px] h-auto object-contain z-0 
-                       translate-y-6 md:translate-y-12 lg:translate-y-16"
+                       translate-y-6 md:translate-y-12 lg:translate-y-16 "
           />
         </div>
       </div>
