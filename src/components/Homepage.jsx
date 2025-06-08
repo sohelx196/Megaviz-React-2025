@@ -1,5 +1,6 @@
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import { Link } from 'react-router-dom';
 
@@ -58,6 +59,10 @@ import Testimonials from './Testimonials';
 
 function Homepage() {
 
+  useEffect(() => {
+  AOS.init({ duration: 1700, once: true });
+}, []);
+  
 
   return (
     <>
@@ -241,7 +246,7 @@ function Homepage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
           {/* Card 1 */}
-          <div className="relative bg-[#FEE6DC] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
+          <div data-aos="fade-up"   className=" relative group bg-[#FEE6DC] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
             <div className="z-10 text-left pr-20">
               <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
                 IT <span className='block'>Consultancy</span>
@@ -250,11 +255,11 @@ function Homepage() {
                 Automate the entire cycle of build, provisioning, and deployment process with our DevOps experts & agile processes.
               </p>
             </div>
-            <img src={card01} alt="IT Consultancy" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0"  loading="lazy"/>
+            <img src={card01} alt="IT Consultancy" className=" absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"  loading="lazy"/>
           </div>
 
           {/* Card 2 */}
-          <div className="relative bg-[#DFF7EA] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
+          <div data-aos="fade-up" className="group relative bg-[#DFF7EA] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
             <div className="z-10 text-left pr-36">
               <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
                 Infrastructure  <span className='block'>& Cloud</span>
@@ -263,11 +268,11 @@ function Homepage() {
                 Secure And Managed Solutions To Streamline Cloud Adoption, Development, And Migrat ion For Businesses.
               </p>
             </div>
-            <img src={card02} alt="Infrastructure & Cloud" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0"  loading="lazy"/>
+            <img src={card02} alt="Infrastructure & Cloud" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"  loading="lazy"/>
           </div>
 
           {/* Card 3 */}
-          <div className="relative bg-[#FEEFC1] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
+          <div data-aos="fade-up" className="group relative bg-[#FEEFC1] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
             <div className="z-10 text-left pr-24">
               <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
                 Cyber Security <span className='block'>Solutions</span>
@@ -276,11 +281,11 @@ function Homepage() {
                 Integrating AI To Solve The Toughest Business Problems Through The Next-Generation Artificial Intelligence.
               </p>
             </div>
-            <img src={card03} alt="Cyber Security Solutions" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0"  loading="lazy"/>
+            <img src={card03} alt="Cyber Security Solutions" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"  loading="lazy"/>
           </div>
 
           {/* Card 4 */}
-          <div className="relative bg-[#EBE2F2] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
+          <div data-aos="fade-up" className="group relative bg-[#EBE2F2] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
             <div className="z-10 text-left pr-20">
               <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
                 System <span className='block'>Monitoring</span>
@@ -289,11 +294,11 @@ function Homepage() {
                 Tap Into New Tech Expertise, And Build Your Technology Teams With A Dedicated, Self Sufficient Engineering Team Integrated With Your Organization.
               </p>
             </div>
-            <img src={card04} alt="System Monitoring" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0"  loading="lazy"/>
+            <img src={card04} alt="System Monitoring" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"  loading="lazy"/>
           </div>
 
           {/* Card 5 */}
-          <div className="relative bg-[#FEEFC1] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
+          <div data-aos="fade-up" className="group relative bg-[#FEEFC1] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
             <div className="z-10 text-left pr-24">
               <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2 whitespace-nowrap">
                 Backup Solutions
@@ -302,11 +307,11 @@ function Homepage() {
                 Developing IoT Solutions & Accelerators, That Include End-To-End Digital Execution Capabilities Enabling Clients To Build And Launch New Digital Products.
               </p>
             </div>
-            <img src={card05} alt="Backup Solutions" className="absolute bottom-0 right-[-20px] w-[170px] h-[170px] object-contain z-0"  loading="lazy"/>
+            <img src={card05} alt="Backup Solutions" className="absolute bottom-0 right-[-20px] w-[170px] h-[170px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"  loading="lazy"/>
           </div>
 
           {/* Card 6 */}
-          <div className="relative bg-[#EBE2F2] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
+          <div data-aos="fade-up" className="group relative bg-[#EBE2F2] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
             <div className="z-10 text-left pr-24">
               <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
                 E-Commerce
@@ -315,11 +320,11 @@ function Homepage() {
                 Building Smart Solutions For Leading E-Commerce Brands With A Single View Of Their Business And Customers Across Channels Leveraging Real-Time Analytics And Reporting.
               </p>
             </div>
-            <img src={card06} alt="E-Commerce" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0"  loading="lazy"/>
+            <img src={card06} alt="E-Commerce" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"  loading="lazy"/>
           </div>
 
           {/* Card 7 */}
-          <div className="relative bg-[#DFF7EA] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
+          <div data-aos="fade-up" className="group relative bg-[#DFF7EA] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
             <div className="z-10 text-left pr-28">
               <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
                 IT Support
@@ -328,11 +333,11 @@ function Homepage() {
                 Automate The Entire Cycle Of Build, Provisioning, And Deployment Process With Our DevOps Experts & Agile Processes.
               </p>
             </div>
-            <img src={card07} alt="IT Support" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0"  loading="lazy"/>
+            <img src={card07} alt="IT Support" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"  loading="lazy"/>
           </div>
 
           {/* Card 8 */}
-          <div className="relative bg-[#FEE6DC] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
+          <div data-aos="fade-up" className="group relative bg-[#FEE6DC] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
             <div className="z-10 text-left pr-24">
               <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
                 Telephony
@@ -341,7 +346,7 @@ function Homepage() {
                 Building Bespoke Software Applications Using Cutting-Edge Tools That Are Scalable, Flexible, And Easy To Manage.
               </p>
             </div>
-            <img src={card08} alt="Telephony" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0"  loading="lazy"/>
+            <img src={card08} alt="Telephony" className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"  loading="lazy"/>
           </div>
 
         </div>
