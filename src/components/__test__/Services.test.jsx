@@ -78,12 +78,12 @@ describe("Service Page Testing" , ()=>{
     expect(systemMonitoring).toHaveClass("w-32 h-32 z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]");
     expect(systemMonitoring).toHaveAttribute("loading" , "lazy");
     expect(systemMonitoring).toHaveAttribute("src" , expect.stringContaining("systemMonitering"));
-
-   
+    
+     
     })
    // Image test end
-
-
+ 
+   
   
 
 })
