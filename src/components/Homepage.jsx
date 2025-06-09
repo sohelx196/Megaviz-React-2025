@@ -559,7 +559,7 @@ function Homepage() {
       </div>
 
       {/* 5 */}
-      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300">
+      <div className="flex items-center justify-center p-10 sm:p-8 lg:p-10 border-b border-r border-gray-300">
         <img src={msAmlinImg} alt="MS Amlin" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
