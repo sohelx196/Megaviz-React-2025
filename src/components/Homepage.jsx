@@ -539,62 +539,62 @@ function Homepage() {
 
 {/* client logos */}
       {/* 1 */}
-      <div className="flex items-center justify-center p-4 sm:p-8 lg:p-10 border-b border-r border-gray-300">
+      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300">
         <img src={maceImg} alt="Mace" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 2 */}
-      <div className="flex items-center justify-center p-4 sm:p-8 lg:p-10 border-b sm:border-r">
+      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b sm:border-r">
         <img src={mundiPharmaImg} alt="Mundi Pharma" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 3 */}
-      <div className="flex items-center justify-center p-4 sm:p-8 lg:p-10 border-b border-r border-gray-300 sm:border-r-0">
+      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300 sm:border-r-0">
         <img src={cbreImg} alt="CBRE" className="h-12 sm:h-12 md:h-20 max-w-[120px] w-full object-contain" />
       </div>
 
       {/* 4 */}
-      <div className="flex items-center justify-center p-4 sm:p-8 lg:p-10 border-b lg:border-l lg:border-r-0 border-gray-300 sm:border-r">
+      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b lg:border-l lg:border-r-0 border-gray-300 sm:border-r">
         <img src={astraZenecaImg} alt="Astrazeneca" className="h-8 sm:h-12 md:h-20 max-w-[170px] w-full object-contain" />
       </div>
 
       {/* 5 */}
-      <div className="flex items-center justify-center p-4 sm:p-8 lg:p-10 border-b border-r border-gray-300">
+      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300">
         <img src={msAmlinImg} alt="MS Amlin" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 6 */}
-      <div className="flex items-center justify-center p-4 sm:p-8 lg:p-10 border-b lg:border-r border-gray-300">
+      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b lg:border-r border-gray-300">
         <img src={ricsImg} alt="RICS" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 7 */}
-      <div className="flex items-center justify-center p-4 sm:p-8 lg:p-10 border-b border-gray-300 sm:border-r-0">
+      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-gray-300 sm:border-r-0">
         <img src={moneyPensionImg} alt="Money Service" className="h-16 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 8 */}
-      <div className="flex items-center justify-center p-4 border-b sm:border-r border-l sm:p-8 lg:p-10 md:border-b border-gray-300 lg:border-r-0">
+      <div className="flex items-center justify-center p-8 border-b sm:border-r border-l sm:p-8 lg:p-10 md:border-b border-gray-300 lg:border-r-0">
         <img src={vivoEnergyImg} alt="Vivo Energy" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 9 */}
-      <div className="flex items-center justify-center p-4 sm:border-r-0 sm:p-8 lg:p-10 border-r md:border-l border-b md:border-b sm:border-l-0 sm:border-b lg:border-r md:border-r-0 lg:border-b-0 lg:border-l-0">
+      <div className="flex items-center justify-center p-8 sm:border-r-0 sm:p-8 lg:p-10 border-r md:border-l border-b md:border-b sm:border-l-0 sm:border-b lg:border-r md:border-r-0 lg:border-b-0 lg:border-l-0">
         <img src={impellamImg} alt="Impellam" className="h-16 sm:h-16 md:h-20 max-w-[150px] w-full object-contain" />
       </div>
 
       {/* 10 */}
-      <div className="flex items-center justify-center p-4 border-b sm:border-b-0 sm:border-r sm:p-8 lg:p-10">
+      <div className="flex items-center justify-center p-8 border-b sm:border-b-0 sm:border-r sm:p-8 lg:p-10">
         <img src={costaCoffeeImg} alt="Costa" className="h-12 sm:h-16 md:h-20 max-w-[130px] w-full object-contain" />
       </div>
 
       {/* 11 */}
-      <div className="flex items-center justify-center p-4 sm:p-8  lg:p-10 border-r border-gray-300 sm:border-r-0">
+      <div className="flex items-center justify-center p-8 sm:p-8  lg:p-10 border-r border-gray-300 sm:border-r-0">
         <img src={quilterInvesterImg} alt="Quilter" className="h-16 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 12 */}
-      <div className="flex items-center justify-center p-4 border-l sm:p-8 lg:p-10">
+      <div className="flex items-center justify-center p-8 border-l sm:p-8 lg:p-10">
         <img src={babcockImg} alt="Babcock" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
