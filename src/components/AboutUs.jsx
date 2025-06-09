@@ -72,7 +72,7 @@ function AboutUs() {
         <div className="hidden lg:block absolute w-6 h-6 top-1/3 left-[18%] -translate-y-1/2 rounded-full shadow-[0px_3px_20px_rgba(0,0,0,0.05)]" style={{ background: "linear-gradient(180deg, #FF8E8E 0%, #F62424 100%)" }}></div>
         <div className="hidden lg:block absolute w-6 h-6 -top-[50%] right-[5%] rounded-full shadow-[0px_3px_20px_rgba(0,0,0,0.05)]" style={{ background: "linear-gradient(180deg, #FF8E8E 0%, #F62424 100%)" }}></div>
 
-        <img src={studentImg} alt="Team Meeting" className="rounded-2xl w-full max-w-3xl object-cover z-10"   loading="lazy"/>
+        <img src={studentImg} alt="Team Meeting Desktop" className="rounded-2xl w-full max-w-3xl object-cover z-10"   loading="lazy"/>
 
         <div className="quicksand absolute top-6 left-48 bg-white rounded-xl shadow-lg px-4 py-3 w-auto z-20">
           <div className="font-quicksand flex items-center space-x-2 mb-1">
@@ -217,7 +217,7 @@ function AboutUs() {
           <div className="lg:col-span-2 relative text-white rounded-2xl shadow-lg min-h-[250px] overflow-hidden flex flex-col justify-between p-6 bg-black">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
-              <img src={projectFinish} alt="Background" className="w-full h-full object-cover opacity-3 rotate-[6deg] scale-110"  loading="lazy" />
+              <img src={projectFinish} alt="Project Finish" className="w-full h-full object-cover opacity-3 rotate-[6deg] scale-110"  loading="lazy" />
             </div>
 
             {/* Content Layer */}

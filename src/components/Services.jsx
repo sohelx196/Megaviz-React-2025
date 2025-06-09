@@ -49,18 +49,18 @@ function Services() {
             {/* Main Background Image */}
             <img
               src={officeImg}
-              alt="Office Scene"
+              alt="officeBg"
                loading="lazy"
               className="rounded-2xl object-cover w-full h-auto"
             />
 
-            {/* Overlay Card */}
+            {/* Overlay image/card */}
             <div
               className="absolute w-[90px] sm:w-[110px] md:w-[130px] lg:w-[230px] xl:w-[310px]
                          top-[24%] left-[13%] -translate-x-1/2 -translate-y-1/2">
               <img
                 src={clientCardImg}
-                alt="Client Card"
+                alt="Client Img"
                 className="rounded-2xl w-full h-auto"
                  loading="lazy"
               />
@@ -132,6 +132,7 @@ function Services() {
         </div>
       </Link>
 
+
       <Link
         to="/cyberSecurity"
         className="bg-[#DFF7EA] group rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-center lg:text-left hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer min-h-[280px] lg:min-h-[240px]"
@@ -144,6 +145,7 @@ function Services() {
           </p>
         </div>
       </Link>
+
 
       <Link
         to="/backupSolution"

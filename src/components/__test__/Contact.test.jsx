@@ -1,10 +1,10 @@
-import { render , screen} from "@testing-library/react";
+import { fireEvent, render , screen} from "@testing-library/react";
 import ContactUs from "../ContactUs";
 import { describe, expect, test } from "vitest";
 import { MemoryRouter } from "react-router-dom";
 
 
-describe("Contact Page Testing" , ()=>{
+describe("Contact Ui Testing" , ()=>{
 
 
 
@@ -24,29 +24,39 @@ describe("Contact Page Testing" , ()=>{
       // we checking the name attribute here
        const nameInput =  screen.getByLabelText("Your Name");
        expect(nameInput).toHaveAttribute("name" , "name")
+       expect(nameInput).toHaveAttribute("id" , "myName")
+       expect(nameInput).toHaveAttribute("type" , "text")
+       
 
        const emailInput = screen.getByLabelText("Email Address")
        expect(emailInput).toHaveAttribute("name","email")
+       expect(emailInput).toHaveAttribute("id" , "myEmail")
+       expect(emailInput).toHaveAttribute("type" , "email")
 
        const phoneInput = screen.getByLabelText("Phone Number")
        expect(phoneInput).toHaveAttribute("name","mobile")
+       expect(phoneInput).toHaveAttribute("id","myMobile")
+       expect(phoneInput).toHaveAttribute("type","number")
+       
        
        const messageInput = screen.getByLabelText("Message")
        expect(messageInput).toHaveAttribute("name","message")
-
+       expect(messageInput).toHaveAttribute("id","myMessage")
       
-       
-
-       
 
     })
     
-    
-    
-    
+    test("Input onchange Testing" , ()=>{
 
+      render(
+        <MemoryRouter>
+          <ContactUs/>
+        </MemoryRouter>
+      )
+        
+      
 
-
+    })
 
 
 
@@ -68,7 +78,7 @@ describe("Contact Page Testing" , ()=>{
     })
 
 
-
+   
 
     
 })
