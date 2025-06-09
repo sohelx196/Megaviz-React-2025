@@ -36,7 +36,6 @@ function Testimonials() {
     return () => clearInterval(interval);
   }, []);
 
-  
   // Swipe Handlers
   const swipeHandlers = useSwipeable({
     onSwipedLeft: () =>
@@ -107,99 +106,95 @@ function Testimonials() {
         </div>
       </div>
 
+      {/* Desktop View */}
+      {testimonials.length <= 3 ? (
+        <div className="hidden sm:flex justify-center gap-6">
+          {testimonials.map((testimonial) => (
+            <div
+              key={testimonial.id}
+              className="w-[300px] rounded-xl border border-gray-200 shadow-sm p-6 flex flex-col justify-between transition hover:shadow-black hover:shadow-md"
+            >
+              <div>
+                <div className="flex justify-start mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <img
+                      key={i}
+                      src={starIcon}
+                      alt="star icon"
+                      className="w-5 h-5 mx-0.5"
+                      loading="lazy"
+                    />
+                  ))}
+                </div>
+                <p className="text-sm text-gray-600 font-medium mb-6">
+                  “{testimonial.text}”
+                </p>
+              </div>
+              <div className="flex items-center gap-3 mt-auto">
+                <img
+                  src={testimonial.avatar}
+                  alt={testimonial.name}
+                  className="w-10 h-10 rounded-full border-2 border-blue-600"
+                  loading="lazy"
+                />
+                <p className="font-semibold text-black">- {testimonial.name}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        // only scrolll above 3 cardsss
+        <div className="hidden sm:block">
+          <div className="overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory">
+            <div className="flex w-max gap-6 px-4">
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={testimonial.id}
+                  className="min-w-[300px] snap-start rounded-xl border border-gray-200 shadow-sm p-6 flex flex-col justify-between transition hover:shadow-black hover:shadow-md"
+                >
+                  <div>
+                    <div className="flex justify-start mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <img
+                          key={i}
+                          src={starIcon}
+                          alt="star icon"
+                          className="w-5 h-5 mx-0.5"
+                          loading="lazy"
+                        />
+                      ))}
+                    </div>
+                    <p className="text-sm text-gray-600 font-medium mb-6">
+                      “{testimonial.text}”
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-3 mt-auto">
+                    <img
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                      className="w-10 h-10 rounded-full border-2 border-blue-600"
+                      loading="lazy"
+                    />
+                    <p className="font-semibold text-black">
+                      - {testimonial.name}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
 
-
-
-{/* Desktop View */}
-{testimonials.length <= 3 ? (
- 
-  <div className="hidden sm:flex justify-center gap-6">
-    {testimonials.map((testimonial) => (
-      <div
-        key={testimonial.id}
-        className="w-[300px] rounded-xl border border-gray-200 shadow-sm p-6 flex flex-col justify-between transition hover:shadow-black hover:shadow-md"
-      >
-        <div>
-          <div className="flex justify-start mb-4">
-            {[...Array(5)].map((_, i) => (
-              <img
-                key={i}
-                src={starIcon}
-                alt="star icon"
-                className="w-5 h-5 mx-0.5"
-                loading="lazy"
-              />
+          {/* Dot indicators */}
+          <div className="flex justify-center mt-6 space-x-2">
+            {testimonials.map((_, index) => (
+              <div
+                key={index}
+                className="w-3 h-3 rounded-full bg-gray-300"
+              ></div>
             ))}
           </div>
-          <p className="text-sm text-gray-600 font-medium mb-6">
-            “{testimonial.text}”
-          </p>
         </div>
-        <div className="flex items-center gap-3 mt-auto">
-          <img
-            src={testimonial.avatar}
-            alt={testimonial.name}
-            className="w-10 h-10 rounded-full border-2 border-blue-600"
-            loading="lazy"
-          />
-          <p className="font-semibold text-black">- {testimonial.name}</p>
-        </div>
-      </div>
-    ))}
-  </div>
-) : (
-  // only scrolll above 3 cardsss
-  <div className="hidden sm:block">
-    <div className="overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory">
-      <div className="flex w-max gap-6 px-4">
-        {testimonials.map((testimonial, index) => (
-          <div
-            key={testimonial.id}
-            className="min-w-[300px] snap-start rounded-xl border border-gray-200 shadow-sm p-6 flex flex-col justify-between transition hover:shadow-black hover:shadow-md"
-          >
-            <div>
-              <div className="flex justify-start mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <img
-                    key={i}
-                    src={starIcon}
-                    alt="star icon"
-                    className="w-5 h-5 mx-0.5"
-                    loading="lazy"
-                  />
-                ))}
-              </div>
-              <p className="text-sm text-gray-600 font-medium mb-6">
-                “{testimonial.text}”
-              </p>
-            </div>
-            <div className="flex items-center gap-3 mt-auto">
-              <img
-                src={testimonial.avatar}
-                alt={testimonial.name}
-                className="w-10 h-10 rounded-full border-2 border-blue-600"
-                loading="lazy"
-              />
-              <p className="font-semibold text-black">- {testimonial.name}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-
-    {/* Dot indicators */}
-    <div className="flex justify-center mt-6 space-x-2">
-      {testimonials.map((_, index) => (
-        <div
-          key={index}
-          className="w-3 h-3 rounded-full bg-gray-300"
-        ></div>
-      ))}
-    </div>
-  </div>
-)}
-
-
+      )}
     </section>
   );
 }
