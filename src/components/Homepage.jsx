@@ -524,10 +524,20 @@ function Homepage() {
 
       {/* Why choose us end */}
 
-<<<<<<< HEAD
-      {/* Clients logos */}
+            <section className="bg-white py-20 px-4 lg:px-24">
+        {/* Heading Section */}
+        <div className="text-center mb-12 px-4">
+          <h2 className="font-cabin text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F2B59]">
+            Meet Our<span className="text-red-600"> Clients</span>
+          </h2>
+          <p className="font-cabin text-[#696969] mt-4 text-base sm:text-lg font-normal">
+            We have earned the trust of 100's of customers,
+            <span className="block">including these fine companies</span>
+          </p>
+        </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-0">
 
+{/* client logos */}
       {/* 1 */}
       <div className="flex items-center justify-center p-4 sm:p-8 lg:p-10 border-b border-r border-gray-300">
         <img src={maceImg} alt="Mace" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
@@ -589,8 +599,8 @@ function Homepage() {
       </div>
 
     </div>
+      </section>
 
-    </section>
 {/* Meet Our client end */}
 
 
@@ -600,139 +610,7 @@ function Homepage() {
   <Testimonials/>
 
 {/* Testimonial Section end */}
-=======
-      {/* Meet Our client start */}
-      <section className="bg-white py-20 px-4 lg:px-24">
-        {/* Heading Section */}
-        <div className="text-center mb-12 px-4">
-          <h2 className="font-cabin text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F2B59]">
-            Meet Our<span className="text-red-600"> Clients</span>
-          </h2>
-          <p className="font-cabin text-[#696969] mt-4 text-base sm:text-lg font-normal">
-            We have earned the trust of 100's of customers,
-            <span className="block">including these fine companies</span>
-          </p>
-        </div>
 
-        {/* Clients Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
-          <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-b border-gray-300">
-            <img
-              src={maceImg}
-              alt="Mace"
-              className="h-16 sm:h-20 max-w-[140px] object-contain"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-b border-gray-300">
-            <img
-              src={mundiPharmaImg}
-              alt="Mundi Pharma"
-              className="h-16 sm:h-20 max-w-[140px] object-contain"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-b border-gray-300">
-            <img
-              src={cbreImg}
-              alt="CBRE"
-              className="h-16 sm:h-20 max-w-[140px] object-contain"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-b border-gray-300">
-            <img
-              src={astraZenecaImg}
-              alt="AstraZeneca"
-              className="h-16 sm:h-20 max-w-[140px] object-contain"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-b border-gray-300">
-            <img
-              src={msAmlinImg}
-              alt="MS Amlin"
-              className="h-16 sm:h-20 max-w-[140px] object-contain"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-b border-gray-300">
-            <img
-              src={ricsImg}
-              alt="RICS"
-              className="h-16 sm:h-20 max-w-[140px] object-contain"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-b border-gray-300">
-            <img
-              src={moneyPensionImg}
-              alt="Money Service"
-              className="h-16 sm:h-20 max-w-[140px] object-contain"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-b border-gray-300">
-            <img
-              src={vivoEnergyImg}
-              alt="Vivo Energy"
-              className="h-16 sm:h-20 max-w-[140px] object-contain"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-gray-300">
-            <img
-              src={impellamImg}
-              alt="Impellam"
-              className="h-16 sm:h-20 max-w-[140px] object-contain"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-gray-300">
-            <img
-              src={costaCoffeeImg}
-              alt="Costa"
-              className="h-16 sm:h-20 max-w-[140px] object-contain"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-r border-gray-300">
-            <img
-              src={quilterInvesterImg}
-              alt="Quilter"
-              className="h-16 sm:h-20 max-w-[140px] object-contain"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="flex items-center justify-center p-8 sm:p-10 lg:p-16 border-gray-300">
-            <img
-              src={babcockImg}
-              alt="Babcock"
-              className="h-16 sm:h-20 max-w-[140px] object-contain"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
-      {/* Meet Our client end */}
-
-      {/* Testimonial Section start */}
->>>>>>> 9baf75de480d22b083ee66237afa40176a700807
-
-      <Testimonials />
-
-      {/* Testimonial Section end */}
     </>
   );
 }
