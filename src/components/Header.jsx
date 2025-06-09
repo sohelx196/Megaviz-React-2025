@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../assets/images/megavizLogo.png';
-import hamburger from '../assets/icons/hamburger.png';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "../assets/images/megavizLogo.png";
+import hamburger from "../assets/icons/hamburger.png";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,13 +22,48 @@ function Header() {
         {/* Center: Desktop Nav */}
         <nav className="hidden lg:flex flex-1 justify-center pt-2">
           <ul className="flex space-x-8 text-base items-center">
-            <li><Link to="/" className=" font-poppins nav-link"><span className="top">Home</span><span className="bottom">Home</span></Link></li>
-            <li><Link to="/services" className=" font-poppins nav-link"><span className="top">Capabilities</span><span className="bottom">Capabilities</span></Link></li>
-            <li><Link to="" className=" font-poppins nav-link"><span className="top">Industries</span><span className="bottom">Industries</span></Link></li>
-            <li><Link to="aboutUs" className="font-poppins nav-link"><span className="top">About Us</span><span className="bottom">About Us</span></Link></li>
-            <li><Link to="" className=" font-poppins nav-link"><span className="top">Blogs</span><span className="bottom">Blogs</span></Link></li>
-            <li><Link to="" className=" font-poppins nav-link"><span className="top">Case Studies</span><span className="bottom">Case Studies</span></Link></li>
-            <li><Link to="" className=" font-poppins nav-link"><span className="top">Career</span><span className="bottom">Career</span></Link></li>
+            <li>
+              <Link to="/" className=" font-poppins nav-link">
+                <span className="top">Home</span>
+                <span className="bottom">Home</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/services" className=" font-poppins nav-link">
+                <span className="top">Capabilities</span>
+                <span className="bottom">Capabilities</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="" className=" font-poppins nav-link">
+                <span className="top">Industries</span>
+                <span className="bottom">Industries</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="aboutUs" className="font-poppins nav-link">
+                <span className="top">About Us</span>
+                <span className="bottom">About Us</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="" className=" font-poppins nav-link">
+                <span className="top">Blogs</span>
+                <span className="bottom">Blogs</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="" className=" font-poppins nav-link">
+                <span className="top">Case Studies</span>
+                <span className="bottom">Case Studies</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="" className=" font-poppins nav-link">
+                <span className="top">Career</span>
+                <span className="bottom">Career</span>
+              </Link>
+            </li>
           </ul>
         </nav>
 
@@ -52,13 +87,76 @@ function Header() {
       {menuOpen && (
         <div className="lg:hidden px-6 pb-4">
           <ul className="flex flex-col space-y-4 text-base items-center">
-            <li><Link to="/" className="font-poppins nav-link" onClick={() => setMenuOpen(false)}><span className="top">Home</span><span className="bottom">Home</span></Link></li>
-            <li><Link to="" className="font-poppins nav-link" onClick={() => setMenuOpen(false)}><span className="top">Capabilities</span><span className="bottom">Capabilities</span></Link></li>
-            <li><Link to="" className="font-poppins nav-link" onClick={() => setMenuOpen(false)}><span className="top">Industries</span><span className="bottom">Industries</span></Link></li>
-            <li><Link to="aboutUs" className="font-poppins nav-link" onClick={() => setMenuOpen(false)}><span className="top">About Us</span><span className="bottom">About Us</span></Link></li>
-            <li><Link to="" className="font-poppins nav-link" onClick={() => setMenuOpen(false)}><span className="top">Blogs</span><span className="bottom">Blogs</span></Link></li>
-            <li><Link to="" className="font-poppins nav-link" onClick={() => setMenuOpen(false)}><span className="top">Case Studies</span><span className="bottom">Case Studies</span></Link></li>
-            <li><Link to="" className="font-poppins nav-link" onClick={() => setMenuOpen(false)}><span className="top">Career</span><span className="bottom">Career</span></Link></li>
+            <li>
+              <Link
+                to="/"
+                className="font-poppins nav-link"
+                onClick={() => setMenuOpen(false)}
+              >
+                <span className="top">Home</span>
+                <span className="bottom">Home</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to=""
+                className="font-poppins nav-link"
+                onClick={() => setMenuOpen(false)}
+              >
+                <span className="top">Capabilities</span>
+                <span className="bottom">Capabilities</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to=""
+                className="font-poppins nav-link"
+                onClick={() => setMenuOpen(false)}
+              >
+                <span className="top">Industries</span>
+                <span className="bottom">Industries</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="aboutUs"
+                className="font-poppins nav-link"
+                onClick={() => setMenuOpen(false)}
+              >
+                <span className="top">About Us</span>
+                <span className="bottom">About Us</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to=""
+                className="font-poppins nav-link"
+                onClick={() => setMenuOpen(false)}
+              >
+                <span className="top">Blogs</span>
+                <span className="bottom">Blogs</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to=""
+                className="font-poppins nav-link"
+                onClick={() => setMenuOpen(false)}
+              >
+                <span className="top">Case Studies</span>
+                <span className="bottom">Case Studies</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to=""
+                className="font-poppins nav-link"
+                onClick={() => setMenuOpen(false)}
+              >
+                <span className="top">Career</span>
+                <span className="bottom">Career</span>
+              </Link>
+            </li>
             <li>
               <button
                 onClick={() => setMenuOpen(false)}

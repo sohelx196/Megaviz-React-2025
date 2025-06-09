@@ -1,28 +1,23 @@
-
-import { Outlet } from 'react-router-dom'
-import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import ScrollToTop from './components/ScrollToTop'
+import { Outlet } from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-
   return (
     <>
-    
-    <ScrollToTop/>
+      <ScrollToTop />
 
-      <Header/>
+      <Header />
 
-      <div className='w-full h-full'>
-        <Outlet/>
+      <div className="w-full h-full">
+        <Outlet />
       </div>
 
-      <Footer/>
-      
+      <Footer />
     </>
-  )
-
+  );
 }
 
-export default App
+export default App;
