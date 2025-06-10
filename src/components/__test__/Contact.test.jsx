@@ -78,6 +78,35 @@ describe("Contact Ui Testing" , ()=>{
     })
 
 
+    test("ContactUs Image Testing" , ()=>{
+
+      render(
+        <MemoryRouter>
+          <ContactUs/>
+        </MemoryRouter>
+      )
+
+    const facebook = screen.getByAltText("Facebook");
+    expect(facebook).toBeInTheDocument();
+    expect(facebook).toHaveAttribute("src" , expect.stringContaining("facebook"));
+
+    const instagram = screen.getByAltText("Instagram");
+    expect(instagram).toBeInTheDocument();
+    expect(instagram).toHaveAttribute("src" , expect.stringContaining("instagram"));
+
+    const twitter = screen.getByAltText("Twitter");
+    expect(twitter).toBeInTheDocument();
+    expect(twitter).toHaveAttribute("src" , expect.stringContaining("twitter"));
+
+    const arrow = screen.getByAltText("Arrow");
+    expect(arrow).toBeInTheDocument();
+    expect(arrow).toHaveAttribute("src" , expect.stringContaining("arrorw"));
+
+    
+    })
+
+
+
    
 
     

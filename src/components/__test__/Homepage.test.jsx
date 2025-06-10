@@ -1,20 +1,30 @@
-import { expect, test } from "vitest";
+import { describe, expect, test } from "vitest";
 import Homepage from "../Homepage";
 import { render,screen } from "@testing-library/react";
 
 import { MemoryRouter } from 'react-router-dom';
 
-test("Testing of Homepage Image" , ()=>{
+describe("HomePage Testing" , ()=>{
 
-  render(
-      <MemoryRouter>
-        <Homepage />
-      </MemoryRouter>
-    );
 
-  const arrowIcons = screen.getAllByAltText(/Arrow/i);
-  expect(arrowIcons.length).toBeGreaterThan(0); 
-
+  test("Image Testing" , ()=>{
   
+    render(
+        <MemoryRouter>
+          <Homepage />
+        </MemoryRouter>
+      );
+  
+      const arrowIcon = screen.getAllByAltText("Arrow");
+      arrowIcon.forEach(icon => {
+        expect(icon).toBeInTheDocument();
+        expect(icon).toHaveClass("w-3 h-3 transition-transform duration-300 group-hover:rotate-45");
+        expect(icon).toHaveAttribute("src" , expect.stringContaining("arrorw"));
+      })
+      
+  })
+
+
+
 
 })
