@@ -46,12 +46,12 @@ function BackupSolution() {
                        -top-5 sm:-top-2 md:-top-6 lg:-top-8 xl:-top-10
                        -right-2 sm:-right-2 md:-right-6 lg:-right-8 xl:-right-7
                        w-28 sm:w-32 md:w-44 lg:w-52 xl:w-60 
-                       z-0 pointer-events-none"
-          />
+                       z-0 pointer-events-none"/>
+
           {/* Main Image */}
           <img
             src={backupSolutionMain}
-            alt="Team Working"
+            alt="Backup Solution Image"
              loading="lazy"
             className="w-full h-[300px] md:h-[480px] lg:h-[500px] object-cover rounded-2xl md:rounded-l-none md:rounded-r-2xl relative z-10"
           />
@@ -72,7 +72,7 @@ function BackupSolution() {
         <div className="w-full md:w-1/2 relative z-0 ml-0">
           <img
             src={backupSolutionOverlap}
-            alt="Team Working"
+            alt="Backup Solution Overlap"
              loading="lazy"
             className="rounded-[30px] 
                        w-[90%] h-[500px] 
@@ -140,7 +140,7 @@ function BackupSolution() {
           </div>
           <img
             src={toyMen}
-            alt="IT Consultancy"
+            alt="HelpImg"
              loading="lazy"
             className="absolute bottom-5 right-[-60px] sm:right-[-70px] md:right-[-70px] lg:right-[-90px] 
                        w-[200px] sm:w-[200px] md:w-[240px] lg:w-[260px] h-auto object-contain z-0 
@@ -162,7 +162,7 @@ function BackupSolution() {
           </div>
           <img
             src={twoWomen}
-            alt="IT Consultancy"
+            alt="ServiceImg"
              loading="lazy"
             className="absolute bottom-5 right-[-30px] sm:right-[-70px] md:right-[-70px] lg:right-[-90px] 
                        w-[220px] sm:w-[200px] md:w-[290px] lg:w-[330px] h-auto object-contain z-0 
