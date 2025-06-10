@@ -90,7 +90,7 @@ function AboutUs() {
             <div className="font-quicksand flex items-center space-x-2 mb-1">
               <img
                 src={starIcon}
-                alt="star icon"
+                alt="star"
                 className="w-4 h-4"
                 loading="lazy"
               />
@@ -130,7 +130,7 @@ function AboutUs() {
             <div className="flex items-center space-x-2 mb-1">
               <img
                 src={starIcon}
-                alt="star icon"
+                alt="star"
                 className="w-4 h-4"
                 loading="lazy"
               />

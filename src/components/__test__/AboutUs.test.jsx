@@ -92,14 +92,17 @@ describe("About Page Testing" , ()=>{
     expect(mission).toHaveAttribute("src" , expect.stringContaining("ourMission"))
     
     
-    const starIcon = screen.getByAltText("star icon");
-    expect(starIcon).toBeInTheDocument();
-    expect(starIcon).toHaveClass("w-4 h-4")
-    expect(starIcon).toHaveAttribute("src" , expect.stringContaining("newStar"))
+    const starIcon = screen.getAllByAltText("star");
+    starIcon.forEach(icon=>{
+      expect(icon).toBeInTheDocument();
+      expect(icon).toHaveClass("w-4 h-4")
+      expect(icon).toHaveAttribute("src" , expect.stringContaining("newStar"))
+    })  
 
 
+    
 
-     
+    
   })
 
 
