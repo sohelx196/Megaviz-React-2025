@@ -67,7 +67,7 @@ function ItSupport() {
           {/* Main Image */}
           <img
             src={itSupportMain}
-            alt="Team Working"
+            alt="ItSupport Image"
              loading="lazy"
             className="w-full h-[300px] md:h-[480px] lg:h-[500px] object-cover rounded-2xl md:rounded-l-none md:rounded-r-2xl relative z-10"
           />
@@ -88,7 +88,7 @@ function ItSupport() {
         <div className="w-full md:w-1/2 relative z-0 ml-0">
           <img
             src={itSupportOverlap}
-            alt="Team Working"
+            alt="ItSupport Overlap"
              loading="lazy"
             className="rounded-[30px]
                        w-[90%] h-[400px]
@@ -164,7 +164,7 @@ function ItSupport() {
 
           <img
             src={toyMen}
-            alt="IT Consultancy"
+            alt="HelpImg"
              loading="lazy"
             className="absolute bottom-5 
               right-[-60px] sm:right-[-70px] md:right-[-70px] lg:right-[-90px] 
