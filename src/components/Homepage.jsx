@@ -113,7 +113,7 @@ function Homepage() {
             <div className="flex justify-center items-center order-1 mt-3">
               <img
                 src={mace01}
-                alt="Client 1"
+                alt="Mace Logo"
                 className="max-w-full h-auto w-20 sm:w-28 md:w-32"
                 loading="lazy"
               />
@@ -121,7 +121,7 @@ function Homepage() {
             <div className="flex justify-center items-center order-2 mt-3">
               <img
                 src={mace02}
-                alt="Client 2"
+                alt="Ms Amlin"
                 className="max-w-full h-auto w-24 sm:w-28 md:w-32"
                 loading="lazy"
               />
@@ -129,7 +129,7 @@ function Homepage() {
             <div className="col-span-2 md:col-span-1 flex justify-center items-center order-3">
               <img
                 src={mace03}
-                alt="RICS Logo"
+                alt="AstraZeneca"
                 className="max-w-full h-auto w-24 sm:w-28 md:w-40"
                 loading="lazy"
               />
@@ -137,7 +137,7 @@ function Homepage() {
             <div className="flex justify-center items-center order-4 md:order-3">
               <img
                 src={mace04}
-                alt="Client 4"
+                alt="Inmarsat"
                 className="max-w-full h-auto w-24 sm:w-28 md:w-40"
                 loading="lazy"
               />
@@ -145,7 +145,7 @@ function Homepage() {
             <div className="flex justify-center items-center order-5 md:order-4 mt-3">
               <img
                 src={mace05}
-                alt="Client 5"
+                alt="Rics"
                 className="max-w-full h-auto w-24 sm:w-28 md:w-32"
                 loading="lazy"
               />
@@ -170,7 +170,7 @@ function Homepage() {
             <div className="flex flex-col items-center text-center">
               <img
                 src={growthIcon}
-                alt="Graph Icon"
+                alt="Growth Icon"
                 className="w-6 h-6 mb-2"
                 loading="lazy"
               />
@@ -227,7 +227,7 @@ function Homepage() {
           <div className="w-full md:w-1/2 relative z-0 ml-0">
             <img
               src={meetingImg}
-              alt="Team Image"
+              alt="Team Meeting"
               className="rounded-[30px] w-full h-full max-h-[600px] object-cover"
               loading="lazy"
             />
@@ -523,6 +523,10 @@ function Homepage() {
       </section>
 
       {/* Why choose us end */}
+
+      
+
+      {/* Meet Our Client Start */}
 
             <section className="bg-white py-20 px-4 lg:px-24">
         {/* Heading Section */}
