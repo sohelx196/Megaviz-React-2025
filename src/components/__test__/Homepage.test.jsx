@@ -155,7 +155,19 @@ describe("HomePage Testing" , ()=>{
 
       // Meet Our client Start
 
-       
+      //  const mace = screen.getByAltText("Mace");
+      //  expect(mace).toBeInTheDocument();
+      //  expect(mace).toHaveClass("h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain");
+      //  expect(mace).toHaveAttribute("loading" , "lazy");
+      //  expect(mace).toHaveAttribute("src" , expect.stringContaining("mace"));
+
+      //  const mundiPharma = screen.getByAltText("Mundi Pharma");
+      //  expect(mundiPharma).toBeInTheDocument();
+      //  expect(mundiPharma).toHaveClass("h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain");
+      //  expect(mundiPharma).toHaveAttribute("loading" , "lazy");
+      //  expect(mundiPharma).toHaveAttribute("src" , expect.stringContaining("mundi_pharma"));
+
+
       
       // Meet Our client end
 
