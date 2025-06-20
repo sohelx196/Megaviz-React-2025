@@ -111,11 +111,11 @@ function Homepage() {
       <section className="bg-white py-20 overflow-x-hidden">
         <div className="container mx-auto text-center px-4">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-            <div className="flex justify-center items-center order-1 mt-3">
+            <div className="flex justify-center items-center order-1">
               <img
                 src={microsoft}
                 alt="Microsoft Logo"
-                className="max-w-full h-auto w-20 sm:w-28 md:w-32"
+                className="max-w-full h-auto w-24 sm:w-28 md:w-40"
                 loading="lazy"
               />
             </div>
@@ -123,7 +123,7 @@ function Homepage() {
               <img
                 src={sonicWall}
                 alt="SonicWall Logo"
-                className="max-w-full h-auto w-24 sm:w-28 md:w-32"
+                className="max-w-full h-auto w-24 sm:w-28 md:w-40"
                 loading="lazy"
               />
             </div>
@@ -131,7 +131,7 @@ function Homepage() {
               <img
                 src={vmware}
                 alt="VMware Logo"
-                className="max-w-full h-auto w-24 sm:w-28 md:w-40"
+                className="max-w-full h-auto w-20 sm:w-28 md:w-36"
                 loading="lazy"
               />
             </div>
@@ -139,15 +139,15 @@ function Homepage() {
               <img
                 src={fortinet}
                 alt="Fortinet Logo"
-                className="max-w-full h-auto w-24 sm:w-28 md:w-40"
+                className="max-w-full h-auto w-24 sm:w-28 md:w-48"
                 loading="lazy"
               />
             </div>
-            <div className="flex justify-center items-center order-5 md:order-4 mt-3">
+            <div className="flex justify-center items-center order-5 md:order-4 ">
               <img
                 src={apple}
                 alt="Apple Logo"
-                className="max-w-full h-auto w-24 sm:w-28 md:w-32"
+                className="max-w-full h-auto w-20 sm:w-28 md:w-28"
                 loading="lazy"
               />
             </div>
@@ -545,12 +545,12 @@ function Homepage() {
 {/* client logos */}
       {/* 1 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300">
-        <img loading="lazy" src={dellEmc} alt="dellEmc" className="h-10 sm:h-12 md:h-20 max-w-[170px] w-full object-contain" />
+        <img loading="lazy" src={dellEmc} alt="dellEmc" className="h-16 sm:h-16 md:h-20 max-w-[180px] w-full object-contain" />
       </div>
 
       {/* 2 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b sm:border-r">
-        <img loading="lazy" src={epson} alt="epson" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={epson} alt="epson" className="h-12 sm:h-16 md:h-20 max-w-[130px] w-full object-contain" />
       </div>
 
       {/* 3 */}
@@ -560,7 +560,7 @@ function Homepage() {
 
       {/* 4 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b lg:border-l lg:border-r-0 border-gray-300 sm:border-r">
-        <img loading="lazy" src={acronis} alt="acronis" className="h-8 sm:h-12 md:h-20 max-w-[170px] w-full object-contain" />
+        <img loading="lazy" src={acronis} alt="acronis" className="h-12 sm:h-16 md:h-24 max-w-[170px] w-full object-contain" />
       </div>
 
       {/* 5 */}
@@ -575,7 +575,7 @@ function Homepage() {
 
       {/* 7 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-gray-300 sm:border-r-0">
-        <img loading="lazy" src={yealink} alt="yealink" className="h-16 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={yealink} alt="yealink" className="h-12 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 8 */}
@@ -585,7 +585,7 @@ function Homepage() {
 
       {/* 9 */}
       <div className="flex items-center justify-center p-8 sm:border-r-0 sm:p-8 lg:p-10 border-r md:border-l border-b md:border-b sm:border-l-0 sm:border-b lg:border-r md:border-r-0 lg:border-b-0 lg:border-l-0">
-        <img loading="lazy" src={suprema} alt="suprema" className="h-16 sm:h-16 md:h-20 max-w-[150px] w-full object-contain" />
+        <img loading="lazy" src={suprema} alt="suprema" className="h-12 sm:h-16 md:h-20 max-w-[150px] w-full object-contain" />
       </div>
 
       {/* 10 */}
@@ -595,7 +595,7 @@ function Homepage() {
 
       {/* 11 */}
       <div className="flex items-center justify-center p-8 sm:p-8  lg:p-10 border-r border-gray-300 sm:border-r-0">
-        <img loading="lazy" src={origin} alt="origin" className="h-16 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={origin} alt="origin" className="h-16 sm:h-16 md:h-20 max-w-[180px] w-full object-contain" />
       </div>
 
       {/* 12 */}
