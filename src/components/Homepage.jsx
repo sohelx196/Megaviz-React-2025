@@ -7,11 +7,12 @@ import { Link } from "react-router-dom";
 import heroBgTop from "../assets/images/main_Img/heroBgTop.png";
 import heroBgBottom from "../assets/images/main_Img/heroBgBottom.png";
 import arrowIcon from "../assets/icons/arrorw.png";
-import mace01 from "../assets/images/mace01.png";
-import mace02 from "../assets/images/mace02.png";
-import mace03 from "../assets/images/mace03.png";
-import mace04 from "../assets/images/mace04.png";
-import mace05 from "../assets/images/mace05.png";
+
+import microsoft from "../assets/images/microsoft.png";
+import sonicWall from "../assets/images/sonicWall.png";
+import vmware from "../assets/images/vmware.png";
+import fortinet from "../assets/images/fortinet.png";
+import apple from "../assets/images/apple.png";
 
 import growthIcon from "../assets/icons/growth.png";
 import ideaIcon from "../assets/icons/idea.png";
@@ -28,18 +29,18 @@ import card07 from "../assets/images/cards_img/homepageCards/card07.png";
 import card08 from "../assets/images/cards_img/homepageCards/card08.png";
 
 // Meet Our client images
-import maceImg from "../assets/images/OurClient/mace.png";
-import mundiPharmaImg from "../assets/images/OurClient/mundi_pharma.png";
-import cbreImg from "../assets/images/OurClient/cbre.png";
-import astraZenecaImg from "../assets/images/OurClient/astra_zeneca.png";
-import msAmlinImg from "../assets/images/OurClient/ms_amlin.png";
-import ricsImg from "../assets/images/OurClient/rics.png";
-import moneyPensionImg from "../assets/images/OurClient/money&pension.png";
-import vivoEnergyImg from "../assets/images/OurClient/vivo_energy.png";
-import impellamImg from "../assets/images/OurClient/impellam.png";
-import costaCoffeeImg from "../assets/images/OurClient/costa_coffee.png";
-import quilterInvesterImg from "../assets/images/OurClient/quilter_Invester.png";
-import babcockImg from "../assets/images/OurClient/babcock.png";
+import dellEmc from "../assets/images/OurClient/dellEmc.png";
+import epson from "../assets/images/OurClient/epson.png";
+import apc from "../assets/images/OurClient/apc.png";
+import acronis from "../assets/images/OurClient/acronis.png";
+import fujitsu from "../assets/images/OurClient/fujitsu.png";
+import avaya from "../assets/images/OurClient/avaya.png";
+import yealink from "../assets/images/OurClient/yealink.png";
+import yeastar from "../assets/images/OurClient/yeastar.png";
+import suprema from "../assets/images/OurClient/suprema.png";
+import dlink from "../assets/images/OurClient/dlink.png";
+import origin from "../assets/images/OurClient/origin.png";
+import samsung from "../assets/images/OurClient/samsung.png";
 
 import meetingImg2 from "../assets/images/main_Img/meeting02.png";
 
@@ -112,40 +113,40 @@ function Homepage() {
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
             <div className="flex justify-center items-center order-1 mt-3">
               <img
-                src={mace01}
-                alt="Mace Logo"
+                src={microsoft}
+                alt="Microsoft Logo"
                 className="max-w-full h-auto w-20 sm:w-28 md:w-32"
                 loading="lazy"
               />
             </div>
             <div className="flex justify-center items-center order-2 mt-3">
               <img
-                src={mace02}
-                alt="Ms Amlin"
+                src={sonicWall}
+                alt="SonicWall Logo"
                 className="max-w-full h-auto w-24 sm:w-28 md:w-32"
                 loading="lazy"
               />
             </div>
             <div className="col-span-2 md:col-span-1 flex justify-center items-center order-3">
               <img
-                src={mace03}
-                alt="AstraZeneca"
+                src={vmware}
+                alt="VMware Logo"
                 className="max-w-full h-auto w-24 sm:w-28 md:w-40"
                 loading="lazy"
               />
             </div>
             <div className="flex justify-center items-center order-4 md:order-3">
               <img
-                src={mace04}
-                alt="Inmarsat"
+                src={fortinet}
+                alt="Fortinet Logo"
                 className="max-w-full h-auto w-24 sm:w-28 md:w-40"
                 loading="lazy"
               />
             </div>
             <div className="flex justify-center items-center order-5 md:order-4 mt-3">
               <img
-                src={mace05}
-                alt="Rics"
+                src={apple}
+                alt="Apple Logo"
                 className="max-w-full h-auto w-24 sm:w-28 md:w-32"
                 loading="lazy"
               />
@@ -468,7 +469,7 @@ function Homepage() {
                 alt="Telephony"
                 className="absolute bottom-0 right-[-20px] w-[180px] h-[180px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"
                 loading="lazy"
-              />
+              />  
             </div>
           </div>
         </div>
@@ -544,62 +545,62 @@ function Homepage() {
 {/* client logos */}
       {/* 1 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300">
-        <img loading="lazy" src={maceImg} alt="Mace" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={dellEmc} alt="dellEmc" className="h-10 sm:h-12 md:h-20 max-w-[170px] w-full object-contain" />
       </div>
 
       {/* 2 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b sm:border-r">
-        <img loading="lazy" src={mundiPharmaImg} alt="Mundi Pharma" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={epson} alt="epson" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 3 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300 sm:border-r-0">
-        <img loading="lazy" src={cbreImg} alt="CBRE" className="h-12 sm:h-12 md:h-20 max-w-[120px] w-full object-contain" />
+        <img loading="lazy" src={apc} alt="apc" className="h-12 sm:h-12 md:h-20 max-w-[120px] w-full object-contain" />
       </div>
 
       {/* 4 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b lg:border-l lg:border-r-0 border-gray-300 sm:border-r">
-        <img loading="lazy" src={astraZenecaImg} alt="Astrazeneca" className="h-8 sm:h-12 md:h-20 max-w-[170px] w-full object-contain" />
+        <img loading="lazy" src={acronis} alt="acronis" className="h-8 sm:h-12 md:h-20 max-w-[170px] w-full object-contain" />
       </div>
 
       {/* 5 */}
       <div className="flex items-center justify-center p-10 sm:p-8 lg:p-10 border-b border-r border-gray-300">
-        <img loading="lazy" src={msAmlinImg} alt="MS Amlin" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={fujitsu} alt="fujitsu" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 6 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b lg:border-r border-gray-300">
-        <img loading="lazy" src={ricsImg} alt="RICS" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={avaya} alt="avaya" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 7 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-gray-300 sm:border-r-0">
-        <img loading="lazy" src={moneyPensionImg} alt="Money Service" className="h-16 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={yealink} alt="yealink" className="h-16 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 8 */}
       <div className="flex items-center justify-center p-8 border-b sm:border-r border-l sm:p-8 lg:p-10 md:border-b border-gray-300 lg:border-r-0">
-        <img loading="lazy" src={vivoEnergyImg} alt="Vivo Energy" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={yeastar} alt="yeastar" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 9 */}
       <div className="flex items-center justify-center p-8 sm:border-r-0 sm:p-8 lg:p-10 border-r md:border-l border-b md:border-b sm:border-l-0 sm:border-b lg:border-r md:border-r-0 lg:border-b-0 lg:border-l-0">
-        <img loading="lazy" src={impellamImg} alt="Impellam" className="h-16 sm:h-16 md:h-20 max-w-[150px] w-full object-contain" />
+        <img loading="lazy" src={suprema} alt="suprema" className="h-16 sm:h-16 md:h-20 max-w-[150px] w-full object-contain" />
       </div>
 
       {/* 10 */}
       <div className="flex items-center justify-center p-8 border-b sm:border-b-0 sm:border-r sm:p-8 lg:p-10">
-        <img loading="lazy" src={costaCoffeeImg} alt="Costa" className="h-12 sm:h-16 md:h-20 max-w-[130px] w-full object-contain" />
+        <img loading="lazy" src={dlink} alt="dlink" className="h-12 sm:h-16 md:h-20 max-w-[130px] w-full object-contain" />
       </div>
 
       {/* 11 */}
       <div className="flex items-center justify-center p-8 sm:p-8  lg:p-10 border-r border-gray-300 sm:border-r-0">
-        <img loading="lazy" src={quilterInvesterImg} alt="Quilter" className="h-16 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={origin} alt="origin" className="h-16 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 12 */}
       <div className="flex items-center justify-center p-8 border-l sm:p-8 lg:p-10">
-        <img loading="lazy" src={babcockImg} alt="Babcock" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={samsung} alt="samsung" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
     </div>

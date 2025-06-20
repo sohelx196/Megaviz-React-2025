@@ -6,4 +6,4 @@ import router from './router.jsx'
 
 createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
- );
+);

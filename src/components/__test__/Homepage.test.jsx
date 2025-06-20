@@ -161,7 +161,7 @@ describe("HomePage Testing" , ()=>{
       //  expect(mace).toHaveAttribute("loading" , "lazy");
       //  expect(mace).toHaveAttribute("src" , expect.stringContaining("mace"));
 
-      //  const mundiPharma = screen.getByAltText("Mundi Pharma");
+      //  const mundiPharma = screen.getByAltText("Mudndi Pharma");
       //  expect(mundiPharma).toBeInTheDocument();
       //  expect(mundiPharma).toHaveClass("h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain");
       //  expect(mundiPharma).toHaveAttribute("loading" , "lazy");
@@ -171,7 +171,7 @@ describe("HomePage Testing" , ()=>{
       
       // Meet Our client end
 
-
+       
 
   })
 
