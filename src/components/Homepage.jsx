@@ -8,17 +8,18 @@ import heroBgTop from "../assets/images/main_Img/heroBgTop.png";
 import heroBgBottom from "../assets/images/main_Img/heroBgBottom.png";
 import arrowIcon from "../assets/icons/arrorw.png";
 
-import microsoft from "../assets/images/microsoft.png";
-import sonicWall from "../assets/images/sonicWall.png";
-import vmware from "../assets/images/vmware.png";
-import fortinet from "../assets/images/fortinet.png";
-import apple from "../assets/images/apple.png";
+// import microsoft from "../assets/images/microsoft.png";
+// import sonicWall from "../assets/images/sonicWall.png";
+// import vmware from "../assets/images/vmware.png";
+// import fortinet from "../assets/images/fortinet.png";
+// import apple from "../assets/images/apple.png";
 
 import growthIcon from "../assets/icons/growth.png";
 import ideaIcon from "../assets/icons/idea.png";
 import syncIcon from "../assets/icons/sync.png";
 import meetingImg from "../assets/images/main_Img/meeting01.png";
 
+// service cards images
 import card01 from "../assets/images/cards_img/homepageCards/card01.png";
 import card02 from "../assets/images/cards_img/homepageCards/card02.png";
 import card03 from "../assets/images/cards_img/homepageCards/card03.png";
@@ -28,19 +29,47 @@ import card06 from "../assets/images/cards_img/homepageCards/card06.png";
 import card07 from "../assets/images/cards_img/homepageCards/card07.png";
 import card08 from "../assets/images/cards_img/homepageCards/card08.png";
 
+// strategic partner images
+import dellEmc from "../assets/images/strategicImages/dellEmc.png";
+import epson from "../assets/images/strategicImages/epson.png";
+import apc from "../assets/images/strategicImages/apc.png";
+import acronis from "../assets/images/strategicImages/acronis.png";
+import fujitsu from "../assets/images/strategicImages/fujitsu.png";
+import avaya from "../assets/images/strategicImages/avaya.png";
+import yealink from "../assets/images/strategicImages/yealink.png";
+import yeastar from "../assets/images/strategicImages/yeastar.png";
+import suprema from "../assets/images/strategicImages/suprema.png";
+import dlink from "../assets/images/strategicImages/dlink.png";
+import origin from "../assets/images/strategicImages/origin.png";
+import samsung from "../assets/images/strategicImages/samsung.png";
+import cisco from "../assets/images/strategicImages/cisco.png";
+import sonicwall from "../assets/images/strategicImages/sonicWall.png";
+import fortinet from "../assets/images/strategicImages/fortinet.png";
+import vembu from "../assets/images/strategicImages/vembu.png";
+
+
 // Meet Our client images
-import dellEmc from "../assets/images/OurClient/dellEmc.png";
-import epson from "../assets/images/OurClient/epson.png";
-import apc from "../assets/images/OurClient/apc.png";
-import acronis from "../assets/images/OurClient/acronis.png";
-import fujitsu from "../assets/images/OurClient/fujitsu.png";
-import avaya from "../assets/images/OurClient/avaya.png";
-import yealink from "../assets/images/OurClient/yealink.png";
-import yeastar from "../assets/images/OurClient/yeastar.png";
-import suprema from "../assets/images/OurClient/suprema.png";
-import dlink from "../assets/images/OurClient/dlink.png";
-import origin from "../assets/images/OurClient/origin.png";
-import samsung from "../assets/images/OurClient/samsung.png";
+import govOfDubai from '../assets/images/OurClient/govOfDubai.png';
+import dubaiMuniciplity from '../assets/images/OurClient/dubaiMunicipality.png';
+import dubaiCustoms from '../assets/images/OurClient/dubaiCustoms.png';
+import dubaiPolice from '../assets/images/OurClient/dubaiPolice.png';
+import emarine from '../assets/images/OurClient/e-marine.png';
+import brightLerners from '../assets/images/OurClient/brightLerners.png';
+import dubaiEconomy from '../assets/images/OurClient/dubaiEconomy.png';
+import dubaiSme from '../assets/images/OurClient/dubaiSme.png';
+import ega from '../assets/images/OurClient/ega.png';
+import emiratesInsurance from '../assets/images/OurClient/emiratesInsurance.png';
+import electronicGovAuthority from '../assets/images/OurClient/electronicGovAuthority.png';
+import dubaiWomenEstablish from '../assets/images/OurClient/dubaiWomenEstablish.png';
+import zulekhaHospital from '../assets/images/OurClient/zulekhaHospital.png';
+import dtc from '../assets/images/OurClient/dtc.png';
+import dubaiSouth from '../assets/images/OurClient/dubaiSouth.png';
+import luxuryCarts from '../assets/images/OurClient/luxuryCarts.png';
+
+
+
+
+
 
 import meetingImg2 from "../assets/images/main_Img/meeting02.png";
 
@@ -108,52 +137,106 @@ function Homepage() {
       {/* hero section end */}
 
       {/* Top Clients Section */}
-      <section className="bg-white py-20 overflow-x-hidden">
-        <div className="container mx-auto text-center px-4">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-            <div className="flex justify-center items-center order-1">
-              <img
-                src={microsoft}
-                alt="Microsoft Logo"
-                className="max-w-full h-auto w-24 sm:w-28 md:w-40"
-                loading="lazy"
-              />
-            </div>
-            <div className="flex justify-center items-center order-2 mt-3">
-              <img
-                src={sonicWall}
-                alt="SonicWall Logo"
-                className="max-w-full h-auto w-24 sm:w-28 md:w-40"
-                loading="lazy"
-              />
-            </div>
-            <div className="col-span-2 md:col-span-1 flex justify-center items-center order-3">
-              <img
-                src={vmware}
-                alt="VMware Logo"
-                className="max-w-full h-auto w-20 sm:w-28 md:w-36"
-                loading="lazy"
-              />
-            </div>
-            <div className="flex justify-center items-center order-4 md:order-3">
-              <img
-                src={fortinet}
-                alt="Fortinet Logo"
-                className="max-w-full h-auto w-24 sm:w-28 md:w-48"
-                loading="lazy"
-              />
-            </div>
-            <div className="flex justify-center items-center order-5 md:order-4 ">
-              <img
-                src={apple}
-                alt="Apple Logo"
-                className="max-w-full h-auto w-20 sm:w-28 md:w-28"
-                loading="lazy"
-              />
-            </div>
-          </div>
+    <section className="bg-white py-20 px-4 lg:px-24">
+        {/* Heading Section */}
+        <div className="text-center mb-12 px-4">
+          <h2 className="font-cabin text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F2B59]">
+            Meet Our <span className="text-red-600 ">Strategic Partner</span>
+          </h2>
+
+          {/* <p className="font-cabin text-[#696969] mt-4 text-base sm:text-lg font-normal">
+            We have earned the trust of 100's of customers,
+            <span className="block">including these fine companies</span>
+          </p> */}
+
         </div>
-      </section>
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-0">
+
+{/* client logos */}
+      {/* 1 */}
+      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300">
+        <img loading="lazy" src={dellEmc} alt="dellEmc" className="h-16 sm:h-16 md:h-20 max-w-[180px] w-full object-contain" />
+      </div>
+
+      {/* 2 */}
+      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b sm:border-r">
+        <img loading="lazy" src={epson} alt="epson" className="h-12 sm:h-16 md:h-20 max-w-[130px] w-full object-contain" />
+      </div>
+
+      {/* 3 */}
+      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300 sm:border-r-0">
+        <img loading="lazy" src={apc} alt="apc" className="h-12 sm:h-12 md:h-20 max-w-[120px] w-full object-contain" />
+      </div>
+
+      {/* 4 */}
+      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b lg:border-l lg:border-r-0 border-gray-300 sm:border-r">
+        <img loading="lazy" src={acronis} alt="acronis" className="h-12 sm:h-16 md:h-24 max-w-[170px] w-full object-contain" />
+      </div>
+
+      {/* 5 */}
+      <div className="flex items-center justify-center p-10 sm:p-8 lg:p-10 border-b border-r border-gray-300">
+        <img loading="lazy" src={fujitsu} alt="fujitsu" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
+      </div>
+
+      {/* 6 */}
+      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b lg:border-r border-gray-300">
+        <img loading="lazy" src={avaya} alt="avaya" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
+      </div>
+
+      {/* 7 */}
+      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-gray-300 sm:border-r-0">
+        <img loading="lazy" src={yealink} alt="yealink" className="h-12 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+      </div>
+
+      {/* 8 */}
+      <div className="flex items-center justify-center p-8 border-b sm:border-r border-l sm:p-8 lg:p-10 md:border-b border-gray-300 lg:border-r-0">
+        <img loading="lazy" src={yeastar} alt="yeastar" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+      </div>
+
+      {/* 9 */}
+      <div className="flex items-center justify-center p-8 sm:border-r-0 sm:p-8 lg:p-10 border-r md:border-l border-b md:border-b sm:border-l-0 sm:border-b lg:border-r md:border-r-0 lg:border-b lg:border-l-0 ">
+        <img loading="lazy" src={suprema} alt="suprema" className="h-12 sm:h-16 md:h-20 max-w-[150px] w-full object-contain" />
+      </div>
+
+      {/* 10 */}
+      <div className="flex items-center justify-center p-8 lg:border-b border-b sm:border-r sm:p-8 lg:p-10">
+        <img loading="lazy" src={dlink} alt="dlink" className="h-12 sm:h-16 md:h-20 max-w-[130px] w-full object-contain" />
+      </div>
+
+      {/* 11 */}
+      <div className="flex items-center justify-center p-8 sm:p-8  lg:p-10 border-b  border-gray-300 sm:border-r-0">
+        <img loading="lazy" src={origin} alt="origin" className="h-16 sm:h-16 md:h-20 max-w-[180px] w-full object-contain" />
+      </div>
+
+      {/* 12 */}
+      <div className="flex items-center justify-center lg:border-b p-8 border-l sm:p-8 lg:p-10 border-b">
+        <img loading="lazy" src={samsung} alt="samsung" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+      </div>
+
+     {/* 13 */}
+    <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 lg:border-b-0  border-r border-b  border-gray-300">
+      <img loading="lazy" src={cisco} alt="cisco" className="h-12 sm:h-16 md:h-20 max-w-[120px] w-full object-contain" />
+    </div>
+
+    {/* 14 */}
+    <div className="flex items-center justify-center p-8 lg:border-b-0 border-b sm:p-8 lg:p-10  sm:border-r">
+      <img loading="lazy" src={sonicwall} alt="sonicwall" className="h-14 sm:h-16 md:h-28 max-w-[150px] w-full object-contain" />
+    </div>
+
+    {/* 15 */}
+    <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10  border-r border-gray-300 sm:border-r-0 md:border-b lg:border-b-0">
+      <img loading="lazy" src={fortinet} alt="fortinet" className="h-14 sm:h-16 md:h-20 max-w-[170px] w-full object-contain" />
+    </div>
+
+    {/* 16 */}
+    <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10  lg:border-l lg:border-r-0 border-gray-300 sm:border-r">
+      <img loading="lazy" src={vembu} alt="vembu" className="h-14 sm:h-16 md:h-20 max-w-[180px] w-full object-contain" />
+    </div>
+
+    </div>
+</section>
+       {/* top clients end */}
+
 
       {/* Company Facts Section */}
       <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
@@ -476,6 +559,7 @@ function Homepage() {
       </section>
       {/* service serction end */}
 
+
       {/* Why choose us start */}
 
       <section className="bg-white py-16 px-4 relative lg:ml-20">
@@ -524,7 +608,6 @@ function Homepage() {
       </section>
 
       {/* Why choose us end */}
-
       
 
       {/* Meet Our Client Start */}
@@ -545,68 +628,88 @@ function Homepage() {
 {/* client logos */}
       {/* 1 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300">
-        <img loading="lazy" src={dellEmc} alt="dellEmc" className="h-16 sm:h-16 md:h-20 max-w-[180px] w-full object-contain" />
+        <img loading="lazy" src={govOfDubai} alt="govOfDubai" className="h-20  sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 2 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b sm:border-r">
-        <img loading="lazy" src={epson} alt="epson" className="h-12 sm:h-16 md:h-20 max-w-[130px] w-full object-contain" />
+        <img loading="lazy" src={dubaiMuniciplity} alt="dubaiMuniciplity" className="h-20 sm:h-16 md:h-28 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 3 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300 sm:border-r-0">
-        <img loading="lazy" src={apc} alt="apc" className="h-12 sm:h-12 md:h-20 max-w-[120px] w-full object-contain" />
+        <img loading="lazy" src={dubaiCustoms} alt="dubaiCustoms" className="h-20 sm:h-12 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 4 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b lg:border-l lg:border-r-0 border-gray-300 sm:border-r">
-        <img loading="lazy" src={acronis} alt="acronis" className="h-12 sm:h-16 md:h-24 max-w-[170px] w-full object-contain" />
+        <img loading="lazy" src={dubaiPolice} alt="dubaiPolice" className="h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 5 */}
       <div className="flex items-center justify-center p-10 sm:p-8 lg:p-10 border-b border-r border-gray-300">
-        <img loading="lazy" src={fujitsu} alt="fujitsu" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={emarine} alt="emarine" className="h-20 sm:h-12 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 6 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b lg:border-r border-gray-300">
-        <img loading="lazy" src={avaya} alt="avaya" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={brightLerners} alt="brightLerners" className="h-20 sm:h-12 md:h-28 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 7 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-gray-300 sm:border-r-0">
-        <img loading="lazy" src={yealink} alt="yealink" className="h-12 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={dubaiEconomy} alt="dubaiEconomy" className="h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 8 */}
       <div className="flex items-center justify-center p-8 border-b sm:border-r border-l sm:p-8 lg:p-10 md:border-b border-gray-300 lg:border-r-0">
-        <img loading="lazy" src={yeastar} alt="yeastar" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={dubaiSme} alt="dubaiSme" className="h-20 sm:h-16 md:h-28 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 9 */}
-      <div className="flex items-center justify-center p-8 sm:border-r-0 sm:p-8 lg:p-10 border-r md:border-l border-b md:border-b sm:border-l-0 sm:border-b lg:border-r md:border-r-0 lg:border-b-0 lg:border-l-0">
-        <img loading="lazy" src={suprema} alt="suprema" className="h-12 sm:h-16 md:h-20 max-w-[150px] w-full object-contain" />
+      <div className="flex items-center justify-center p-8 sm:border-r-0 sm:p-8 lg:p-10 border-r md:border-l border-b md:border-b sm:border-l-0 sm:border-b lg:border-r md:border-r-0 lg:border-b lg:border-l-0">
+        <img loading="lazy" src={ega} alt="ega" className="h-16 sm:h-16 md:h-20 max-w-[150px] w-full object-contain" />
       </div>
 
       {/* 10 */}
-      <div className="flex items-center justify-center p-8 border-b sm:border-b-0 sm:border-r sm:p-8 lg:p-10">
-        <img loading="lazy" src={dlink} alt="dlink" className="h-12 sm:h-16 md:h-20 max-w-[130px] w-full object-contain" />
+      <div className="flex items-center justify-center p-8 border-b sm:border-b-0 sm:border-r lg:border-b sm:p-8 lg:p-10 md:border-b ">
+        <img loading="lazy" src={emiratesInsurance} alt="emiratesInsurance" className="h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 11 */}
-      <div className="flex items-center justify-center p-8 sm:p-8  lg:p-10 border-r border-gray-300 sm:border-r-0">
-        <img loading="lazy" src={origin} alt="origin" className="h-16 sm:h-16 md:h-20 max-w-[180px] w-full object-contain" />
+      <div className="flex items-center justify-center p-8 sm:p-8  lg:p-10  lg:border-b border-gray-300 border-b">
+        <img loading="lazy" src={electronicGovAuthority} alt="Electronic Goverment Authority" className="h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 12 */}
-      <div className="flex items-center justify-center p-8 border-l sm:p-8 lg:p-10">
-        <img loading="lazy" src={samsung} alt="samsung" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+      <div className="flex items-center justify-center p-8 border-l sm:p-8 lg:p-10 border-b">
+        <img loading="lazy" src={dubaiWomenEstablish} alt="dubaiWomenEstablish" className="h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
+
+      {/* 13 */}
+      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 lg:border-b-0 border-b">
+        <img loading="lazy" src={zulekhaHospital} alt="zulekhaHospital" className="h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
+      </div>
+      
+      {/* 14 */}
+      <div className="flex items-center justify-center p-8 border-l lg:border-r border-r-0 sm:p-8 lg:p-10 lg:border-b-0 border-b md:border-r">
+        <img loading="lazy" src={dtc} alt="DTC" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+      </div>
+
+      {/* 15 */}
+      <div className="flex items-center justify-center p-8  sm:p-8 lg:p-10 md:border-b lg:border-b-0 lg:border-r border-r md:border-r-0">
+        <img loading="lazy" src={dubaiSouth} alt="Dubai South" className="h-20 sm:h-16 md:h-20 max-w-[240px] w-full object-contain" />
+      </div>
+
+      {/* 16 */}
+      <div className="flex items-center justify-center p-8 md:border-r sm:p-8 lg:p-10 lg:border-r-0">
+        <img loading="lazy" src={luxuryCarts} alt="Luxury Carts" className="h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
+      </div>  
 
     </div>
       </section>
 
-{/* Meet Our client end */}
+     {/* Meet Our client end */}
 
 
 
