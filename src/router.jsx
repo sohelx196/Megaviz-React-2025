@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import React, { lazy, Suspense } from "react";
 import App from "./App";
+import PageNotFound from "./components/PageNotFound";
 
 
 const Homepage = lazy(() => import("./components/Homepage"));
@@ -84,6 +85,10 @@ const router = createBrowserRouter([
     ], 
   },
 
+  {
+   path:"*",
+   element:<PageNotFound/>
+  }
 
 ]);
 

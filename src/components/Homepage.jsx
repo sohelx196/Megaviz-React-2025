@@ -324,7 +324,7 @@ function Homepage() {
               <span className="">
                 <span className="text-red-600"> IT services </span>worldwide
               </span>
-            </h2>
+            </h2> 
 
             {/* Overlapping Box */}
             <div data-aos="fade-left"  className="border border-gray-400 bg-white shadow-xl rounded-2xl p-10 text-gray-700 mt-6 lg:absolute lg:left-[-110px] lg:w-[550px] z-20">
