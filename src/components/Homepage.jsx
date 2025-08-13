@@ -68,9 +68,6 @@ import luxuryCarts from '../assets/images/OurClient/luxuryCarts.png';
 
 
 
-
-
-
 import meetingImg2 from "../assets/images/main_Img/meeting02.png";
 
 // Testimonial Section
@@ -104,11 +101,11 @@ function Homepage() {
           <h2 className="font-cabin text-gray-500 text-xl sm:text-2xl md:text-[28px] font-medium mb-2">
             Automate. Integrate. Dominate.
           </h2>
-          <h1 className="font-cabin text-[32px] sm:text-[48px] md:text-[63px] font-bold text-[#102E52] leading-tight">
-            Future of
+          <h1 data-aos="fade-left"  className="font-cabin text-[32px] sm:text-[48px] md:text-[63px] font-bold text-[#102E52] leading-tight">
+            Empowering Businesses
           </h1>
-          <h1 className="font-cabin text-[32px] sm:text-[48px] md:text-[63px] font-bold text-red-600 leading-tight mb-4">
-            Modern IT Technology is here
+          <h1 data-aos="fade-right"  className="font-cabin text-[32px] sm:text-[48px] md:text-[63px] font-bold text-red-600 leading-tight mb-4">
+            Through Smart, Scalable IT Solutions
           </h1>
           <p className="font-cabin text-gray-500 text-base sm:text-lg md:text-xl font-normal mb-8 px-2 sm:px-8">
             MegaViz helps enterprises to assess their current IT Infrastructure
@@ -137,7 +134,7 @@ function Homepage() {
       {/* hero section end */}
 
       {/* Top Clients Section */}
-    <section className="bg-white py-20 px-4 lg:px-24">
+       <section className="bg-white py-20 px-4 lg:px-24">
         {/* Heading Section */}
         <div className="text-center mb-12 px-4">
           <h2 className="font-cabin text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F2B59]">
@@ -234,14 +231,14 @@ function Homepage() {
     </div>
 
     </div>
-</section>
+       </section>
        {/* top clients end */}
 
 
       {/* Company Facts Section */}
       <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-center text-center md:text-left gap-12">
-          {/* Heading (Vertically centered on desktop) */}
+          
           <div className="md:w-1/2 md:pl-8 flex h-full items-center">
             <h2 className="font-cabin text-4xl sm:text-5xl font-bold text-[#0F2B59] leading-tight">
               <span className="text-[#B41F1F]">Facts</span> about our{" "}
@@ -259,7 +256,7 @@ function Homepage() {
                 loading="lazy"
               />
               <h3 className="font-cabin text-4xl sm:text-5xl font-bold text-black">
-                35%+
+                53%+
               </h3>
               <p className="font-cabin text-[#C72C28] text-base sm:text-lg font-semibold mt-1">
                 Performance & Productivity Improvement
@@ -274,7 +271,7 @@ function Homepage() {
                 loading="lazy"
               />
               <h3 className="font-cabin text-4xl sm:text-5xl font-bold text-black">
-                60%+
+                70%+
               </h3>
               <p className="font-cabin text-[#C72C28] text-base sm:text-lg font-semibold mt-1">
                 Increase in Digital Adoption
@@ -322,15 +319,15 @@ function Homepage() {
             <p className="font-cabin text-red-600 font-semibold lg:text-xl md:text-lg sm:text-base mb-2 text-center md:text-left">
               About our company
             </p>
-            <h2 className="font-cabin font-bold text-4xl sm:text-5xl text-[#0F2B59] leading-tight mb-4 text-center md:text-left">
-              We're the world's best
-              <span className="block">
-                <span className="text-red-600">IT solutions</span> company
+            <h2 className="font-cabin font-bold text-3xl lg:text-5xl sm:text-4xl text-[#0F2B59]  mb-4 text-center md:text-left">
+             We delivers secure, scalable
+              <span className="">
+                <span className="text-red-600"> IT services </span>worldwide
               </span>
             </h2>
 
             {/* Overlapping Box */}
-            <div className="bg-white shadow-xl rounded-2xl p-10 text-gray-700 mt-6 lg:absolute lg:left-[-110px] lg:w-[550px] z-20">
+            <div data-aos="fade-left"  className="border border-gray-400 bg-white shadow-xl rounded-2xl p-10 text-gray-700 mt-6 lg:absolute lg:left-[-110px] lg:w-[550px] z-20">
               <p className="font-cabin text-base font-normal text-[#696969] mb-4">
                 At Megaviz, we believe in fostering a work environment that
                 feels more like family. A Culture of Belonging means that every
@@ -587,7 +584,7 @@ function Homepage() {
             </h2>
 
             {/* Overlapping Box */}
-            <div className="bg-white shadow-xl rounded-2xl p-10 text-gray-700 mt-10 lg:absolute lg:left-[-110px] lg:w-[550px] z-20">
+            <div data-aos="fade-left" className="border border-gray-400 bg-white shadow-xl rounded-2xl p-10 text-gray-700 mt-10 lg:absolute lg:left-[-110px] lg:w-[550px] z-20">
               <h3 className="font-cabin text-2xl font-semibold mb-4 text-[#000000]">
                 Why Choose us?
               </h3>
@@ -611,7 +608,7 @@ function Homepage() {
       
 
       {/* Meet Our Client Start */}
-
+            
       <section className="bg-white py-20 px-4 lg:px-24">
         {/* Heading Section */}
         <div className="text-center mb-12 px-4">

@@ -10,18 +10,18 @@ const testimonials = [
     text: "As a business with complex IT requirements we find Mega Vision Computers Trading LLC helpful and on call 24/7. They have often fixed problems late at night as we cannot close our systems until late because of our home workers. Offering great value and advice with many money saving applications, so important in this day and age.",
     avatar: person01,
   },
-  {
-    id: 2,
-    name: "Mr. Ali Asgar",
-    text: "As a business with complex IT requirements we find Mega Vision Computers Trading LLC helpful and on call 24/7. They have often fixed problems late at night as we cannot close our systems until late because of our home workers. Offering great value and advice with many money saving applications, so important in this day and age.",
-    avatar: person01,
-  },
-  {
-    id: 3,
-    name: "Mr. Ali Asgar",
-    text: "As a business with complex IT requirements we find Mega Vision Computers Trading LLC helpful and on call 24/7. They have often fixed problems late at night as we cannot close our systems until late because of our home workers. Offering great value and advice with many money saving applications, so important in this day and age.",
-    avatar: person01,
-  },
+  // {
+  //   id: 2,
+  //   name: "Mr. Ali Asgar",
+  //   text: "As a business with complex IT requirements we find Mega Vision Computers Trading LLC helpful and on call 24/7. They have often fixed problems late at night as we cannot close our systems until late because of our home workers. Offering great value and advice with many money saving applications, so important in this day and age.",
+  //   avatar: person01,
+  // },
+  // {
+  //   id: 3,
+  //   name: "Mr. Ali Asgar",
+  //   text: "As a business with complex IT requirements we find Mega Vision Computers Trading LLC helpful and on call 24/7. They have often fixed problems late at night as we cannot close our systems until late because of our home workers. Offering great value and advice with many money saving applications, so important in this day and age.",
+  //   avatar: person01,
+  // },
 ];
 
 function Testimonials() {
@@ -64,7 +64,7 @@ function Testimonials() {
 
       {/* Mobile View */}
       <div className="sm:hidden" {...swipeHandlers}>
-        <div className="w-full max-w-[90%] mx-auto rounded-xl border border-gray-200 shadow-sm p-6 transition hover:shadow-black hover:shadow-md">
+        <div className="w-full max-w-[90%] mx-auto rounded-xl border border-gray-400 shadow-sm p-6 transition hover:shadow-black hover:shadow-md">
           <div className="flex justify-start mb-4">
             {[...Array(5)].map((_, i) => (
               <img
@@ -93,7 +93,7 @@ function Testimonials() {
         </div>
 
         {/* Dots */}
-        <div className="flex justify-center mt-6 space-x-2">
+        {/* <div className="flex justify-center mt-6 space-x-2">
           {testimonials.map((_, index) => (
             <button
               key={index}
@@ -103,7 +103,9 @@ function Testimonials() {
               }`}
             ></button>
           ))}
-        </div>
+        </div> */}
+
+
       </div>
 
       {/* Desktop View */}
@@ -112,7 +114,7 @@ function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="w-[300px] rounded-xl border border-gray-200 shadow-sm p-6 flex flex-col justify-between transition hover:shadow-black hover:shadow-md"
+              className="w-[300px] rounded-xl border border-gray-400 shadow-sm p-6 flex flex-col justify-between transition hover:shadow-black hover:shadow-md"
             >
               <div>
                 <div className="flex justify-start mb-4">
@@ -193,6 +195,7 @@ function Testimonials() {
               ></div>
             ))}
           </div>
+
         </div>
       )}
     </section>

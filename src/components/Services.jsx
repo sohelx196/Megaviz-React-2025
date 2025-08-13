@@ -1,4 +1,8 @@
 import React from "react";
+import { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import { Link } from "react-router-dom";
 
@@ -15,6 +19,11 @@ import itSupport from "../assets/images/OurSollution/itSupport.png";
 import systemMonitoring from "../assets/images/OurSollution/systemMonitering.png";
 
 function Services() {
+
+  useEffect(() => {
+      AOS.init({ duration: 1700, once: true });
+    }, []);
+  
   return (
     <>
       {/* megaviz service start */}
@@ -72,7 +81,7 @@ function Services() {
 
       {/* Innovative It solution start */}
 
-      <section className="my-14 px-4 md:px-8 lg:px-16">
+      <section className=" px-4 md:px-8 lg:px-16">
         <div className="text-center mb-10">
           <div className="py-6">
             <p className="font-cabin text-[#E21F36] font-semibold text-base md:text-lg lg:text-xl">
@@ -85,8 +94,12 @@ function Services() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-6 items-stretch">
-          {/* Left Column */}
+
+
+
+{/* old cards starts  */}
+       {/* <div className="flex flex-col lg:flex-row gap-6 items-stretch">
+         
           <div className="flex flex-col gap-6 lg:w-[300px] w-full">
             <Link
               to="/itConsultancy"
@@ -133,7 +146,7 @@ function Services() {
             </Link>
           </div>
 
-          {/* Right Column */}
+       
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-1">
             <Link
               to="/infrastructure"
@@ -268,10 +281,221 @@ function Services() {
               </div>
             </Link>
           </div>
+       </div> */}
+{/* old cards end  */}
+
+
+
+
+
+{/* new cards design start */}
+     <section className="bg-white lg:py-10  py-5 px-4">
+        <div className="max-w-7xl mx-auto text-center">
+          
+
+          {/* Cards Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            {/* Card 1 - it consultancy*/}
+            <Link to="/itConsultancy">
+            <div
+              data-aos="fade-up"
+              className=" relative group bg-[#FEE6DC] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer"
+            >
+              <div className="z-10 text-left pr-20">
+                <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
+                 IT <span className="">Consultancy</span>
+                </h3>
+                <p className="font-cabin text-[14px] text-[#696969] font-normal leading-snug">
+                   MegaViz’s UC&C platform enables you to modernize communication by integrating new technologies and social media like Facebook, LinkedIn, and Twitter into a unified system.
+                </p>
+              </div>
+              <img
+                src={itConsultancy}     
+                alt="IT Consultancy"
+                className=" absolute -bottom-5 right-[-18px] w-[150px] h-[150px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"
+                loading="lazy"
+              />
+            </div>
+            </Link>
+
+            {/* Card 2 - cctv surveillance */}
+            <Link to="/cctv">
+            <div  
+              data-aos="fade-up"
+              className="group relative bg-[#DFF7EA] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer"
+            >
+              <div className="z-10 text-left pr-20">
+                <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
+                  CCTV <span className="">Surveillance</span>
+                </h3>
+
+                <p className="font-cabin text-[14px] text-[#696969] font-normal leading-snug">
+                  MegaViz secures your branches without guards, reducing costs with advanced CCTV systems that detect abnormal events and behaviors in real time.
+                </p>
+              </div>
+
+              <img
+                src={cctv}
+                alt="Infrastructure & Cloud"
+                className="absolute bottom-0 right-[-20px] w-[140px] h-[140px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"
+                loading="lazy"
+              />
+            </div>
+            </Link>
+
+            {/* Card 3 - infrastructure & cloud */}
+            <Link  to="/infrastructure">
+            <div
+              data-aos="fade-up"
+              className="group relative bg-[#FEEFC1] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer"
+            >
+              <div className="z-10 text-left pr-24">
+                <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
+                  Infrastructure <span className="block">& Cloud</span>
+                </h3>
+                <p className="font-cabin text-[14px] text-[#696969] font-normal leading-snug">
+                 Megaviz can help clients plan, design, implement and operate real-time networking, wireless and infrastructures.
+                </p>
+              </div>
+              <img
+                src={infraCloud}
+                alt="Cyber Security Solutions"
+                className="absolute bottom-0 right-[-20px] w-[140px] h-[140px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"
+                loading="lazy"
+              />
+            </div>
+            </Link>
+
+            {/* Card 4 - cyber security solution */}
+            <Link to="/cyberSecurity">
+            <div
+              data-aos="fade-up"
+              className="group relative bg-[#EBE2F2] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer"
+            >
+              <div className="z-10 text-left pr-20">
+                <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
+                  Cyber Security <span className="block">Solutions</span>
+                </h3> 
+                <p className="font-cabin text-[14px] text-[#696969] font-normal leading-snug">
+                  MegaViz’s expert security team uses decades of experience and industry knowledge to protect your business and minimize risks.
+                </p>
+              </div>
+              <img
+                src={cyberSecurity}
+                alt="System Monitoring"
+                className="absolute bottom-0 right-[-20px] w-[130px] h-[130px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"
+                loading="lazy"
+              />
+            </div>
+            </Link>
+
+            {/* Card 5 -  backup solution*/}
+            <Link to="/backupSolution">
+            <div
+              data-aos="fade-up"
+              className="group relative bg-[#FEEFC1] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer"
+            >
+              <div className="z-10 text-left pr-24">
+                <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2 whitespace-nowrap">
+                  Backup Solutions
+                </h3>
+                <p className="font-cabin text-[14px] text-[#696969] font-normal leading-snug">
+                MegaViz technicians build service offerings around the best-in-class server technologies, then combine hardware, software and services to create a platform a business requires.
+                </p>
+              </div>
+              <img
+                src={backupSolution}
+                alt="Backup Solutions"
+                className="absolute bottom-0 right-[-20px] w-[140px] h-[140px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"
+                loading="lazy"
+              />
+            </div>
+            </Link>
+
+            {/* Card 6 - telephony*/}
+            <Link to="/telephony">
+            <div
+              data-aos="fade-up"
+              className="group relative bg-[#EBE2F2] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer"
+            >
+              <div className="z-10 text-left pr-24">
+                <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
+                  Telephony
+                </h3>
+                <p className="font-cabin text-[14px] text-[#696969] font-normal leading-snug">
+                 MegaViz’s proven experience and in-depth industry knowledge will play a key role in delivering excellent telecom solutions and business communication services across the UAE.
+                </p>
+              </div>
+              <img
+                src={telephony}
+                alt="E-Commerce"
+                className="absolute bottom-0 right-[-18px] w-[120px] h-[120px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"
+                loading="lazy"
+              />
+            </div>
+            </Link>
+
+            {/* Card 7 - it support */}
+            <Link to="/itSupport">
+            <div
+              data-aos="fade-up"
+              className="group relative bg-[#DFF7EA] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer"
+            >
+              <div className="z-10 text-left pr-24">
+                <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
+                  IT Support
+                </h3>
+                <p className="font-cabin text-[14px] text-[#696969] font-normal leading-snug">
+                  If your growing business can’t justify a full IT department, MegaViz offers cost-effective help desk support with flexible service level agreements.
+                </p>
+              </div>
+              <img
+                src={itSupport}
+                alt="IT Support"
+                className="absolute bottom-0 right-[-20px] w-[140px] h-[140px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"
+                loading="lazy"
+              />
+            </div>
+            </Link>
+
+            {/* Card 8 - system monitoring*/}
+            <Link to="/systemMonitoring">
+            <div
+              data-aos="fade-up"
+              className="group relative bg-[#FEE6DC] rounded-2xl p-5 w-full h-[240px] flex flex-col justify-between overflow-hidden hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer"
+            >
+              <div className="z-10 text-left pr-20">
+                <h3 className="font-poppins text-[22px] leading-tight font-semibold text-[#1E1E1E] mb-2">
+                System Monitoring
+                </h3>
+                <p className="font-cabin text-[14px] text-[#696969] font-normal">
+                 MegaViz’s System Monitoring empowers employees to work more efficiently, respond faster, and stay productive from anywhere, anytime.
+                </p>
+              </div>  
+              <img
+                src={systemMonitoring}
+                alt="Telephony"
+                className="absolute bottom-0 right-[-20px] w-[130px] h-[130px] object-contain z-0 transition-transform duration-500 ease-in-out group-hover:translate-y-[-5px]"
+                loading="lazy"
+              />  
+            </div>
+            </Link>
+
+          </div>
         </div>
+      </section>
+{/* new cards design end */}
+
+
       </section>
 
       {/* Innovative It solution end */}
+      
+
+
+
+
     </>
   );
 }

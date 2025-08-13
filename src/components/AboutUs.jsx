@@ -29,9 +29,8 @@ function AboutUs() {
             Welcome To <span className="text-[#C72C28]">MegaViz</span>
           </h1>
           <p className="font-cabin text-[#696969] mt-4 max-w-3xl mx-auto text-sm sm:text-base">
-            MegaViz helps enterprises to assess their current IT Infrastructure
-            and evaluates whether an upgrade is required to justify their
-            business needs.
+            Founded in 2010, MegaViz delivers scalable and secure IT services globally. We focus on collaboration,
+empathy, and long-term client success. Our culture promotes learning, inclusion, and excellence.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-5">

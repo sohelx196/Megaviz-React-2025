@@ -256,9 +256,9 @@ function ContactUs() {
             </p>
             <h2 className="font-cabin text-[#102E52] text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug tracking-wide">
               <span className="block lg:mb-2 md:mb-2 sm:mb-1 mb-0">
-                We’d Love to Hear
+                Ready to discuss your
               </span>
-              <span className="block">From You.</span>
+              <span className="block">IT needs?</span>
             </h2>
           </div>
 
@@ -269,15 +269,17 @@ function ContactUs() {
               </h4>
               <div className="h-[3px] w-5 bg-black mb-3 mx-auto sm:mx-0"></div>
               <p className="font-inter text-sm sm:text-base font-bold">
-                info@megaviz.co
+               <a href="mailto:info@megaviztech.com">info@megaviztech.com</a>
               </p>
-              <p className="font-inter text-xs sm:text-sm mt-1">
+
+              {/* <p className="font-inter text-xs sm:text-sm mt-1">
                 <span className="block font-normal">Assistance hours:</span>
                 <span className="block font-normal">
                   Monday - Friday 6 am to
                 </span>
                 <span className="font-normal">8 pm EST</span>
-              </p>
+              </p> */}
+
             </div>
             <div>
               <h4 className="font-cabin text-sm sm:text-base text-black font-bold mb-3 sm:mb-5">

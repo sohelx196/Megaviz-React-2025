@@ -152,6 +152,7 @@ describe("HomePage Testing" , ()=>{
       expect(whyChooseUs).toHaveClass("rounded-[30px] w-full h-full max-h-[600px] object-cover");
       expect(whyChooseUs).toHaveAttribute("src" , expect.stringContaining("meeting02"));
 
+      
 
       // Meet Our client Start
 
@@ -174,8 +175,6 @@ describe("HomePage Testing" , ()=>{
        
 
   })
-
-
 
 
 })
