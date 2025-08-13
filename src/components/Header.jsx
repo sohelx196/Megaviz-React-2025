@@ -35,7 +35,7 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link to="" className=" font-poppins nav-link">
+              <Link to="/industries" className=" font-poppins nav-link">
                 <span className="top">Industries</span>
                 <span className="bottom">Industries</span>
               </Link>
@@ -47,19 +47,19 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link to="" className=" font-poppins nav-link">
+              <Link to="/blogs" className=" font-poppins nav-link">
                 <span className="top">Blogs</span>
                 <span className="bottom">Blogs</span>
               </Link>
             </li>
             <li>
-              <Link to="" className=" font-poppins nav-link">
+              <Link to="/caseStudies" className=" font-poppins nav-link">
                 <span className="top">Case Studies</span>
                 <span className="bottom">Case Studies</span>
               </Link>
             </li>
             <li>
-              <Link to="" className=" font-poppins nav-link">
+              <Link to="/career" className=" font-poppins nav-link">
                 <span className="top">Career</span>
                 <span className="bottom">Career</span>
               </Link>

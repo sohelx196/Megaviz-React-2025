@@ -8,7 +8,7 @@ import instagramIcon from "../assets/icons/instagram.png";
 
 function Footer() {
   return (
-    <footer className="bg-white px-6 lg:px-24 py-14 pt-32">
+    <footer className="bg-white px-6 lg:px-24 py-6 pt-32">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-16 lg:gap-24">
         {/* Logo + Description */}
         <div className="w-full lg:max-w-sm text-center lg:text-left">

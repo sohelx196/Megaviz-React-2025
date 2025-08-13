@@ -2,6 +2,10 @@ import { createBrowserRouter } from "react-router-dom";
 import React, { lazy, Suspense } from "react";
 import App from "./App";
 import PageNotFound from "./components/PageNotFound";
+import Industries from "./components/morePages/Industries";
+import Blogs from "./components/morePages/Blogs";
+import CaseStudies from "./components/morePages/CaseStudies";
+import Career from "./components/morePages/Career";
 
 
 const Homepage = lazy(() => import("./components/Homepage"));
@@ -38,6 +42,24 @@ const router = createBrowserRouter([
            path: "aboutUs", 
            element: withSuspense(AboutUs) 
          },
+
+         {
+            path:"industries",
+            element:<Industries/>
+         },
+         {
+           path:"blogs",
+           element:<Blogs/>
+         },
+         {
+           path:"caseStudies",
+           element:<CaseStudies/>
+         },
+         {
+           path:"career",
+           element:<Career/>
+         },
+
         { 
            path: "contactUs",
             element: withSuspense(ContactUs) 
@@ -79,16 +101,18 @@ const router = createBrowserRouter([
             element: withSuspense(SystemMonitoring) 
         },
         
-        
-        
-        
-    ], 
-  },
 
+
+        
+        
   {
    path:"*",
    element:<PageNotFound/>
   }
+
+        
+    ], 
+  },
 
 ]);
 
