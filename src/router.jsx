@@ -1,17 +1,21 @@
 import { createBrowserRouter } from "react-router-dom";
 import React, { lazy, Suspense } from "react";
 import App from "./App";
-import PageNotFound from "./components/PageNotFound";
-import Industries from "./components/morePages/Industries";
-import Blogs from "./components/morePages/Blogs";
-import CaseStudies from "./components/morePages/CaseStudies";
-import Career from "./components/morePages/Career";
+
+
+
+const PageNotFound = lazy(()=>import("./components/PageNotFound"));
 
 
 const Homepage = lazy(() => import("./components/Homepage"));
 const AboutUs = lazy(() => import("./components/AboutUs"));
 const ContactUs = lazy(() => import("./components/ContactUs"));
 const Services = lazy(() => import("./components/Services"));
+const Industries = lazy(()=> import("./components/morePages/Industries"));
+const Blogs = lazy(()=> import("./components/morePages/Blogs"));
+const CaseStudies = lazy(()=>import("./components/morePages/CaseStudies"));
+const Career = lazy(()=>import("./components/morePages/Career"));
+
 
 const ITConsultancy = lazy(() => import("./components/it_Solution/ITConsultancy"));
 const Infrastructure = lazy(() => import("./components/it_Solution/Infrastructure"));
@@ -45,23 +49,24 @@ const router = createBrowserRouter([
 
          {
             path:"industries",
-            element:<Industries/>
+            element:withSuspense(Industries)
          },
          {
            path:"blogs",
-           element:<Blogs/>
+           element:withSuspense(Blogs)
          },
          {
            path:"caseStudies",
-           element:<CaseStudies/>
+           element:withSuspense(CaseStudies)
          },
          {
            path:"career",
-           element:<Career/>
+           element:withSuspense(Career)
          },
 
-        { 
-           path: "contactUs",
+         
+         { 
+            path: "contactUs",
             element: withSuspense(ContactUs) 
          },
         { 
@@ -107,7 +112,7 @@ const router = createBrowserRouter([
         
   {
    path:"*",
-   element:<PageNotFound/>
+   element:withSuspense(PageNotFound)
   }
 
         
