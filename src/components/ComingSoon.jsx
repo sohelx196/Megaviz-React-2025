@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import arrowIcon from '../assets/icons/arrorw.png'; 
-import ComingSoonImg from '../assets/icons/comingSoon.png';
+// import ComingSoonImg from '../assets/icons/comingSoon.png';
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 
-function ComingSoon() {
+function ComingSoon({ComingSoonImg,text1,text2}) {
 
     useEffect(() => {
       AOS.init({ duration: 1700, once: true });
@@ -26,7 +26,7 @@ function ComingSoon() {
 
         {/* Heading */}
         <h1  className="font-cabin font-bold text-3xl sm:text-5xl text-[#0F2B59] leading-tight mb-3">
-         <span data-aos="fade-right" data-aos-duration="1000"  className='text-red-800'>Coming</span> <span data-aos="fade-right" data-aos-duration="5000">Soon!</span>
+         <span data-aos="fade-right" data-aos-duration="1000"  className='text-red-800'>{text1}</span> <span data-aos="fade-right" data-aos-duration="5000">{text2}</span>
         </h1>
 
         {/* Subtext
