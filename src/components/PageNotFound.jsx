@@ -29,7 +29,7 @@ export default function PageNotFound() {
             />
           </button>
         </Link>
-      </div>  
+      </div>   
     </>
   )
 }

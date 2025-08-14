@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import studentImg from "../assets/images/AboutUs/student.png";
 import arrowIcon from "../assets/icons/arrorw.png";
@@ -20,6 +24,12 @@ import ourMission from "../assets/images/AboutUs/ourMission.png";
 import Testimonials from "./Testimonials";
 
 function AboutUs() {
+
+
+   useEffect(() => {
+        AOS.init({ duration: 1700, once: true });
+      }, []);
+
   return (
     <>
       {/* Welcome to megaviz start */}
@@ -50,29 +60,32 @@ empathy, and long-term client success. Our culture promotes learning, inclusion,
 
         <div className="relative hidden sm:flex justify-center items-center px-4 md:px-0">
           <div className="absolute -top-6 left-[30%] flex space-x-3 z-10">
-            <div className="w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
           </div>
 
           <div className="absolute -bottom-6 left-[35%] flex space-x-3 z-10">
-            <div className="w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
           </div>
 
+{/* dot 1st */}
           <div
-            className="hidden lg:block absolute w-6 h-6 top-1/3 left-[18%] -translate-y-1/2 rounded-full shadow-[0px_3px_20px_rgba(0,0,0,0.05)]"
+            className="animate-float hidden lg:block absolute w-6 h-6 top-1/3 left-[18%] -translate-y-1/2 rounded-full shadow-[0px_3px_20px_rgba(0,0,0,0.05)]"
             style={{
               background: "linear-gradient(180deg, #FF8E8E 0%, #F62424 100%)",
             }}
           ></div>
+
+{/* dot 2nd */}
           <div
-            className="hidden lg:block absolute w-6 h-6 -top-[50%] right-[5%] rounded-full shadow-[0px_3px_20px_rgba(0,0,0,0.05)]"
+            className="animate-float hidden lg:block absolute w-6 h-6 -top-[50%] right-[5%] rounded-full shadow-[0px_3px_20px_rgba(0,0,0,0.05)]"
             style={{
               background: "linear-gradient(180deg, #FF8E8E 0%, #F62424 100%)",
             }}
@@ -85,7 +98,7 @@ empathy, and long-term client success. Our culture promotes learning, inclusion,
             loading="lazy"
           />
 
-          <div className="quicksand absolute top-6 left-48 bg-white rounded-xl shadow-lg px-4 py-3 w-auto z-20">
+          <div data-aos="fade-up" className="border  quicksand absolute top-6 left-48 bg-white rounded-xl shadow-lg px-4 py-3 w-auto z-20">
             <div className="font-quicksand flex items-center space-x-2 mb-1">
               <img
                 src={starIcon}
@@ -102,7 +115,7 @@ empathy, and long-term client success. Our culture promotes learning, inclusion,
             </p>
           </div>
 
-          <div className="absolute bottom-6 right-48 bg-white rounded-xl shadow-lg px-4 py-4 w-60 z-20">
+          <div data-aos="fade-up" className="border absolute bottom-6 right-48 bg-white rounded-xl shadow-lg px-4 py-4 w-60 z-20">
             <div className="flex items-center space-x-2 mb-2">
               <img
                 src={personImg}
@@ -122,10 +135,13 @@ empathy, and long-term client success. Our culture promotes learning, inclusion,
               only match but surpass our customer's expectations. “
             </p>
           </div>
+
         </div>
 
-        <div className="flex flex-col items-center space-y-6 px-4 sm:hidden">
-          <div className="quicksand bg-white rounded-xl shadow-lg px-4 py-3 w-full max-w-xs">
+
+        <div data-aos="fade-up"  className="flex flex-col items-center space-y-6 px-4 sm:hidden">
+
+          <div   className="border quicksand bg-white rounded-xl shadow-lg px-4 py-3 w-full max-w-xs">
             <div className="flex items-center space-x-2 mb-1">
               <img
                 src={starIcon}
@@ -143,11 +159,11 @@ empathy, and long-term client success. Our culture promotes learning, inclusion,
           </div>
 
           <div className="flex space-x-2">
-            <div className="w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#377DFF] rounded-full"></div>
           </div>
 
           <img
@@ -158,14 +174,14 @@ empathy, and long-term client success. Our culture promotes learning, inclusion,
           />
 
           <div className="flex space-x-2">
-            <div className="w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
-            <div className="w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
+            <div className="animate-blink w-[5px] h-[5.25px] bg-[#F62424] rounded-full"></div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg px-4 py-4 w-full max-w-xs">
+          <div className="border bg-white rounded-xl shadow-lg px-4 py-4 w-full max-w-xs">
             <div className="flex items-center space-x-2 mb-2">
               <img
                 src={personImg}
@@ -360,7 +376,9 @@ empathy, and long-term client success. Our culture promotes learning, inclusion,
       <section className="px-4 py-10 sm:py-14 lg:py-20 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-5">
           {/* Vision Card */}
-          <div className="bg-[#FEEFC1] rounded-xl p-6 sm:p-8 flex flex-col justify-start items-center shadow-md max-w-md mx-auto hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
+          
+
+          <div className="border border-gray-400 bg-[#FEEFC1] rounded-xl p-6 sm:p-8 flex flex-col justify-start items-center shadow-md max-w-md mx-auto hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
             <div className="w-full text-start">
               <h3 className="font-cabin text-2xl sm:text-3xl md:text-4xl font-bold text-[#323131] mb-4">
                 Our Vision
@@ -384,7 +402,7 @@ empathy, and long-term client success. Our culture promotes learning, inclusion,
           </div>
 
           {/* Mission Card */}
-          <div className="hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#EBE2F2] rounded-xl p-6 sm:p-8 flex flex-col justify-start items-center shadow-md max-w-md mx-auto">
+          <div className="border border-gray-400 hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#EBE2F2] rounded-xl p-6 sm:p-8 flex flex-col justify-start items-center shadow-md max-w-md mx-auto">
             <div className="flex justify-center mb-4 sm:mb-6">
               <img
                 src={ourMission}
@@ -406,6 +424,8 @@ empathy, and long-term client success. Our culture promotes learning, inclusion,
               </p>
             </div>
           </div>
+
+
         </div>
       </section>
 

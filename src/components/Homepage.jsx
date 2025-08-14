@@ -133,11 +133,13 @@ function Homepage() {
       </section>
       {/* hero section end */}
 
+
+
       {/* Top Clients Section */}
        <section className="bg-white py-20 px-4 lg:px-24">
         {/* Heading Section */}
         <div className="text-center mb-12 px-4">
-          <h2 className="font-cabin text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F2B59]">
+          <h2 data-aos="fade-down" className="font-cabin text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F2B59]">
             Meet Our <span className="text-red-600 ">Strategic Partner</span>
           </h2>
 
@@ -151,83 +153,83 @@ function Homepage() {
 
 {/* client logos */}
       {/* 1 */}
-      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300">
-        <img loading="lazy" src={dellEmc} alt="dellEmc" className="h-16 sm:h-16 md:h-20 max-w-[180px] w-full object-contain" />
+      <div className="  flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300">
+        <img loading="lazy" src={dellEmc} alt="dellEmc" className="  animate-float h-16 sm:h-16 md:h-20 max-w-[180px] w-full object-contain" />
       </div>
 
       {/* 2 */}
-      <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b sm:border-r">
-        <img loading="lazy" src={epson} alt="epson" className="h-12 sm:h-16 md:h-20 max-w-[130px] w-full object-contain" />
+      <div className="  flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b sm:border-r">
+        <img loading="lazy" src={epson} alt="epson" className="animate-float  h-12 sm:h-16 md:h-20 max-w-[130px] w-full object-contain" />
       </div>
 
       {/* 3 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300 sm:border-r-0">
-        <img loading="lazy" src={apc} alt="apc" className="h-12 sm:h-12 md:h-20 max-w-[120px] w-full object-contain" />
+        <img loading="lazy" src={apc} alt="apc" className="animate-float mh-12 sm:h-12 md:h-20 max-w-[120px] w-full object-contain" />
       </div>
 
       {/* 4 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b lg:border-l lg:border-r-0 border-gray-300 sm:border-r">
-        <img loading="lazy" src={acronis} alt="acronis" className="h-12 sm:h-16 md:h-24 max-w-[170px] w-full object-contain" />
+        <img loading="lazy" src={acronis} alt="acronis" className="animate-float  mh-12 sm:h-16 md:h-24 max-w-[170px] w-full object-contain" />
       </div>
 
       {/* 5 */}
       <div className="flex items-center justify-center p-10 sm:p-8 lg:p-10 border-b border-r border-gray-300">
-        <img loading="lazy" src={fujitsu} alt="fujitsu" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={fujitsu} alt="fujitsu" className="animate-float  mh-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 6 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b lg:border-r border-gray-300">
-        <img loading="lazy" src={avaya} alt="avaya" className="h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={avaya} alt="avaya" className="animate-float  h-10 sm:h-12 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 7 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-gray-300 sm:border-r-0">
-        <img loading="lazy" src={yealink} alt="yealink" className="h-12 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={yealink} alt="yealink" className="animate-float  h-12 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 8 */}
       <div className="flex items-center justify-center p-8 border-b sm:border-r border-l sm:p-8 lg:p-10 md:border-b border-gray-300 lg:border-r-0">
-        <img loading="lazy" src={yeastar} alt="yeastar" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={yeastar} alt="yeastar" className="animate-float  h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 9 */}
       <div className="flex items-center justify-center p-8 sm:border-r-0 sm:p-8 lg:p-10 border-r md:border-l border-b md:border-b sm:border-l-0 sm:border-b lg:border-r md:border-r-0 lg:border-b lg:border-l-0 ">
-        <img loading="lazy" src={suprema} alt="suprema" className="h-12 sm:h-16 md:h-20 max-w-[150px] w-full object-contain" />
+        <img loading="lazy" src={suprema} alt="suprema" className="animate-float  h-12 sm:h-16 md:h-20 max-w-[150px] w-full object-contain" />
       </div>
 
       {/* 10 */}
       <div className="flex items-center justify-center p-8 lg:border-b border-b sm:border-r sm:p-8 lg:p-10">
-        <img loading="lazy" src={dlink} alt="dlink" className="h-12 sm:h-16 md:h-20 max-w-[130px] w-full object-contain" />
+        <img loading="lazy" src={dlink} alt="dlink" className="animate-float  h-12 sm:h-16 md:h-20 max-w-[130px] w-full object-contain" />
       </div>
 
       {/* 11 */}
       <div className="flex items-center justify-center p-8 sm:p-8  lg:p-10 border-b  border-gray-300 sm:border-r-0">
-        <img loading="lazy" src={origin} alt="origin" className="h-16 sm:h-16 md:h-20 max-w-[180px] w-full object-contain" />
+        <img loading="lazy" src={origin} alt="origin" className="animate-float  h-16 sm:h-16 md:h-20 max-w-[180px] w-full object-contain" />
       </div>
 
       {/* 12 */}
       <div className="flex items-center justify-center lg:border-b p-8 border-l sm:p-8 lg:p-10 border-b">
-        <img loading="lazy" src={samsung} alt="samsung" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={samsung} alt="samsung" className="animate-float  h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
      {/* 13 */}
     <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 lg:border-b-0  border-r border-b  border-gray-300">
-      <img loading="lazy" src={cisco} alt="cisco" className="h-12 sm:h-16 md:h-20 max-w-[120px] w-full object-contain" />
+      <img loading="lazy" src={cisco} alt="cisco" className="animate-float  h-12 sm:h-16 md:h-20 max-w-[120px] w-full object-contain" />
     </div>
 
     {/* 14 */}
     <div className="flex items-center justify-center p-8 lg:border-b-0 border-b sm:p-8 lg:p-10  sm:border-r">
-      <img loading="lazy" src={sonicwall} alt="sonicwall" className="h-14 sm:h-16 md:h-28 max-w-[150px] w-full object-contain" />
+      <img loading="lazy" src={sonicwall} alt="sonicwall" className="animate-float  h-14 sm:h-16 md:h-28 max-w-[150px] w-full object-contain" />
     </div>
 
     {/* 15 */}
     <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10  border-r border-gray-300 sm:border-r-0 md:border-b lg:border-b-0">
-      <img loading="lazy" src={fortinet} alt="fortinet" className="h-14 sm:h-16 md:h-20 max-w-[170px] w-full object-contain" />
+      <img loading="lazy" src={fortinet} alt="fortinet" className="animate-float h-14 sm:h-16 md:h-20 max-w-[170px] w-full object-contain" />
     </div>
 
     {/* 16 */}
-    <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10  lg:border-l lg:border-r-0 border-gray-300 sm:border-r">
-      <img loading="lazy" src={vembu} alt="vembu" className="h-14 sm:h-16 md:h-20 max-w-[180px] w-full object-contain" />
+    <div className="hoveflex items-center justify-center p-8 sm:p-8 lg:p-10  lg:border-l lg:border-r-0 border-gray-300 sm:border-r">
+      <img loading="lazy" src={vembu} alt="vembu" className="animate-float  h-14 sm:h-16 md:h-20 max-w-[180px] w-full object-contain" />
     </div>
 
     </div>
@@ -240,8 +242,8 @@ function Homepage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-center text-center md:text-left gap-12">
           
           <div className="md:w-1/2 md:pl-8 flex h-full items-center">
-            <h2 className="font-cabin text-4xl sm:text-5xl font-bold text-[#0F2B59] leading-tight">
-              <span className="text-[#B41F1F]">Facts</span> about our{" "}
+            <h2  className="font-cabin text-4xl sm:text-5xl font-bold text-[#0F2B59] leading-tight">
+              <span  className="text-[#B41F1F]">Facts</span> about our
               <span className="block">company</span>
             </h2>
           </div>
