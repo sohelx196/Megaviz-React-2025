@@ -22,6 +22,7 @@ function ComingSoon({ComingSoonImg,text1,text2}) {
           src={ComingSoonImg}
           alt="Coming Soon"
           className="w-56 sm:w-72 lg:w-96 h-auto mb-6"
+          loading="lazy"
         />
 
         {/* Heading */}
