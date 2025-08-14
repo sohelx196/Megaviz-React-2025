@@ -271,7 +271,7 @@ function Homepage() {
                 loading="lazy"
               />
               <h3 className="font-cabin text-4xl sm:text-5xl font-bold text-black">
-                70%+
+                72%+
               </h3>
               <p className="font-cabin text-[#C72C28] text-base sm:text-lg font-semibold mt-1">
                 Increase in Digital Adoption
