@@ -327,7 +327,7 @@ function Homepage() {
             </h2> 
 
             {/* Overlapping Box */}
-            <div data-aos="fade-left"  className="border border-gray-400 bg-white shadow-xl rounded-2xl p-10 text-gray-700 mt-6 lg:absolute lg:left-[-110px] lg:w-[550px] z-20">
+            <div data-aos="fade-up"  className="border border-gray-400 bg-white shadow-xl rounded-2xl p-10 text-gray-700 mt-6 lg:absolute lg:left-[-110px] lg:w-[550px] z-20">
               <p className="font-cabin text-base font-normal text-[#696969] mb-4">
                 At Megaviz, we believe in fostering a work environment that
                 feels more like family. A Culture of Belonging means that every
@@ -566,7 +566,7 @@ function Homepage() {
             <img
               src={meetingImg2}
               alt="Team Working"
-              className="rounded-[30px] w-full h-full max-h-[600px] object-cover"
+              className="rounded-[30px]  w-full h-full  max-h-[600px] object-cover"
               loading="lazy"
             />
           </div>
@@ -584,7 +584,7 @@ function Homepage() {
             </h2>
 
             {/* Overlapping Box */}
-            <div data-aos="fade-left" className="border border-gray-400 bg-white shadow-xl rounded-2xl p-10 text-gray-700 mt-10 lg:absolute lg:left-[-110px] lg:w-[550px] z-20">
+            <div data-aos="fade-up" className="border border-gray-400 bg-white shadow-xl rounded-2xl p-10 text-gray-700 mt-10 lg:absolute lg:left-[-110px] lg:w-[550px] z-20">
               <h3 className="font-cabin text-2xl font-semibold mb-4 text-[#000000]">
                 Why Choose us?
               </h3>

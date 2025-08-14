@@ -99,7 +99,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to=""
+                to="/services"
                 className="font-poppins nav-link"
                 onClick={() => setMenuOpen(false)}
               >
@@ -109,7 +109,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to=""
+                to="/industries"
                 className="font-poppins nav-link"
                 onClick={() => setMenuOpen(false)}
               >
@@ -119,7 +119,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="aboutUs"
+                to="/aboutUs"
                 className="font-poppins nav-link"
                 onClick={() => setMenuOpen(false)}
               >
@@ -129,7 +129,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to=""
+                to="/blogs"
                 className="font-poppins nav-link"
                 onClick={() => setMenuOpen(false)}
               >
@@ -139,7 +139,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to=""
+                to="/caseStudies"
                 className="font-poppins nav-link"
                 onClick={() => setMenuOpen(false)}
               >
@@ -149,7 +149,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to=""
+                to="/career"
                 className="font-poppins nav-link"
                 onClick={() => setMenuOpen(false)}
               >

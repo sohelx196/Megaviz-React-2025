@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import arrowIcon from '../assets/icons/arrorw.png'; 
-// import ComingSoonImg from '../assets/icons/ComingSoon.png';
+import ComingSoonImg from '../assets/icons/comingSoon.png';
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -17,16 +17,16 @@ function ComingSoon() {
     <>
       <div className="flex flex-col items-center justify-center text-center pt-10 px-4">
         
-        {/* Illustration
+        {/* Illustration */}
         <img
-          src=""
+          src={ComingSoonImg}
           alt="Coming Soon"
-          className="w-56 sm:w-72 h-auto mb-6"
-        /> */}
+          className="w-56 sm:w-72 lg:w-96 h-auto mb-6"
+        />
 
         {/* Heading */}
-        <h1 data-aos="zoom-out" className="font-cabin font-bold text-3xl sm:text-5xl text-[#0F2B59] leading-tight mb-3">
-          Something Exciting is <span className='text-red-800'>Coming Soon!</span>
+        <h1  className="font-cabin font-bold text-3xl sm:text-5xl text-[#0F2B59] leading-tight mb-3">
+         <span data-aos="fade-right" data-aos-duration="1000"  className='text-red-800'>Coming</span> <span data-aos="fade-right" data-aos-duration="5000">Soon!</span>
         </h1>
 
         {/* Subtext
