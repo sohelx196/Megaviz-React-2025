@@ -269,7 +269,7 @@ function ContactUs() {
               </h4>
               <div className="h-[3px] w-5 bg-black mb-3 mx-auto sm:mx-0"></div>
               <p className="font-inter text-sm sm:text-base font-bold">
-               <a href="mailto:info@megaviztech.com">info@megaviztech.com</a>
+               <a href="mailto:info@megaviz.co">info@megaviz.co</a>
               </p>
 
               {/* <p className="font-inter text-xs sm:text-sm mt-1">
