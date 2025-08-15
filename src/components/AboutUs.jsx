@@ -35,7 +35,7 @@ function AboutUs() {
       {/* Welcome to megaviz start */}
       <section className="my-7">
         <div className="text-center px-4 py-10 md:py-20">
-          <h1 className="font-cabin text-[#102E52] text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 md:mb-8">
+          <h1 data-aos="zoom-out"  className="font-cabin text-[#102E52] text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 md:mb-8" >
             Welcome To <span className="text-[#C72C28]">MegaViz</span>
           </h1>
           <p className="font-cabin text-[#696969] mt-4 max-w-3xl mx-auto text-sm sm:text-base">
@@ -208,13 +208,13 @@ empathy, and long-term client success. Our culture promotes learning, inclusion,
       {/* our service section start */}
 
       <section className="py-16 px-4 sm:px-6 lg:px-8 text-center my-7">
-        <p className="text-[#D72323]  font-cabin  font-semibold tracking-wider lg:text-lg md:text-lg sm:text-base mb-2 text-center ">
+        <p data-aos="fade-up" className="text-[#D72323]  font-cabin  font-semibold tracking-wider lg:text-lg md:text-lg sm:text-base mb-2 text-center " >
           Our Service
         </p>
-        <h2 className="font-cabin text-3xl sm:text-5xl font-extrabold text-[#102E52] mb-4">
+        <h2 data-aos="fade-up" className="font-cabin text-3xl sm:text-5xl font-extrabold text-[#102E52] mb-4">
           What do we do
         </h2>
-        <p className="font-cabin text-gray-600 max-w-2xl mx-auto text-sm sm:text-base mb-12">
+        <p data-aos="fade-up" className="font-cabin text-gray-600 max-w-2xl mx-auto text-sm sm:text-base mb-12" >
           You can give yourself time to concentrate on more important operations
           that are mission-critical to your organization.
         </p>
@@ -395,7 +395,7 @@ empathy, and long-term client success. Our culture promotes learning, inclusion,
               <img
                 src={ourVision}
                 alt="Vision"
-                className="w-full max-w-[320px] sm:max-w-[360px] object-contain"
+                className=" w-full max-w-[320px] sm:max-w-[360px] object-contain"
                 loading="lazy"
               />
             </div>

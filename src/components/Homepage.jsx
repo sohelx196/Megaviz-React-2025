@@ -243,8 +243,8 @@ function Homepage() {
           
           <div className="md:w-1/2 md:pl-8 flex h-full items-center">
             <h2  className="font-cabin text-4xl sm:text-5xl font-bold text-[#0F2B59] leading-tight">
-              <span  className="text-[#B41F1F]">Facts</span> about our
-              <span className="block">company</span>
+              <span data-aos="fade-down"  className="text-[#B41F1F]">Facts</span> <span data-aos="fade-down">about our</span>
+              <span data-aos="fade-up" className="block">company</span>
             </h2>
           </div>
 
@@ -318,10 +318,10 @@ function Homepage() {
 
           {/* Content */}
           <div className="w-full md:w-1/2 pl-0 md:pl-10 mt-10 md:mt-0 relative z-10">
-            <p className="font-cabin text-red-600 font-semibold lg:text-xl md:text-lg sm:text-base mb-2 text-center md:text-left">
+            <p data-aos="fade-up" className="font-cabin text-red-600 font-semibold lg:text-xl md:text-lg sm:text-base mb-2 text-center md:text-left" >
               About our company
             </p>
-            <h2 className="font-cabin font-bold text-3xl lg:text-5xl sm:text-4xl text-[#0F2B59]  mb-4 text-center md:text-left">
+            <h2 data-aos="fade-up" className="font-cabin font-bold text-3xl lg:text-5xl sm:text-4xl text-[#0F2B59]  mb-4 text-center md:text-left">
              We delivers secure, scalable
               <span className="">
                 <span className="text-red-600"> IT services </span>worldwide
@@ -365,11 +365,11 @@ function Homepage() {
       <section className="bg-white py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           {/* Heading */}
-          <h2 className="font-cabin text-4xl sm:text-5xl font-bold mb-4">
-            <span className="text-[#0F2B59]">Our</span>{" "}
+          <h2 data-aos="fade-up" className="font-cabin text-4xl sm:text-5xl font-bold mb-4">
+            <span className="text-[#0F2B59]">Our </span>
             <span className="text-red-600">Services</span>
           </h2>
-          <p className="font-cabin text-[#000000BF] font-normal mb-12 max-w-lg mx-auto text-center leading-[1.6]">
+          <p data-aos="fade-up" className="font-cabin text-[#000000BF] font-normal mb-12 max-w-lg mx-auto text-center leading-[1.6]">
             Start your amazing IT experience with us.
           </p>
 
@@ -575,10 +575,10 @@ function Homepage() {
 
           {/* Right Content */}
           <div className="w-full md:w-1/2 pl-0 md:pl-10 mt-10 md:mt-0 relative z-10">
-            <p className="font-cabin text-red-600 font-semibold lg:text-xl md:text-lg sm:text-base mb-2 text-center md:text-left">
+            <p data-aos="fade-up" className="font-cabin text-red-600 font-semibold lg:text-xl md:text-lg sm:text-base mb-2 text-center md:text-left">
               Why choose us
             </p>
-            <h2 className="font-cabin font-bold text-4xl sm:text-5xl text-[#0F2B59] leading-tight text-center md:text-left">
+            <h2 data-aos="fade-up" className="font-cabin font-bold text-4xl sm:text-5xl text-[#0F2B59] leading-tight text-center md:text-left">
               We promise high
               <span className="block mt-1 lg:mt-3">
                 quality <span className="text-red-600">IT services</span>
@@ -613,11 +613,11 @@ function Homepage() {
             
       <section className="bg-white py-20 px-4 lg:px-24">
         {/* Heading Section */}
-        <div className="text-center mb-12 px-4">
-          <h2 className="font-cabin text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F2B59]">
+        <div  className="text-center mb-12 px-4" >
+          <h2 data-aos="fade-up"  className="font-cabin text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F2B59]">
             Meet Our<span className="text-red-600"> Clients</span>
           </h2>
-          <p className="font-cabin text-[#696969] mt-4 text-base sm:text-lg font-normal">
+          <p data-aos="fade-up"  className="font-cabin text-[#696969] mt-4 text-base sm:text-lg font-normal">
             We have earned the trust of 100's of customers,
             <span className="block">including these fine companies</span>
           </p>
@@ -627,83 +627,83 @@ function Homepage() {
 {/* client logos */}
       {/* 1 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300">
-        <img loading="lazy" src={govOfDubai} alt="govOfDubai" className="h-20  sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
+        <img loading="lazy" src={govOfDubai} alt="govOfDubai" className="animate-float  h-20  sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 2 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b sm:border-r">
-        <img loading="lazy" src={dubaiMuniciplity} alt="dubaiMuniciplity" className="h-20 sm:h-16 md:h-28 max-w-[240px] w-full object-contain" />
+        <img loading="lazy" src={dubaiMuniciplity} alt="dubaiMuniciplity" className="animate-float h-20 sm:h-16 md:h-28 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 3 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-r border-gray-300 sm:border-r-0">
-        <img loading="lazy" src={dubaiCustoms} alt="dubaiCustoms" className="h-20 sm:h-12 md:h-24 max-w-[240px] w-full object-contain" />
+        <img loading="lazy" src={dubaiCustoms} alt="dubaiCustoms" className="animate-float h-20 sm:h-12 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 4 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b lg:border-l lg:border-r-0 border-gray-300 sm:border-r">
-        <img loading="lazy" src={dubaiPolice} alt="dubaiPolice" className="h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
+        <img loading="lazy" src={dubaiPolice} alt="dubaiPolice" className="animate-float h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 5 */}
       <div className="flex items-center justify-center p-10 sm:p-8 lg:p-10 border-b border-r border-gray-300">
-        <img loading="lazy" src={emarine} alt="emarine" className="h-20 sm:h-12 md:h-24 max-w-[240px] w-full object-contain" />
+        <img loading="lazy" src={emarine} alt="emarine" className="animate-float h-20 sm:h-12 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 6 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b lg:border-r border-gray-300">
-        <img loading="lazy" src={brightLerners} alt="brightLerners" className="h-20 sm:h-12 md:h-28 max-w-[240px] w-full object-contain" />
+        <img loading="lazy" src={brightLerners} alt="brightLerners" className="animate-float h-20 sm:h-12 md:h-28 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 7 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 border-b border-gray-300 sm:border-r-0">
-        <img loading="lazy" src={dubaiEconomy} alt="dubaiEconomy" className="h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
+        <img loading="lazy" src={dubaiEconomy} alt="dubaiEconomy" className="animate-float h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 8 */}
       <div className="flex items-center justify-center p-8 border-b sm:border-r border-l sm:p-8 lg:p-10 md:border-b border-gray-300 lg:border-r-0">
-        <img loading="lazy" src={dubaiSme} alt="dubaiSme" className="h-20 sm:h-16 md:h-28 max-w-[240px] w-full object-contain" />
+        <img loading="lazy" src={dubaiSme} alt="dubaiSme" className="animate-float h-20 sm:h-16 md:h-28 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 9 */}
       <div className="flex items-center justify-center p-8 sm:border-r-0 sm:p-8 lg:p-10 border-r md:border-l border-b md:border-b sm:border-l-0 sm:border-b lg:border-r md:border-r-0 lg:border-b lg:border-l-0">
-        <img loading="lazy" src={ega} alt="ega" className="h-16 sm:h-16 md:h-20 max-w-[150px] w-full object-contain" />
+        <img loading="lazy" src={ega} alt="ega" className="animate-float h-16 sm:h-16 md:h-20 max-w-[150px] w-full object-contain" />
       </div>
 
       {/* 10 */}
       <div className="flex items-center justify-center p-8 border-b sm:border-b-0 sm:border-r lg:border-b sm:p-8 lg:p-10 md:border-b ">
-        <img loading="lazy" src={emiratesInsurance} alt="emiratesInsurance" className="h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
+        <img loading="lazy" src={emiratesInsurance} alt="emiratesInsurance" className="animate-float h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 11 */}
       <div className="flex items-center justify-center p-8 sm:p-8  lg:p-10  lg:border-b border-gray-300 border-b">
-        <img loading="lazy" src={electronicGovAuthority} alt="Electronic Goverment Authority" className="h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
+        <img loading="lazy" src={electronicGovAuthority} alt="Electronic Goverment Authority" className="animate-float h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 12 */}
       <div className="flex items-center justify-center p-8 border-l sm:p-8 lg:p-10 border-b">
-        <img loading="lazy" src={dubaiWomenEstablish} alt="dubaiWomenEstablish" className="h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
+        <img loading="lazy" src={dubaiWomenEstablish} alt="dubaiWomenEstablish" className="animate-float h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 13 */}
       <div className="flex items-center justify-center p-8 sm:p-8 lg:p-10 lg:border-b-0 border-b">
-        <img loading="lazy" src={zulekhaHospital} alt="zulekhaHospital" className="h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
+        <img loading="lazy" src={zulekhaHospital} alt="zulekhaHospital" className="animate-float h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
       </div>
       
       {/* 14 */}
       <div className="flex items-center justify-center p-8 border-l lg:border-r border-r-0 sm:p-8 lg:p-10 lg:border-b-0 border-b md:border-r">
-        <img loading="lazy" src={dtc} alt="DTC" className="h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
+        <img loading="lazy" src={dtc} alt="DTC" className="animate-float h-14 sm:h-16 md:h-20 max-w-[140px] w-full object-contain" />
       </div>
 
       {/* 15 */}
       <div className="flex items-center justify-center p-8  sm:p-8 lg:p-10 md:border-b lg:border-b-0 lg:border-r border-r md:border-r-0">
-        <img loading="lazy" src={dubaiSouth} alt="Dubai South" className="h-20 sm:h-16 md:h-20 max-w-[240px] w-full object-contain" />
+        <img loading="lazy" src={dubaiSouth} alt="Dubai South" className="animate-float h-20 sm:h-16 md:h-20 max-w-[240px] w-full object-contain" />
       </div>
 
       {/* 16 */}
       <div className="flex items-center justify-center p-8 md:border-r sm:p-8 lg:p-10 lg:border-r-0">
-        <img loading="lazy" src={luxuryCarts} alt="Luxury Carts" className="h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
-      </div>  
+        <img loading="lazy" src={luxuryCarts} alt="Luxury Carts" className="animate-float h-20 sm:h-16 md:h-24 max-w-[240px] w-full object-contain" />
+      </div>   
 
     </div>
       </section>

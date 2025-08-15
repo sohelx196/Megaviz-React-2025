@@ -32,7 +32,7 @@ function Services() {
         <h2 className="font-cabin text-red-600 font-semibold text-base md:text-lg lg:text-xl mb-2">
           MegaViz Services & Capabilities
         </h2>
-        <h1 className="font-cabin text-4xl md:text-5xl font-bold text-[#102E52] leading-tight">
+        <h1 data-aos="zoom-out"  className="font-cabin text-4xl md:text-5xl font-bold text-[#102E52] leading-tight">
           <span className="block">We're passionate about helping other</span>
           <span className="block">
             businesses <span className="text-[#C72C28]">succeed</span>
@@ -84,10 +84,10 @@ function Services() {
       <section className=" px-4 md:px-8 lg:px-16">
         <div className="text-center mb-10">
           <div className="py-6">
-            <p className="font-cabin text-[#E21F36] font-semibold text-base md:text-lg lg:text-xl">
+            <p data-aos="fade-up" className="font-cabin text-[#E21F36] font-semibold text-base md:text-lg lg:text-xl">
               Innovative IT Solutions
             </p>
-            <h1 className="font-cabin text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold mt-2 text-[#0C0C0C] leading-tight">
+            <h1 data-aos="fade-up"  className="font-cabin text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold mt-2 text-[#0C0C0C] leading-tight">
               <span>Start your amazing IT</span>
               <span className="block mt-2 sm:mt-3">Experience with Us.</span>
             </h1>

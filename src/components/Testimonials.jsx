@@ -53,8 +53,8 @@ function Testimonials() {
     <section className="px-4 sm:px-6 lg:px-16 py-10 ">
       {/* Header */}
       <div className="text-center mb-12">
-        <p className="font-bold text-xl text-[#002699]">Testimonials</p>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#0F2B59] mt-2">
+        <p data-aos="fade-up" className="font-bold text-xl text-[#002699]">Testimonials</p>
+        <h2 data-aos="fade-up" className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#0F2B59] mt-2">
           See what people are
           <span className="block">
             saying <span className="text-red-600">about us</span>
